@@ -1,7 +1,6 @@
 $(function(){
     // default variables
     var tail = $('.tail'),
-    filterCard = $('.filter-card'),
       filters = $('.ex-filter').children(),
       filter = $('.filter-button'),
       all = $('.all'),
@@ -49,23 +48,6 @@ $(function(){
     if(currentFilter) {
         setCurrentFilter(currentFilter);
     }
-
-        // shuffle js .filter-card hover fix
-    // TODO: This should be trivial to implement in css rather than js.
-    $grid.on('layout.shuffle', function() {
-        setTimeout(function() {  
-            filterCard.each(function() {
-                var style = $(this).attr('style');
-                $(this).attr('style', style+' -webkit-transition: all 200ms ease !important; transition: all 200ms ease !important;');
-            });
-        }, 50);
-    });
-    filterCard.on('mouseenter', function() {
-        $(this).css('margin-top', '-5px');       
-    }).on('mouseleave', function() {
-        $(this).css('margin-top', '0px');
-    });
-
 
     //
     // Code below here is implementing the nav menu for /brief

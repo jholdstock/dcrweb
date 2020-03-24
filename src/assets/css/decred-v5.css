@@ -4564,9 +4564,9 @@ p.text-block-11 {
 
 .filter-card:hover {
   box-shadow: 0 12px 17px 0 rgba(0, 0, 0, .16);
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
+  -webkit-transform: translate(0px, -5px);
+  -ms-transform: translate(0px, -5px);
+  transform: translate(0px, -5px);
 }
 
 .filter-card.high-liquidity.atomic-swaps {
