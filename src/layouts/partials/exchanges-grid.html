@@ -1,6 +1,3 @@
-
-
-
 {{ $exchanges := .Site.Data.exchanges.exchanges }}
 {{ $otc := .Site.Data.exchanges.otc }}
 {{ $payment_providers := .Site.Data.exchanges.payment }}
@@ -25,7 +22,7 @@
 <div class="subpage-content exchanges">
     <div class="filter-cards-wrap w-clearfix">
 
-    {{ range $exchanges }}
+    {{ range sort $exchanges "name" }}
         {{ partial "exchange-card" (dict "exchange" . "allTags" $tags  ) }}
     {{ end }}
     </div>
@@ -35,7 +32,7 @@
         <div class="subsection-subtitle">{{ T "exchanges_otc_description" }}</div>
     </div>
 
-    {{ range $otc }}
+    {{ range sort $otc "name" }}
         {{ partial "community-card" . }}
     {{ end }}
 
@@ -44,7 +41,7 @@
         <div class="subsection-subtitle">{{ T "exchanges_payment_description" }}</div>
     </div>
 
-    {{ range $payment_providers }}
+    {{ range sort $payment_providers "name" }}
         {{ partial "community-card" . }}
     {{ end }}
 </div>

@@ -1,7 +1,7 @@
 $(function(){
     // default variables
     var tail = $('.tail'),
-      filterCard = $('.filter-card'),
+    filterCard = $('.filter-card'),
       filters = $('.ex-filter').children(),
       filter = $('.filter-button'),
       all = $('.all'),
@@ -12,18 +12,6 @@ $(function(){
     }
 
     var $grid = $('.filter-cards-wrap');
-
-    // Sort the exchange list alphabetically.
-    // TODO: Do this sorting server-side rather than using JS - use contributor
-    // list sorting as reference.
-    $grid.shuffle({
-        itemSelector: '.filter-card',
-        initialSort: {
-            by: function($el) {
-                return $el.find('.filter-card-title').text().toLowerCase();
-            }
-        }
-    });
 
     // The tooltip for exchange category buttons
     filter.not(all).on('mouseenter', function() {
@@ -62,7 +50,7 @@ $(function(){
         setCurrentFilter(currentFilter);
     }
 
-    // shuffle js .filter-card hover fix
+        // shuffle js .filter-card hover fix
     // TODO: This should be trivial to implement in css rather than js.
     $grid.on('layout.shuffle', function() {
         setTimeout(function() {  
