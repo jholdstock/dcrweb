@@ -216,7 +216,11 @@ body.noscroll >.below.subpage {
   margin-top: 0 !important;
 }
 
-.below.subpage.brief, .below.subpage.sustainability, .below.subpage.security, .below.subpage.adaptability {
+.below.subpage.brief,
+.below.subpage.sustainability,
+.below.subpage.fair,
+.below.subpage.security,
+.below.subpage.adaptability {
   overflow: visible;
 }
 
@@ -2632,6 +2636,13 @@ html[dir="rtl"] .lang-menu {
   background-image: linear-gradient(to right, rgba(9,20,64,0.6) 0%,rgba(9,20,64,0.6) 100%), url('../images/landing-sustainability.png');
 }
 .landingbox-sustainable:hover {
+  background: url('../images/landing-sustainability.png') center/cover no-repeat #091440;
+}
+.landingbox-fair {
+  background: center/cover no-repeat #091440;
+  background-image: linear-gradient(to right, rgba(9,20,64,0.6) 0%,rgba(9,20,64,0.6) 100%), url('../images/landing-sustainability.png');
+}
+.landingbox-fair:hover {
   background: url('../images/landing-sustainability.png') center/cover no-repeat #091440;
 }
 .landingbox-adaptable {
