@@ -14,10 +14,16 @@
                 <span>{{ T "landing_opener" }}</span>
             </div>
             <div class="d-flex"> 
-                <a class="wallet-btn alldl" href="{{ "/wallets/" | relLangURL }}"><img src="{{ .Site.BaseURL }}/images/wallet.svg" alt=""> {{ T "home_download_wallet" }}</a>
+                <a class="wallet-btn alldl" href="{{ "/wallets/" | relLangURL }}">{{ T "home_download_wallet" }}</a>
                 {{ range $download_links }}
-                <a class="wallet-btn os-specific {{ .platform }}" href="{{ .url }}"><img src="{{ .Site.BaseURL }}/images/wallet.svg" alt=""> {{ T "home_download_wallet" }}</a>
-                <div class="all-downloads os-specific {{ .platform }}">{{ $msg_id := print "home_decrediton_for_" .platform }} {{ T $msg_id  }} <br /><a href="{{ "/wallets/" | relLangURL }}" class="wallet-alld">{{ T "home_all_downloads" }} →</a></div>
+                <a class="wallet-btn os-specific {{ .platform }}" href="{{ .url }}">{{ T "home_download_wallet" }}</a>
+
+                <div class="all-downloads os-specific {{ .platform }}">
+                    {{ $msg_id := print "home_decrediton_for_" .platform }}
+                    {{ T $msg_id  }}
+                    <br />
+                    <a href="{{ "/wallets/" | relLangURL }}" class="wallet-alld">{{ T "home_all_downloads" }} →</a>
+                </div>
                 {{ end }}
             </div>
         </div>
