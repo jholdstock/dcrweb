@@ -156,10 +156,6 @@
     {{ end }}
 
     {{ partial "navbar.html" . }}
-
-    {{ if .IsHome }}
-        {{ partial "video-modal.html" . }}
-    {{ end }}
     
     {{ if eq .Section "security" }}
         {{ partial "video-modal-security.html" . }}
@@ -172,11 +168,6 @@
     {{ if eq .Section "adaptability" }}
         {{ partial "video-modal-adaptability.html" . }}
     {{ end }}
-
-    {{ if eq .Section "landing" }}
-        {{ partial "video-modal.html" . }}
-    {{ end }}
-
 
     {{ partial "_js_builder" (dict "bundle" "main.js" "resources" $.Site.Params.js_resources.critical ) }}
 

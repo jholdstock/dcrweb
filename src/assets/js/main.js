@@ -1,7 +1,7 @@
 // Global vars.
 var API_ROOT = "https://api.decred.org";
 
-// Homepage video player.
+// Video player (/sustainability, /adaptability, /security).
 $(document).ready(function () {
 
 	var active = 'active',
@@ -29,7 +29,7 @@ $(document).ready(function () {
 	});
 
 	$(document).click(function(event) {
-		//Watch for clicks and check if it is outside the video modal
+		// Watch for clicks and check if it is outside the video modal
 		if (!$(event.target).closest(".video-modal-wrapper").length && (videoModal).hasClass(active)) {
 			closevideo();
 		}
