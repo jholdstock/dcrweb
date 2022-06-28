@@ -9,7 +9,10 @@
     <div class="fronta landing video-header">
         <div class="_960 subpage-header"><a href="{{ "/" | relLangURL }}" class="subpage-logo-dark w-inline-block"></a></div>
         <div class="_960 subpage-header">
-            <div class="landing-title">{{ T "landing_opener" }}</div>
+            <div class="landing-title">
+                <span>Decred —</span>
+                <span>{{ T "landing_opener" }}</span>
+            </div>
             <div class="d-flex"> 
                 <a class="wallet-btn alldl" href="{{ "/wallets/" | relLangURL }}"><img src="{{ .Site.BaseURL }}/images/wallet.svg" alt=""> {{ T "home_download_wallet" }}</a>
                 {{ range $download_links }}
