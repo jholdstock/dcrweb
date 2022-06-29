@@ -2823,10 +2823,6 @@ p.text-block-11 {
   max-width: 380px;
 }
 
-.img-hidden {
-  display: none;
-}
-
 .col-8 {
   width: 66.666666%;
 }
@@ -2861,12 +2857,6 @@ p.text-block-11 {
   }
   .col-6 img {
     max-width: 100%;
-  }
-  .img-hidden {
-    display: block;
-  }
-  .img-visible {
-    display: none !important;
   }
 }
 
