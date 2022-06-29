@@ -98,23 +98,6 @@
         </div>
     </div>
 </div>
-<div class="full-width latest-news">
-    <div class="_960">
-        <div class="d-flex latest-news__title">
-            <p>{{ T "landing_latestnews" }}</p>
-            <a href="{{ "press/" | relLangURL }}">{{ T "landing_seemore" }} →</a>
-        </div>
-        <div class="subpage-content-section">
-            <div class="press press__coverage subpage-content w-clearfix active">
-                {{ $pressPages := where .Site.RegularPages "Section" "=" "press" }}
-                {{ $coveragePages := .Site.Data.press.coverage }}
-                {{ $allNews := append $coveragePages $pressPages }}
-                {{ $sortedNews := sort $allNews "Params.sortDate" "desc" }}
-                {{ partial "press/coverage-list" (first 5 $sortedNews) }}
-            </div>
-        </div>
-    </div>
-</div>
 
   {{ end }}
 

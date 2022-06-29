@@ -2620,27 +2620,6 @@ html[dir="rtl"] .lang-menu {
   }
 }
 
-.latest-news {
-  padding-top: 45px;
-  background: #eaeef0;
-}
-.latest-news__title {
-  justify-content: space-between;
-  align-items: center;
-}
-.latest-news__title p {
-  font-size: 22px;
-  line-height: 40px;
-  color: #091440;
-
-}
-.latest-news__title a {
-  font-size: 16px;
-  line-height: 42px;
-  color: #596d81;
-  text-decoration: none;
-}
-
 .subpage-logo {
   width: 166px;
   height: 30px;
