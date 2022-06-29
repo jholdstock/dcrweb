@@ -37,7 +37,6 @@
   "nav_security": "高度安全",
   "nav_adaptability": "强适应性",
   "nav_sustainability": "可持续发展",
-  "nav_pastfuture": "历史",
   "nav_getstarted": "入门",
   "nav_stakingvoting": "质押和投票",
   "nav_bugbounty": "Bug赏金计划",
@@ -247,9 +246,5 @@
   "landing_04_link": "交易所",
   "landing_05_link": "文档",
   "landing_06_link": "社区",
-  "landing_07_link": "下载",
-  "history_01_headline": "Decred 的历史",
-  "history_01_text": "<p>Decred基于2013年4月在Bitcointalk论坛上提出的关于Memcoin2加密货币的<a href=\"https://decred.org/research/mackenzie2013.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">提案</a>。用户tacotime提出了新的加密货币，并与另一个Bitcointalk用户_ingsoc和Jake Yocom-Piatt一起实施了混合工作量证明（PoW）/权益证明（PoS）共识系统来基于Memcoin2的新项目，称为Decred。</p><p>这种混合共识系统的主要创新在于，它创建了一种PoS治理机制，用户可以选择暂时锁定其硬币，以换取选票参与治理的权力。这些用户称之为利益相关者。在每个区块中随机选出几张选票，通过投票参加共识系统，这将对Decred决策的权力直接置于其利益相关者手中。</p><p>相比之下，每种纯PoW加密货币都必须主要依靠其矿工来进行治理决策，因为它们单独执行共识系统并提供其安全性。但是，Decred必须依靠其利益相关者和矿工来达成共识并确保其安全。最终结果是，Decred的混合PoW / PoS共识系统比纯PoW系统既公平又安全。</p><p>Decred的代码建立在<a href=\"https://github.com/btcsuite/\" rel=\"noopener noreferrer\">btcsuite</a>代码库上，该代码库是由Company 0 LLC编写的比特币全节点的Go语言实现。尽管Decred基于比特币的代码，但它是独立的加密货币，而不是“比特币分叉”。这项工作于2014年2月开始，在Company 0 LLC的帮助下一直持续到2016年2月其主网启动。</p>",
-  "history_02_headline": "空投和预挖",
-  "history_02_text": "在2016年2月<a href=\"https://docs.decred.org/advanced/premine/\" target=\"_blank\" rel=\"noopener noreferrer\">主网启动</a>之际，Decred使用创新的空投和小型的预挖，引导Decred网络的PoS组件，建立一个由潜在项目贡献者组成的广泛网络，并补偿早期开发人员在启动前的工作。鉴于分配的必要性，这一进程被确定为公平、透明，并从一开始就产生了很大的权力下放。",
+  "landing_07_link": "下载"
 }

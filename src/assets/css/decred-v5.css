@@ -2778,26 +2778,6 @@ p.text-block-11 {
   text-decoration: underline;
 }
 
-.subpage-content__history {
-  background-color: #f9fafa; 
-  padding: 57px 0 37px;
-  color: #091440;
-}
-
-.subpage-content__history h3 {
-  margin-bottom: 0;
-  font-size: 22px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  text-align: left;
-}
-
-.subpage-content__history h3 span {
-  font-size: 60px;
-}
-
 .col-6, .col-6x {
   width: 50%;
 }
@@ -2853,18 +2833,6 @@ p.text-block-11 {
 }
 .align-self-start {
   align-self: flex-start;
-}
-
-.history-info {
-  margin-right: 10px;
-  margin-bottom: 36px;
-  max-width: 310px;
-  padding-right: 48px;
-}
-
-.history__text-block {
-  font-size: 12px;
-  line-height: 1.33;
 }
 
 .text-color--light {

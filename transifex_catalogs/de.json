@@ -185,7 +185,6 @@
   "nav_security": "Sicher",
   "nav_adaptability": "Adaptierbar",
   "nav_sustainability": "Nachhaltig",
-  "nav_pastfuture": "Geschichte",
   "nav_getstarted": "Los legen",
   "nav_stakingvoting": "Staking und Voting",
   "nav_bugbounty": "Bug Bounty",
@@ -239,9 +238,5 @@
   "landing_04_link": "Exchanges",
   "landing_05_link": "Dokumentation",
   "landing_06_link": "Community",
-  "landing_07_link": "Downloads",
-  "history_01_headline": "Decred Historie",
-  "history_01_text": "<p>Decred basiert auf einem <a href=\"https://decred.org/research/mackenzie2013.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Vorschlag</a> für die Memcoin2-Kryptowährung vom April 2013 veröffentlicht im Bitcointalk-Forum. Der Benutzer tacotime schlug diese neue Kryptowährung vor und arbeitete mit _ingsoc, einem weiteren Bitcointalk-Benutzer, und Jake Yocom-Piatt zusammen, um das hybride Proof-of-Work (\"PoW\") / Proof-of-Stake (\"PoS\") Konsensus-System von Memcoin2 als neues Projekt, genannt Decred, zu implementieren.</p><p>Die wichtigste Neuerung dieses hybriden Konsensus-Systems bestand darin, dass es einen PoS-Governance-Mechanismus geschaffen hat bei dem die Nutzer sich dafür entscheiden ihre Coins im Austausch gegen die Teilnahme an einer Lotterie vorübergehend zu sperren. Diese Nutzer werden als Stakeholder bezeichnet. Mehrere Gewinner dieser Lotterie werden in jedem Block ausgewählt um mit ihren Abstimmungen am Konsensus-System teilzunehmen womit die Souveränität über Entscheidungen über Decred direkt in die Hände der Stakeholder gelegt wird.</p><p>Im Gegensatz dazu muss sich jede reine PoW-Kryptowährung bei Governance-Entscheidungen in erster Linie auf ihre Miner verlassen, da diese vorwiegend das Konsensus-System vertreten, durchsetzen und seine Sicherheit gewährleisten. Decred verlässt sich jedoch sowohl auf seine Stakeholder als auch auf die Miner um einen Konsens zu erzielen und seine Sicherheit zu gewährleisten. Das Endergebnis ist, dass das hybride PoW/PoS-Konsensus-System von Decred sowohl wesentlich fairer als auch sicherer ist als reine PoW-Systeme.</p><p>Der Code von Decred wurde auf der <a href=\"https://github.com/btcsuite/\" rel=\"noopener noreferrer\">btcsuite</a> codebase, einer alternativen Full-Node-Bitcoin-Implementierung in Go, geschrieben von Company 0 LLC, aufgebaut.  Obwohl Decred auf dem Code von Bitcoin basiert, handelt es sich um eine eigenständige Kryptowährung, nicht um einen “Bitcoin-Fork“.  Diese Arbeit begann im Februar 2014 und wurde mit der Unterstützung von Company 0 LLC bis zur Einführung des Mainnets im Februar 2016 fortgesetzt.</p>",
-  "history_02_headline": "Airdrop & Premine",
-  "history_02_text": "Während des <a href=\"https://docs.decred.org/advanced/premine/\" target=\"_blank\" rel=\"noopener noreferrer\">Launch</a> im Februar 2016 nutzte Decred einen innovativen Airdrop und einen kleine Premine, um die PoS-Komponente des Decred-Netzwerks zu starten, ein breites Netzwerk potenzieller Projektmitarbeiter aufzubauen und die frühen Entwickler für ihre Arbeit vor dem Start zu entschädigen. Angesichts der Notwendigkeit der Verteilung war dieser Prozess von Anfang an auf Fairness und Transparenz ausgerichtet und führte zu einer erheblichen Dezentralisierung vom Anbeginn.",
+  "landing_07_link": "Downloads"
 }
