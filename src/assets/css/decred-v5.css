@@ -661,12 +661,6 @@ body.noscroll >.below.subpage {
   color: #69d5f7;
 }
 
-.footerblock {
-  display: block;
-  width: 20%;
-  float: left;
-}
-
 .icon {
   width: 32px;
   height: 32px;
