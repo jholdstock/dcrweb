@@ -1,65 +1,6 @@
 // Global vars.
 var API_ROOT = "https://api.decred.org";
 
-// Video player (/sustainability, /adaptability, /security).
-$(document).ready(function () {
-
-	var active = 'active',
-		playButton = $('.play-modal'),
-		mobilePlayButton = $('.mobile-play-button'),
-		videoModal = $('.video-modal');
-
-	playButton.add(mobilePlayButton).click( function() {
-		if($(this).is(playButton) || $(this).is(mobilePlayButton)) {
-			initMediaElement(function(media){
-                videoModal.addClass('active');
-				videoModalPlayPauseButton = videoModal.find($('.mejs__playpause-button'));
-				$('.mejs__controls').prepend('<a href="#" class="video-modal-close">Close</a>');
-
-				$('.video-modal-close').click(function(){
-					closevideo();
-					return false;
-				});
-
-				// play media element
-				media.play();
-			});
-			return false;
-		}
-	});
-
-	$(document).click(function(event) {
-		// Watch for clicks and check if it is outside the video modal
-		if (!$(event.target).closest(".video-modal-wrapper").length && (videoModal).hasClass(active)) {
-			closevideo();
-		}
-	  });
-
-	document.onkeydown = function(evt) {
-		// Watch for escape key and close video modal if active
-		evt = evt || window.event;
-		if (evt.keyCode == 27 && (videoModal).hasClass(active)) {
-			closevideo();
-		}
-	};
-
-	function closevideo(){
-		// pausevideo
-		videoModalPlayPauseButton.children().eq(0).click();
-		jQuery.each(mejs.players, function(key, val) {
-			val.pause();
-		// make video modal not active
-		videoModal.removeClass('active');
-		});
-	}
-
-	if (typeof $('#mediaplayer').mediaelementplayer !== 'undefined') {
-        $('#mediaplayer').mediaelementplayer();
-	}
-});
-
-
-
 // All pages - footer download stats.
 $(document).ready(function () {
 
