@@ -216,7 +216,7 @@ body.noscroll >.below.subpage {
   margin-top: 0 !important;
 }
 
-.below.subpage.brief, .below.subpage.sustainability, .below.subpage.security, .below.subpage.adaptability {
+.below.subpage.brief {
   overflow: visible;
 }
 
@@ -2637,10 +2637,6 @@ html[dir="rtl"] .lang-menu {
   position: relative;
 }
 
-#subpages .subpage-description {
-  margin-top: 0;
-}
-
 .subpage-description-wide {
   margin-top: 46px;
   margin-bottom: 36px;
@@ -2696,26 +2692,6 @@ html[dir="rtl"] .lang-menu {
   margin-bottom: 0;
   margin-left: -24px;
   padding-left: 24px;
-}
-
-.subpage-description__heading {
-  margin-bottom: 46px;
-  width: 540px;
-  font-size: 19px;
-  line-height: 1.26;
-  color:  #091440;
-}
-
-.subpage-description__heading ul {
-  margin-bottom: 0;
-  margin-left: -6px;
-  padding-left: 24px;
-}
-
-@media screen and (max-width: 768px) {
-  .subpage-description__heading {
-    width: auto;
-  }
 }
 
 ul.subpage-description__list {
@@ -2977,7 +2953,7 @@ p.text-block-11 {
   position: relative;
 }
 
-#brief .subpage-content, #subpages .subpage-content, #adaptability .subpage-content {
+#brief .subpage-content {
   padding-top: 38px;
 }
 
@@ -5709,14 +5685,6 @@ p.text-block-11 {
   }
 }
 
-.subpages-box {
-  margin-bottom: 46px;
-  padding: 24px;
-  display: flex;
-  background-color: #f9fafa;
-  box-shadow: 0 3px 13px 0 rgba(9, 20, 64, 0.13);
-}
-
 .d-flex, .d-flex__text {
   display: -webkit-flex;
   display: -moz-flex;
@@ -5736,10 +5704,6 @@ p.text-block-11 {
 
 .d-block {
   display: block;
-}
-
-#subpages .d-flex__text, #subpages .d-flex__text-1 {
-  justify-content: space-between;
 }
 
 @media screen and (max-width: 768px) {
