@@ -185,17 +185,7 @@
   "nav_cointribute_repos": "Colabora con nuestros Repos",
   "nav_explore_community": "Explora las Plataformas de la Comunidad",
   "sign_up_for_newsletter": "Recibí el Newsletter de Decred",
-  "landing_01_headline": "Segura",
-  "landing_01_text": "Decred emplea un innovador sistema híbrido de Proof-of-Work y Proof-of-Stake que genera capas de seguridad y alinea cuidadosamente los incentivos. Este sistema permite obtener lo mejor de ambos mundos, haciendo que sea un orden de magnitud más caro de atacar que las cadenas que solo usan Proof-of-Work o Proof-of-Stake.",
   "landing_01_link2": "Programa de Bug Bounty",
   "landing_01_link3": "Github",
-  "landing_02_headline": "Adaptable",
-  "landing_02_text": "Los sistemas de gobernanza incorporados en Decred le brindan a su comunidad derechos formales para hacer cambios por consenso y gestionar las decisiones a nivel proyecto. Estos sistemas hacen que Decred sea adaptable, permitiéndole evolucionar según la voluntad de su comunidad, resistir a las bifurcaciones e incorporar nuevas tecnologías a largo plazo.",
-  "landing_03_headline": "Sustentable",
-  "landing_03_text": "Decred financia continuamente su tesoro con el 10% de la recompensa de cada bloque y emplea un modelo de contratistas flexible que permite a los colaboradores recibir una compensación por su trabajo. Esto hace que Decred sea una organización autónoma descentralizada sustentable y autofinanciada.",
-  "landing_03_link2": "Colaborar y Convertirse en Contratista",
-  "landing_04_link": "Exchanges",
-  "landing_05_link": "Documentación",
-  "landing_06_link": "Comunidad",
-  "landing_07_link": "Descargas"
+  "landing_03_link2": "Colaborar y Convertirse en Contratista"
 }

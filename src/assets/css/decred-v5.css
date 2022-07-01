@@ -2306,35 +2306,8 @@ html[dir="rtl"] .lang-menu {
   -moz-box-shadow: 13px 13px 21px 0px rgba(9,20,64,0.21);
   box-shadow: 13px 13px 21px 0px rgba(9,20,64,0.21); 
 }
-.landing-bg {
-  margin-right: 21px;
-  margin-bottom: 20px;
-  padding: 20px 9px;
-  background: #091440;
-  transition: 0.34s;
-}
-.landing-bg:hover {
-  -webkit-box-shadow: 13px 13px 21px 0px rgba(9,20,64,0.21);
-  -moz-box-shadow: 13px 13px 21px 0px rgba(9,20,64,0.21);
-  box-shadow: 13px 13px 21px 0px rgba(9,20,64,0.21); 
-}
 .landing-content-link a:hover {
   color: #4dbeff;
-}
-.landing-bg:nth-child(4n+0) {
-  margin-right: -21px;
-}
-.landing-bg__content {
-  min-width: 111px;
-  min-height: 89px;
-}
-.landing-bg a {
-  text-decoration: none;
-}
-.landing-heading-block {
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
 }
 .landing-text-block {
   width: 100%;
@@ -2350,23 +2323,6 @@ html[dir="rtl"] .lang-menu {
     padding: 30px 20px;
     height: 363px;
   }
-  .landing-bg {
-    padding: 20px;
-  }
-  .landing-bg__content {
-    min-width: 117px;
-    min-height: 117px;
-  }
-  .landing-heading-block {
-    font-size: 18px;
-    line-height: 23px;
-  }
-}
-@media screen and (min-width: 376px) {
-  .landing-bg__content {
-    min-width: 142px;
-    min-height: 142px;
-  }
 }
 @media screen and (min-width: 480px) {
   .landing-content-bg {
@@ -2376,14 +2332,6 @@ html[dir="rtl"] .lang-menu {
   .landing-text-block {
     width: 75%
   }
-  .landing-bg__content {
-    min-width: 126px;
-    min-height: 126px;
-  }
-  .landing-heading-block {
-    font-size: 18px;
-    line-height: 23px;
-  }
 }
 @media screen and (min-width: 769px) {
   .landing-content-bg {
@@ -2392,22 +2340,6 @@ html[dir="rtl"] .lang-menu {
   .landing-text-block {
     width: 50%
   }
-  .landing-bg__content {
-    min-width: 184px;
-    min-height: 184px;
-  }
-  .landing-heading-block {
-    font-size: 24px;
-    line-height: 31px;
-  }
-}
-@media screen and (max-width: 479px) {
-  .landing-bg:nth-child(2n+0) {
-    margin-right: -21px;
-  }
-}
-.landing-content-link {
-
 }
 .landing-content-link a {
   display: block;

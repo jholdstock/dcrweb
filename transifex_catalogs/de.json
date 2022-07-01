@@ -185,17 +185,7 @@
   "nav_cointribute_repos": "Zu unseren Repos beitragen",
   "nav_explore_community": "Erkunde die Community-Plattformen",
   "sign_up_for_newsletter": "Decred Newsletter abonnieren",
-  "landing_01_headline": "Sicher",
-  "landing_01_text": "Decred verwendet ein innovatives hybrides System aus Proof-of-Work und Proof-of-Stake welches die Sicherheitsschichten und Motivationsmodelle sorgfältig aufeinander abstimmt. Dieses System liefert das Beste aus beiden Welten und ist damit um eine Größenordnung teurer als ein Angriff auf herkömmliche Proof-of-Work oder  reine Proof-of-Stake Systeme.",
   "landing_01_link2": "Bug-Bounty-Programm",
   "landing_01_link3": "Github",
-  "landing_02_headline": "Anpassbar",
-  "landing_02_text": "Die in Decred eingebauten Governance-Systeme geben der Gemeinschaft formelle Rechte um Konsensänderungen vorzunehmen und Entscheidungen auf Projektebene zu verwalten. Diese Systeme machen Decred anpassungsfähig, damit es sich nach dem Willen der Beteiligten entwickeln, Forks verhindern und neue Technologien auf lange Sicht integrieren kann.",
-  "landing_03_headline": "Nachhaltig",
-  "landing_03_text": "Decred finanziert seine Projektkasse kontinuierlich mit 10% jeder Blockausschüttung und wendet ein flexibles Vertragsmodell an das es den Mitgliedern ermöglicht eine Vergütung für ihre Arbeit zu erhalten. Dies macht Decred zu einer nachhaltigen und selbstfinanzierten, dezentralisierten, autonomen Organisation.",
-  "landing_03_link2": "Beitragen und zum Kontraktor werden",
-  "landing_04_link": "Exchanges",
-  "landing_05_link": "Dokumentation",
-  "landing_06_link": "Community",
-  "landing_07_link": "Downloads"
+  "landing_03_link2": "Beitragen und zum Kontraktor werden"
 }
