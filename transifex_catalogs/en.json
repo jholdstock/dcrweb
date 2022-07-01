@@ -57,7 +57,6 @@
   "exchanges_subtitle": "Decred on Exchanges",
   "exchanges_showall": "Show all",
   "home_download_wallet": "Download Wallet",
-  "home_mainheading": "Decred is an autonomous digital currency.",
   "home_all_downloads": "All Downloads",
   "home_decrediton_for_macdl": "Decrediton for macOS",
   "home_decrediton_for_linuxdl": "Decrediton for Linux",
@@ -126,5 +125,7 @@
   "landing_04_link": "Exchanges",
   "landing_05_link": "Docs",
   "landing_06_link": "Community",
-  "landing_07_link": "Downloads"
+  "landing_07_link": "Downloads",
+
+  ""
 }
