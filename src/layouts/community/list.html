@@ -7,10 +7,10 @@
 {{ end }}
 
 {{ define "main" }}
-
-<div class="full-width">
-    <div class="_960">
-        <div class="subpage-content-section">
+<div class="below subpage community">
+    <div class="full-width">
+        <div class="_960">
+            <div class="subpage-content-section">
                 <div class="subpage-description">{{ T "community_description" }}</div>
                 <div class="subpage-content community">
                     {{ partial "community-grid" . }}
@@ -18,4 +18,5 @@
             </div>
         </div>
     </div>
+</div>
 {{end}}

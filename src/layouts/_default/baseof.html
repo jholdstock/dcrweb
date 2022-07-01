@@ -119,11 +119,10 @@
 
   <body class="body">
 
+    {{ block "content-top" . }}{{ end }}
 
-        {{ block "content-top" . }}{{ end }}
-
-        {{ block "fronta" . }}
-          <div class="fronta subpage video-header">
+    {{ block "fronta" . }}
+        <div class="fronta subpage video-header">
             <div class="_960 subpage-header">
                 <a href="{{ .Site.BaseURL | relLangURL  }}" class="subpage-logo w-inline-block"></a>
             </div>
@@ -131,12 +130,11 @@
                 <div class="subpage-title">{{ block "header" . }}{{ end }}</div>
             </div>
         </div>
-      {{ end }}
+    {{ end }}
 
-      <div class="below subpage {{ .Section }}">
-        {{ block "main" . }}{{ end }}
-        {{ partial "footer.html" . }}
-      </div>
+    {{ block "main" . }}{{ end }}
+    
+    {{ partial "footer.html" . }}
 
     {{ partial "navbar.html" . }}
 

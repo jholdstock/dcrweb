@@ -430,35 +430,6 @@ body.noscroll >.below.subpage {
   background-color: #091440;
 }
 
-.fronta.landing {
-  min-height: 620px;
-  background-image: url('../images/dcrweb-header-1366.png');
-  -webkit-box-pack: justify;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: justify;
-  justify-content: flex-start;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  background-color: #fdfdfd;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-@media screen and (max-width: 768px) {
-  .fronta.landing {
-    background-image: url('../images/dcrweb-header-768.png');
-  }
-}
-
-.charts {
-  width: 400px;
-  height: 400px;
-}
-
-
 .colorblue {
   color: #2970ff;
 }
@@ -2191,38 +2162,6 @@ html[dir="rtl"] .lang-menu {
     font-size: 52px;
   }
 }
-.landing-title {
-  display: flex;
-  flex-direction: column;
-  text-transform: uppercase;
-  margin-top: 50px;
-  margin-bottom: 19px;
-  font-size: 28px;
-  line-height: 34px;
-  color: #091440;
-}
-
-@media screen and (min-width: 321px) {
-  .landing-title {
-    font-size: 38px;
-    line-height: 42px;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .landing-title {
-    font-size: 48px;
-    line-height: 56px;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .landing-title {
-    font-size: 54px;
-    line-height: 64px;
-  }
-}
 
 .wallet-btn {
   display: inline;
@@ -2282,17 +2221,6 @@ html[dir="rtl"] .lang-menu {
   width: 166px;
   height: 30px;
   background-image: url('../images/subpage_logo.svg');
-  background-position: 0px 0px;
-  background-size: auto;
-  background-repeat: no-repeat;
-  -webkit-transition: opacity 100ms ease;
-  transition: opacity 100ms ease;
-}
-
-.subpage-logo-dark {
-  width: 166px;
-  height: 30px;
-  background-image: url('../images/subpage_logo_dark.svg');
   background-position: 0px 0px;
   background-size: auto;
   background-repeat: no-repeat;

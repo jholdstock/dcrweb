@@ -1,16 +1,13 @@
 {{ define "content-top" }}{{ end }}
 
-
-
 {{ define "fronta" }}
 
-    {{ if .IsHome }}
     {{ $download_links := where (index .Site.Data.wallets.links "decrediton") "is_direct_download" true }}
-    <div class="fronta landing video-header">
-        <div class="_960 subpage-header"><a href="{{ "/" | relLangURL }}" class="subpage-logo-dark w-inline-block"></a></div>
-        <div class="_960 subpage-header">
-            <div class="landing-title">
-                <span>Decred —</span>
+    <div class="landing-fronta">
+        <div class="_960">
+            <a href="{{ "/" | relLangURL }}" class="w-inline-block dcr-logo"></a>
+            <div class="title">
+                <span class="dcr">Decred —</span>
                 <span>{{ T "landing_opener" }}</span>
             </div>
             <div class="d-flex"> 
@@ -28,12 +25,10 @@
             </div>
         </div>
     </div>
-    {{ end }}
 {{ end }}
 
 {{ define "main" }}
 
-  {{ if .IsHome }}
   <div class="full-width landing-content">
     <div class="_960">
         <div class="wrapper">
@@ -88,7 +83,6 @@
     </div>
 </div>
 
-  {{ end }}
 
 {{ end }}
 
