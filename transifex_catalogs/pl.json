@@ -1,7 +1,4 @@
 {
-  "general_release_stable": "stabilna",
-  "general_downloads": "pobrania",
-  "general_total": "razem",
   "general_javascript_warning": "Wymagane środowisko JavaScript",
   "general_javascript_warning_description": "Przykro nam, ale ta strona nie działa prawidłowo bez włączonego środowiska JavaScript.",
   "exchanges_title": "Giełdy i kantory",

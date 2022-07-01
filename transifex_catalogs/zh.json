@@ -1,7 +1,4 @@
 {
-  "general_release_stable": "稳定",
-  "general_downloads": "下载",
-  "general_total": "总计",
   "general_javascript_warning": "JavaScript请求",
   "general_javascript_warning_description": "很抱歉，此网站在没有JavaScript的情况下不能正常工作。",
   "exchanges_title": "交易所",

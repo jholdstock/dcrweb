@@ -1,15 +1,8 @@
 // Global vars.
 var API_ROOT = "https://api.decred.org";
 
-// All pages - footer download stats.
+// Detect platform to show appropriate download links.
 $(document).ready(function () {
-
-	var APIdc = API_ROOT + '/?c=dc';
-
-	// get download_count from github
-	$.getJSON(APIdc, function(data) {
-		$('#footerDownloads').text(data[1]);
-	});
 
 	if (platform.os.family == "Windows" || platform.os.family == "Windows Server" || platform.os.family == "Windows 7" || platform.os.family == "Windows 7 / Server 2008 R2" || platform.os.family == "Windows Server 2008 R2 / 7 x64") {
 		$(".windl").show();

@@ -1,7 +1,4 @@
 {
-  "general_release_stable": "stable",
-  "general_downloads": "ダウンロード",
-  "general_total": "/",
   "general_javascript_warning": "JavaScriptが必要です",
   "general_javascript_warning_description": "申し訳ありませんが、このウェブサイトを正常に表示するにはJavaScriptを有効にする必要があります。",
   "exchanges_title": "取引所",

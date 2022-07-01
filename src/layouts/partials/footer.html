@@ -1,6 +1,3 @@
-
-{{ $current_release := .Site.Data.wallets.current_release }}
-
 <div class="footer">
     <div class="footercolumns width1100">
         <div class="footerrows w-row">
@@ -18,18 +15,6 @@
                 <a href="https://dcrdata.decred.org/"  target="_blank" rel="noopener noreferrer" class="footerblocklink transition">{{ T "nav_dcrdata" }}</a>
                 <a href="https://timestamp.decred.org" target="_blank" rel="noopener noreferrer" class="footerblocklink transition">{{ T "nav_time" }}</a>
                 <a href="https://bounty.decred.org"    target="_blank" rel="noopener noreferrer" class="footerblocklink transition">{{ T "nav_bounty" }}</a>
-            </div>
-            <div class="footerblockstats footerrowscolumn1 w-clearfix w-col w-col-2 w-col-medium-2">
-                <div class="footerblockstatsrow w-clearfix">
-                    {{ with $current_release }}
-                        <a id="footerRelease" class="backgroundturquoise borderradius4 dropshadow footerblockstatslink" href="{{ .release_url_base }}{{ .current_version }}" target="_blank" rel="noopener noreferrer">{{ .current_version }}</a>
-                    {{ end }}
-                    <div class="footerblockstatsname">{{ T "general_release_stable" }}</div>
-                </div>
-                <div class="footerblockstatsrow w-clearfix">
-                    <a id="footerDownloads" class="backgroundwashedblue borderradius4 dropshadow footerblockstatslink" href="{{ "wallets/" | relLangURL }}">457k {{ T "general_total" }}</a>
-                    <div class="footerblockstatsname">{{ T "general_downloads" }}</div>
-                </div>
             </div>
             <div class="footerblockicon footerrowscolumn1 w-clearfix w-col w-col-2 w-col-medium-2">
                 <a target="_blank" rel="noopener noreferrer" href="{{ $.Site.Data.community.channels.matrix.url  }}" class="icon w-inline-block matrix"></a>

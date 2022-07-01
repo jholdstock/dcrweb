@@ -1,7 +1,4 @@
 {
-  "general_release_stable": "안정적",
-  "general_downloads": "다운로드",
-  "general_total": "총",
   "general_javascript_warning": "자바스크립트 필수",
   "general_javascript_warning_description": "죄송합니다. 이 웹사이트는 자바스크립트를 사용하도록 설정하지 않으면 제대로 작동하지 않습니다.",
   "exchanges_title": "환전",
