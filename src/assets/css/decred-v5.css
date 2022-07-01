@@ -2798,61 +2798,6 @@ p.text-block-11 {
   display: none;
 }
 
-.subpage-description.breadcrumbs {
-  width: 100%;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 21px;
-  padding-bottom: 20px;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #3d5873;
-  font-family: 'dcrweb-code';
-}
-
-.subpage-description.breadcrumbs div {
-  display: inline-block;
-  position: relative;
-}
-
-.subpage-description.breadcrumbs .external:after {
-  content: "";
-  width: 6px;
-  height: 6px;
-  display: block;
-  background: url('../images/press-coverage-hover-icon.svg') center/cover no-repeat;
-  display: inline-block;
-  margin-left: 1px;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.25s ease-in-out;
-  position: absolute;
-  top: 3px;
-}
-
-.subpage-description.breadcrumbs .external:hover:after {
-  opacity: 1;
-  visibility: visible;
-}
-
-.subpage-description.breadcrumbs a {
-  display: inline-block;
-  padding-left: 28px;
-  text-decoration: none;
-  color: #3d5873;
-}
-
-.subpage-description.breadcrumbs a.active {
-  color: #091440;
-  text-decoration: underline;
-}
-
-.subpage-description.breadcrumbs a:hover {
-  color: #091440;
-  cursor: pointer;
-}
-
-
 @media screen and (min-width: 768px) {
   .subpage-description.ex {
     font-size: 16px;
