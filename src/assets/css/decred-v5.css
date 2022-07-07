@@ -240,14 +240,6 @@ a {
   color: #091440;
 }
 
-.text {
-  max-width: 380px;
-  margin-bottom: 26px;
-  float: left;
-  clear: left;
-  color: #d5edfa;
-}
-
 .backgrounddarkblue {
   background-color: #091440;
 }
@@ -2025,7 +2017,7 @@ p.text-block-11 {
   background-repeat: no-repeat;
 }
 
-.wrapper.matrix-join {
+.wrapper-matrix-join {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
