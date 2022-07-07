@@ -23,6 +23,7 @@ params:
             - "js/platform.min.js"
             - "js/main.js"
             - "js/vsp.js"
+            - "js/bootstrap.bundle-5.0.2.min.js"
         extra:
             - "js/jquery.dataTables.min.js"
             - "js/jquery.waypoints.min.js"

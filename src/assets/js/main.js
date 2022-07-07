@@ -2,40 +2,25 @@
 var API_ROOT = "https://api.decred.org";
 
 // Detect platform to show appropriate download links.
-$(document).ready(function () {
+document.addEventListener("DOMContentLoaded", function() {
 
-	if (platform.os.family == "Windows" || platform.os.family == "Windows Server" || platform.os.family == "Windows 7" || platform.os.family == "Windows 7 / Server 2008 R2" || platform.os.family == "Windows Server 2008 R2 / 7 x64") {
-		$(".windl").show();
-		$(".alldl").hide();
-
-		if($("#decreditonmac").length || $("#decreditonlinux").length) {
-			$("#decreditonlinux").css({color:  "#a2a7b0"});
-			$("#decreditonmac").css({color:  "#a2a7b0"});
-		}
+	var os = platform.os.family;
+	
+	if (os == "Windows" || os == "Windows Server" || os == "Windows 7" || os == "Windows 7 / Server 2008 R2" || os == "Windows Server 2008 R2 / 7 x64") {
+		document.getElementById("windl").style.display = "block";
+		document.getElementById("alldl").style.display = "none";
 	}
 
-	if (platform.os.family == "CentOS" || platform.os.family == "Debian" || platform.os.family == "Fedora" || platform.os.family == "Gentoo" || platform.os.family == "Kubuntu" || platform.os.family == "Linux Mint" || platform.os.family == "Red Hat" || platform.os.family == "SuSE" || platform.os.family == "Ubuntu" || platform.os.family == "Ubuntu Chromium" || platform.os.family == "Xubuntu" || platform.os.family == "Linux") {
-		$(".linuxdl").show();
-		$(".alldl").hide();
-
-		if($("#decreditonmac").length || $("#decreditonwindows").length) {
-			$("#decreditonmac").css({color:  "#a2a7b0"});
-			$("#decreditonwindows").css({color:  "#a2a7b0"});
-		}
+	if (os == "CentOS" || os == "Debian" || os == "Fedora" || os == "Gentoo" || os == "Kubuntu" || os == "Linux Mint" || os == "Red Hat" || os == "SuSE" || os == "Ubuntu" || os == "Ubuntu Chromium" || os == "Xubuntu" || os == "Linux") {
+		document.getElementById("linuxdl").style.display = "block";
+		document.getElementById("alldl").style.display = "none";
 	}
 
-	if (platform.os.family == "OS X") {
-
+	if (os == "OS X") {
 		// If we detect OS X, we can't know if the user will want an amd or arm
-		// build. Just show the amd64 link which will work on both platforms.
-
-		$(".macdl").show();
-		$(".alldl").hide();
-
-		if($("#decreditonlinux").length || $("#decreditonwindows").length) {
-			$("#decreditonlinux").css({color:  "#a2a7b0"});
-			$("#decreditonwindows").css({color:  "#a2a7b0"});
-		}
+		// build. Just show the amd link which will work on both platforms.
+		document.getElementById("macdl").style.display = "block";
+		document.getElementById("alldl").style.display = "none";
 	}
 });
 

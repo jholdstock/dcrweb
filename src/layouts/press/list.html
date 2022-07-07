@@ -8,8 +8,8 @@
 
 {{ define "main" }}
 <div class="below subpage press">
-    <input class="w-hidden" type="radio" id="coverage" name="subpage_toggler" checked />
-    <input class="w-hidden" type="radio" id="releases" name="subpage_toggler" />
+    <input class="d-none" type="radio" id="coverage" name="subpage_toggler" checked />
+    <input class="d-none" type="radio" id="releases" name="subpage_toggler" />
     
     <div class="full-width">
         <div class="_960">
@@ -24,11 +24,11 @@
     <div class="full-width press__wrapper">
         <div class="_960">
             <div class="subpage-content-section toggleable">
-                <div class="press press__coverage subpage-content w-clearfix">
+                <div class="press press__coverage subpage-content">
                     {{ partial "press/coverage-list" .Site.Data.press.coverage }}
                 </div>
                 
-                <div class="press press__releases subpage-content w-clearfix">
+                <div class="press press__releases subpage-content">
                     {{ partial "press/coverage-list" (where .Site.RegularPages "Section" "=" "press") }}
                 </div>
             </div>
