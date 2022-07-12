@@ -2,190 +2,159 @@
   url: "https://godex.io/"
   tags:
     - "instant-exchange"
-  logo_src: "Godex.jpg"
   name: Godex
 -
   url: "https://www.livecoin.net/"
   tags:
     - all
-  logo_src: "livecoin.jpg"
   name: Livecoin
 -
   url: "https://coinswitch.co/"
   tags:
     - "instant-exchange"
-  logo_src: "Coinswitch.jpg"
   name: CoinSwitch
 -
   url: "https://bittrex.com/"
   tags:
     - "high-liquidity"
     - "fiat"
-  logo_src: "Bittrex.jpg"
   name: Bittrex
 -
   url: "https://poloniex.com/"
   tags:
     - "high-liquidity"
-  logo_src: "Poloniex.jpg"
   name: Poloniex
 -
   url: "https://holytransaction.com/"
   tags:
     - all
-  logo_src: "HolyTransaction.jpg"
   name: HolyTransaction
 -
   url: "https://www.coinspot.com.au/"
   tags:
     - "high-liquidity"
     - fiat
-  logo_src: "Coinspot.jpg"
   name: CoinSpot
 -
   url: "https://bisq.network"
   tags:
     - decentralized
-  logo_src: "Bisq.jpg"
   name: Bisq
 -
   url: "https://tuxexchange.com/"
   tags:
     - all
-  logo_src: "tuxexchange.jpg"
   name: "Tux Exchange"
 -
   url: "https://www.kaiserex.com/"
   tags:
     - fiat
-  logo_src: "kaiserex.jpg"
   name: Kaiserex
 -
   url: "https://braziliex.com/"
   tags:
     - fiat
-  logo_src: "braziliex.jpg"
   name: Braziliex
 -
   url: "https://profitfy.trade/"
   tags:
     - fiat
-  logo_src: "profitfy.jpg"
   name: Profitfy
 -
   url: "https://www.swyftx.com.au/"
   tags:
     - fiat
     - "high-liquidity"
-  logo_src: "Swyftx.jpg"
   name: Swyftx
 -
   url: "https://www.cointree.com.au/"
   tags:
     - all
-  logo_src: "cointree.jpg"
   name: CoinTree
 -
   url: "https://okx.com/"
   tags:
     - "high-liquidity"
-  logo_src: "okx.png"
   name: OKX
 -
   url: "https://www.huobi.com/"
   tags:
     - "high-liquidity"
-  logo_src: "huobi.jpg"
   name: Huobi
 -
   url: "https://www.kucoin.com/"
   tags:
     - all
-  logo_src: "kucoin.jpg"
   name: KuCoin
 -
   url: "https://www.coinex.com/"
   tags:
     - all
-  logo_src: "coinex.jpg"
   name: CoinEx
 -
   url: "https://changelly.com/"
   tags:
     - all
-  logo_src: "changelly.png"
   name: Changelly
 -
   url: "https://www.bitladon.com/"
   tags:
     - fiat
-  logo_src: "bitladon.jpg"
   name: Bitladon
 -
   url: "https://bitvavo.com/en/decred"
   tags:
     - fiat
-  logo_src: "bitvavo.png"
   name: Bitvavo
 -
   url: "https://www.gate.io/"
   tags:
     - all
-  logo_src: "gate-io.jpg"
   name: "Gate.io"
 -
   url: "https://www.binance.com/"
   tags:
     - "high-liquidity"
-  logo_src: "binance.jpg"
   name: "Binance.com"
 -
   url: "https://simpleswap.io/"
   tags:
     - "instant-exchange"
-  logo_src: "simpleswap.jpg"
   name: "Simple Swap"
 -
   url: "https://www.sequoir.com/"
   tags:
     - fiat
-  logo_src: "sequoir.png"
   name: Sequoir
 -
   url: "https://stealthex.io/"
   tags:
     - all
-  logo_src: "stealthex.png"
   name: StealthEX
 -
   url: "https://catalx.io/"
   tags:
     - "high-liquidity"
-  logo_src: "catalx.png"
   name: CatalX
 -
   url: "https://evercoin.com/home"
   tags:
     - "instant-exchange"
-  logo_src: "evercoin.png"
   name: "Evercoin"
 -
  url: "https://flyp.me/"
  tags:
    - "instant-exchange"
- logo_src: "Flypme.jpg"
  name: Flyp
 -
   url: "https://www.metalpay.com/"
   tags:
     - all
-  logo_src: "metalpay.png"
   name: "Metal Pay"
 -
   url: "https://www.novadax.com.br/"
   tags:
     - all
-  logo_src: "novadax.png"
   name: "Novadax"
 -
   url: "https://dex.decred.org/"
@@ -193,35 +162,29 @@
     - "high-liquidity"
     - decentralized
     - atomic-swaps
-  logo_src: "dcrdex.png"
   name: "DCRDEX"
 -
   url: "https://swapzone.io/"
   tags:
     - "instant-exchange"
-  logo_src: "swapzone.png"
   name: "Swapzone"
 -
   url: "https://www.hotbit.io/"
   tags:
     - all
-  logo_src: "hotbit.png"
   name: "Hotbit"
 -
   url: "https://www.hotbit.co.kr/"
   tags:
     - "fiat"
-  logo_src: "hotbitkorea.png"
   name: "Hotbit Korea"
 -
   url: "https://wazirx.com/"
   tags:
     - fiat
-  logo_src: "wazirx.png"
   name: WazirX
 -
   url: "https://exchange.bitcoin.com/"
   tags:
     - all
-  logo_src: "bitcoin.png"
   name: Bitcoin.com

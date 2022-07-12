@@ -5,36 +5,36 @@
     <li><a href="{{ "community/" | relLangURL }}" class="navigation-link">{{ T "nav_community" }}</a></li>
     <li><a href="#" class="navigation-link">{{ T "nav_insights_resources" }} →</a>
     <li><a href="https://github.com/decred" target="_blank" rel="noopener noreferrer" class="navigation-link external">{{ T "nav_development" }}</a></li>
-    <li><a href="{{ "brief/" | relLangURL }}" class="navigation-link">{{ T "nav_business_brief" }}</a></li>
     <li><a href="{{ "brand/" | relLangURL }}" class="navigation-link">{{ T "nav_brand_resources" }}</a></li>
     <li><a href="{{ "press/" | relLangURL }}" class="navigation-link">{{ T "nav_news_posts" }}</a></li>
 -->
 
-<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+<nav class="navbar fixed-top navbar-expand-md navbar-dark">
 
-    <div class="container">
-        <a class="navbar-brand dcr-logo" href="{{ .Site.BaseURL | relLangURL }}"></a>
+    <div class="container-md">
+        <div>
+            <a class="navbar-brand dcr-logo" href="{{ .Site.BaseURL | relLangURL }}"></a>
+        </div>
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-nav">
             <span class="navbar-toggler-icon"></span>
         </button>
         
         <div class="collapse navbar-collapse" id="collapse-nav">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="{{ "wallets/" | relLangURL }}">{{ T "nav_downloads" }}</a>
+                    <a class="nav-link {{ if eq .Section "wallets" }}active{{end}}" href="{{ "wallets/" | relLangURL }}">{{ T "nav_downloads" }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ "exchanges/" | relLangURL }}">{{ T "nav_exchanges" }}</a>
+                    <a class="nav-link {{ if eq .Section "exchanges" }}active{{end}}" href="{{ "exchanges/" | relLangURL }}">{{ T "nav_exchanges" }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ "community/" | relLangURL }}">{{ T "nav_community" }}</a>
+                    <a class="nav-link {{ if eq .Section "community" }}active{{end}}" href="{{ "community/" | relLangURL }}">{{ T "nav_community" }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://docs.decred.org/">{{ T "nav_documentation" }}</a>
+                    <a class="nav-link" href="https://docs.decred.org/" target="_blank" rel="noopener noreferrer">{{ T "nav_documentation" }}</a>
                 </li>
 
-                {{ if .IsHome }}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         {{ .Site.Language.LanguageName }}
@@ -47,7 +47,6 @@
                         {{ end }}
                     </ul>
                 </li>
-                {{ end }}
 
             </ul>
         

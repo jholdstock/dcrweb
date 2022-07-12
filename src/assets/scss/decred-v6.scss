@@ -1,19 +1,23 @@
-$dark-blue: #091440;
-$white: #FFFFFF;
 $light-blue: rgb(41, 112, 255); // #2970FF
 $turquoise: rgb(45, 216, 163); // #2DD8A3
+$dark-blue: #091440;
+$white: #FFFFFF;
+$orange: #ED6D47;
 
 .navbar {
+    padding: 0;
+    background-color: $dark-blue;
 
     .dcr-logo {
+        padding: 0;
+        margin: 0;
         display: block;
-        height: 40px;
-        width: 40px;
+        height: 60px;
+        width: 60px;
         background-image: url('../images/iconDecredWhite.svg');
-        background-size: 40px;
+        background-size: 60px;
         background-repeat: no-repeat;
     }
-
 }
 
 
@@ -50,12 +54,12 @@ $turquoise: rgb(45, 216, 163); // #2DD8A3
             display: flex;
             flex-direction: column;
             margin-right: 45px;
-    
+
             font-family: "dcrweb-poppins";
             font-size: 65px;
             font-weight: bold;
             color: white;
-    
+
             .dcr {
                 text-transform: uppercase;
             }
@@ -66,7 +70,7 @@ $turquoise: rgb(45, 216, 163); // #2DD8A3
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
-    
+
             .btn {
                 padding: 10px 21px;
                 margin: 0 0 15px 0;
@@ -76,28 +80,28 @@ $turquoise: rgb(45, 216, 163); // #2DD8A3
                 text-decoration: none;
                 transition: background-color 0.13s ease-in-out;
                 white-space: nowrap;
-    
+
                 &.exchange-btn {
                     color: $dark-blue;
                     background-color: $turquoise;
-    
+
                     &:hover {
                         background-color: rgba($turquoise, 0.89);
                     }
                 }
-    
+
                 &.wallet-btn {
                     color: $white;
                     background-color: $light-blue;
-    
+
                     &:hover {
                         background-color: rgba($light-blue, 0.89);
                     }
-    
+
                     &#alldl {
                         display: block;
                     }
-    
+
                     &.os-specific {
                         display: none;
                     }
@@ -165,14 +169,17 @@ $turquoise: rgb(45, 216, 163); // #2DD8A3
     @media (max-width: 992px) { // lg
         .fronta-center {
             flex-direction: column;
+
             .title {
                 margin-right: 0;
                 margin-bottom: 12px;
                 font-size: 55px;
             }
+
             .fronta-buttons {
                 flex-direction: row;
                 justify-content: start;
+
                 .btn {
                     margin: 15px 15px 0 0;
                 }
@@ -183,14 +190,17 @@ $turquoise: rgb(45, 216, 163); // #2DD8A3
     @media (max-width: 576px) { // sm
         .fronta-center {
             flex-direction: column;
+
             .title {
                 margin-right: 0;
                 margin-bottom: 12px;
                 font-size: 45px;
             }
+
             .fronta-buttons {
                 flex-direction: column;
                 justify-content: center;
+
                 .btn {
                     width: 100%;
                     margin: 15px 15px 0 0;
@@ -201,10 +211,16 @@ $turquoise: rgb(45, 216, 163); // #2DD8A3
 
 }
 
+.body-gradient {
+    background-image: url("../images/bg-gradient.svg");
+    background-position: 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .landing-content {
     padding-top: 144px;
     padding-bottom: 144px;
-    background: linear-gradient(20deg, #122e76 0%, #091440 70%);
 
     .landing-box {
         display: flex;
@@ -265,36 +281,6 @@ $turquoise: rgb(45, 216, 163); // #2DD8A3
             }
         }
     }
-
-
-    @media (min-width: 321px) {
-        .landing-box {}
-
-        .text {}
-
-        .links a {}
-    }
-
-    @media (min-width: 480px) {
-        .landing-box {}
-
-        .headline {}
-
-        .text {}
-
-        .links a {}
-    }
-
-    @media (min-width: 769px) {
-        .landing-box {}
-
-        .headline {}
-
-        .text {}
-
-        .links a {}
-    }
-
 }
 
 
@@ -321,8 +307,121 @@ footer {
     }
 
     .social-icon {
-        height: 32px;
         width: 32px;
-        margin-right: 20px;
+        height: 32px;
+        margin-right: 10px;
+        margin-bottom: 8px;
+        margin-left: 10px;
+        background-image: url('../images/transparent.png');
+        background-position: center center;
+        background-size: 32px;
+        background-repeat: no-repeat;
+
+        &.youtube {
+            background-image: url('../images/iconYoutube.svg');
+        }
+
+        &.discord {
+            background-image: url('../images/iconDiscord.svg');
+        }
+
+        &.telegram {
+            background-image: url('../images/iconTelegram.svg');
+        }
+
+        &.matrix {
+            background-image: url('../images/iconMatrix.svg');
+        }
+
+        &.github {
+            background-image: url('../images/iconGithub.svg');
+        }
+
+        &.twitter {
+            background-image: url('../images/iconTwitter.svg');
+        }
+
+        &.reddit {
+            background-image: url('../images/iconReddit.svg');
+        }
+
+        &.medium {
+            background-image: url('../images/iconMedium.svg');
+        }
     }
+
+}
+
+.subpage-fronta {
+    min-height: 600px;
+    background: linear-gradient(200deg, #0f2666 0%, #091440 62%, #091440 100%);
+    background-image: url('../images/landing-bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.subpage-bg {
+    
+    padding-bottom: 123px;
+}
+
+.subpage-title {
+    color: $white;
+    font-family: "dcrweb-poppins";
+    font-size: 34px;
+    padding-top: 89px;
+    padding-bottom: 42px;
+}
+
+.warning {
+    margin-top: 41px;
+    border: 1px solid $orange;
+    border-radius: 8px;
+    font-size: 13px;
+    padding: 21px;
+
+    p {
+        margin: 0;
+    }
+
+    .orange {
+        color: $orange;
+    }
+}
+
+.pills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    a {
+        text-decoration: none;
+        color: white;
+
+        .pill {
+            padding: 15px 24px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            border-radius: 10000px;
+            white-space: nowrap;
+            transition: border 0.08s ease-in-out;
+
+            border: 2px solid rgba($white, 0.21);
+
+            &:hover {
+                border: 2px solid rgba($white, 0.55);
+            }
+
+            &.highlight {
+                border: 2px solid rgba($light-blue, 0.7);
+
+                &:hover {
+                    border: 2px solid rgba($light-blue, 1.0);
+                }
+            }
+
+        }
+    }
+
 }

@@ -2,37 +2,42 @@
    Decred -  {{ T "nav_press" }}
 {{ end }}
 
-{{ define "header" }}
-   {{ T "nav_press" }}
+{{ define "fronta" }}
+   <div class="subpage-fronta"></div>
 {{ end }}
 
 {{ define "main" }}
-<div class="below subpage press">
-    <input class="d-none" type="radio" id="coverage" name="subpage_toggler" checked />
-    <input class="d-none" type="radio" id="releases" name="subpage_toggler" />
-    
-    <div class="full-width">
-        <div class="_960">
-            <div class="subpage-description">{{ T "press_description" | safeHTML }}</div>
-            <div class="subpage__toggle">
-                <label for="coverage">{{ T "press_coverage" }}</label>
-                <label for="releases">{{ T "press_releases" }}</label>
+
+<div class="subpage press" >
+
+    <div class="container-md">
+        <input class="d-none" type="radio" id="coverage" name="subpage_toggler" checked />
+        <input class="d-none" type="radio" id="releases" name="subpage_toggler" />
+        
+        <div class="full-width">
+            <div class="_960">
+                <div class="subpage-description" style="max-width: 440px;">{{ T "press_description" | safeHTML }}</div>
+                <div class="subpage__toggle">
+                    <label for="coverage">{{ T "press_coverage" }}</label>
+                    <label for="releases">{{ T "press_releases" }}</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="full-width press__wrapper">
+            <div class="_960">
+                <div class="subpage-content-section toggleable">
+                    <div class="press press__coverage clearfix subpage-content" style="display: flex;">
+                        {{ partial "press/coverage-list" .Site.Data.press.coverage }}
+                    </div>
+                    
+                    <div class="press press__releases clearfix subpage-content" style="display: flex;">
+                        {{ partial "press/coverage-list" (where .Site.RegularPages "Section" "=" "press") }}
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     
-    <div class="full-width press__wrapper">
-        <div class="_960">
-            <div class="subpage-content-section toggleable">
-                <div class="press press__coverage subpage-content">
-                    {{ partial "press/coverage-list" .Site.Data.press.coverage }}
-                </div>
-                
-                <div class="press press__releases subpage-content">
-                    {{ partial "press/coverage-list" (where .Site.RegularPages "Section" "=" "press") }}
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 {{end}}

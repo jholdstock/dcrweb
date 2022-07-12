@@ -2,56 +2,60 @@
    Decred -  {{ T "nav_downloads" }}
 {{ end }}
 
-{{ define "header" }}
-   {{ T "nav_downloads" }}
+{{ define "fronta" }}
+   <div class="subpage-fronta"></div>
 {{ end }}
 
 {{ define "main" }}
-
-{{ $apps := .Site.Data.wallets.apps }}
-
-<div class="below subpage wallets">
-    <div class="full-width">
-        <div class="_960">
-            <div class="subpage-content-section">
-                <div class="subpage-description">{{ safeHTML ( T "downloads_description") }}</div>
-                <div class="subpage-content">
-                    {{ range $apps }}
-                    <div class="section-download-page">
-                        <div class="section-title-download-page">
-                            {{ $msg_id := print "downloads_category_" .category }}
-                            {{ T $msg_id  }}
-                        </div>
-                            {{ range .apps }}
-                                <div class="section-card-download-page {{ if ne .is_third_party false }}third-party{{end}}" id="{{ .id }}">
-                                    <div class="{{ .id }} section-card-title-download-page">{{ .name }}</div>
-                                    {{ $msg_id := print "downloads_app_" .id }}
-
-                                    <div class="section-card-description-download">{{ T $msg_id }}</div>
-                                    <div class="section-card-download-links-download-page">
-                                        {{ $links := "" }}
-                                        {{ if eq .links nil }}
-                                            {{ $links = index $.Site.Data.wallets.links .id }}
-                                        {{ else }}
-                                            {{ $links = .links }}
-                                        {{ end }}
-                                        {{ range $links }}
-                                            <a  {{ if ne .is_direct_download true }}target="_blank" rel="noopener noreferrer"{{end}} href="{{ .url }}" {{ if ne .id nil }}id="{{ .id }}"{{end}} class="section-card-link-download-page">
-                                                {{ .title }}
-                                                {{ if eq .is_direct_download true }} ↓
-                                                {{ else }} →
-                                                {{ end }}
-                                            </a>
-                                            <div class="separator"></div>
-                                        {{ end }}
-                                    </div>
-                                </div>
-                            {{ end }}
-                        </div>
-                    {{ end }}
-                </div>
+<div class="subpage-bg body-gradient">
+    
+    <div class="container-md">
+        <div class="subpage-title">{{ T "nav_downloads" }}</div>
+        
+        {{ $apps := .Site.Data.wallets.apps }}
+        {{ range $apps }}
+        <div class="section-download-page">
+            
+            <div class="section-title-download-page">
+                {{ $msg_id := print "downloads_category_" .category }}
+                {{ T $msg_id  }}
             </div>
+
+            {{ range .apps }}
+            <div class="section-card-download-page {{ if ne .is_third_party false }}third-party{{end}}" id="{{ .id }}">
+                <div class="{{ .id }} section-card-title-download-page">{{ .name }}</div>
+                {{ $msg_id := print "downloads_app_" .id }}
+                
+                <div class="section-card-description-download">{{ T $msg_id }}</div>
+                <div class="section-card-download-links-download-page">
+                    {{ $links := "" }}
+                    {{ if eq .links nil }}
+                    {{ $links = index $.Site.Data.wallets.links .id }}
+                    {{ else }}
+                    {{ $links = .links }}
+                    {{ end }}
+                    {{ range $links }}
+                        <a  {{ if ne .is_direct_download true }}target="_blank" rel="noopener noreferrer"{{end}} href="{{ .url }}" {{ if ne .id nil }}id="{{ .id }}"{{end}} class="section-card-link-download-page">
+                            {{ .title }}
+                            {{ if eq .is_direct_download true }} ↓
+                            {{ else }} →
+                            {{ end }}
+                        </a>
+                        <div class="separator"></div>
+                    {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            {{ end }}
         </div>
+
+        <div class="warning">
+            <span class="orange">{{ T "warning" }}:</span>
+            {{ safeHTML (T "downloads_description")  }}
+        </div>
+
     </div>
 </div>
+
 {{end}}

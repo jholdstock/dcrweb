@@ -2,21 +2,63 @@
    Decred -  {{ T "nav_community" }}
 {{ end }}
 
-{{ define "header" }}
-   {{ T "nav_community" }}
+{{ define "fronta" }}
+    <div class="subpage-fronta"></div>
 {{ end }}
 
 {{ define "main" }}
-<div class="below subpage community">
-    <div class="full-width">
-        <div class="_960">
-            <div class="subpage-content-section">
-                <div class="subpage-description">{{ T "community_description" }}</div>
-                <div class="subpage-content community">
-                    {{ partial "community-grid" . }}
-                </div>
-            </div>
+
+{{ $social_channels  := $.Site.Data.community.channels }}
+{{ $support_channels := $.Site.Data.community.support }}
+
+<div class="subpage-bg body-gradient">
+    <div class="container-md">
+
+        <div class="subpage-title">{{ T "community_community_title" }}</div>
+
+        <div class="pills">
+            {{ range where $social_channels "highlight" true }}
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="">
+                    <div class="pill highlight">{{ .name }}</div>
+                </a>
+            {{ end }}
         </div>
+        
+        
+        <div class="pills">
+            {{ range where $social_channels "highlight" false }}
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="">
+                    <div class="pill">{{ .name }}</div>
+                </a>
+            {{ end }}
+        </div>
+
+        <div class="subpage-title">{{ T "community_support_title" }}</div>
+
+        <div class="pills">
+            {{ range where $support_channels "highlight" true }}
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="">
+                    <div class="pill highlight">{{ .name }}</div>
+                </a>
+            {{ end }}
+        </div>
+
+        <div class="pills">
+            {{ range where $support_channels "highlight" false }}
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="">
+                    <div class="pill">{{ .name }}</div>
+                 </a>
+            {{ end }}
+        </div>
+
+        <div class="warning">
+            <span class="orange">{{ T "warning" }}:</span>
+                Admins will never DM you or provide support via DM.
+                Do not provide any personal information such as your wallet seed words to anybody helping you.
+        </div>
+
     </div>
 </div>
+
+
 {{end}}

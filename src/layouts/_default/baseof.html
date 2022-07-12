@@ -49,26 +49,6 @@
         <meta name="msapplication-TileImage" content="/images/favicon/mstile-144x144.png?v=fi5jKKtbwv">
         <meta name="msapplication-config" content="/images/favicon/browserconfig.xml?v=fi5jKKtbwv">
         <meta name="theme-color" content="#ffffff">
-        <style>
-          @media (min-width: 1024px) and (max-width: 1212px) {
-            .logo {
-              margin-left: -20px;
-            }
-            .slogan,
-            .description {
-              margin-left: 105px;
-            }
-          }
-          @media (min-width: 992px) and (max-width: 1024px) {
-            .front {
-              width: 480px;
-            }
-            .column {
-              margin-bottom: 20px;
-            }
-          }
-      
-        </style>
 
         <!-- hide lottie players when javascript is disabled -->
         <noscript>
@@ -84,14 +64,6 @@
     {{ block "content-top" . }}{{ end }}
 
     {{ block "fronta" . }}
-        <div class="fronta subpage video-header">
-            <div class="_960 subpage-header">
-                <a href="{{ .Site.BaseURL | relLangURL  }}" class="subpage-logo d-inline-block"></a>
-            </div>
-            <div class="_960 subpage-header">
-                <div class="subpage-title">{{ block "header" . }}{{ end }}</div>
-            </div>
-        </div>
     {{ end }}
 
     {{ block "main" . }}{{ end }}

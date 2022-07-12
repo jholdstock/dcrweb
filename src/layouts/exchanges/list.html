@@ -2,23 +2,71 @@
    Decred -  {{ T "nav_exchanges" }}
 {{ end }}
 
-{{ define "header" }}
-   {{ T "nav_exchanges" }}
+{{ define "fronta" }}
+   <div class="subpage-fronta"></div>
 {{ end }}
 
 {{ define "content-top" }}
     <div class="tail"></div>
 {{ end }}
 
-
 {{ define "main" }}
-<div class="below subpage exchanges">
-    <div class="full-width">
-        <div class="_960">
-            <div class="subpage-content-section ex">
-                    {{ partial "exchanges-grid" . }}
-            </div>
+
+{{ $exchanges := .Site.Data.exchanges.exchanges }}
+{{ $tags := .Site.Data.exchanges.tags }}
+
+<div class="subpage-bg body-gradient">
+    <div class="container-md">
+        
+        <div class="subpage-title">{{ T "exchanges_subtitle" }}</div>
+
+
+        <div class="ex-filter">
+            <a href="#" data-group="all" class="filter-button all is-checked exchange-button">{{ T "exchanges_showall" }}</a>
+            {{ range $id, $tag := $tags }}
+                <a href="#"
+                data-tail="{{ $tag.name }}"
+                data-group="{{ $id }}"
+                class="filter-button {{  $id }} exchange-button"></a>
+            {{ end }}
         </div>
+
+        <div class="filter-cards-wrap">
+
+            {{ range $exchanges }}
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" data-groups="[&quot;{{ delimit .tags "&quot;,&quot;" }}&quot;]" class="filter-card d-inline-block">
+                <div class="filter-card-footer">
+                    <div class="filter-card-title">{{ .name }}</div>
+                
+                    {{ range .tags }}
+                    {{ $tag := index $tags . }}
+                    <div data-tail="{{ $tag.name }}" class="filter-button {{ . }} is-checked"></div>
+                    {{ end }}
+                </div>
+                </a>
+            {{ end }}
+        </div>
+
+        <div class="subpage-title">{{ T "exchanges_payment_title" }}</div>
+
+        <div class="pills">
+            {{ range .Site.Data.exchanges.payment }}
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="">
+                <div class="pill">{{ .name }}</div>
+            </a>
+            {{ end }}
+        </div>
+
+        <div class="warning">
+            <p>
+                <span class="orange">{{ T "warning" }}:</span>
+                {{ safeHTML (T "exchanges_disclaimer")  }}
+                <br /><br />
+                {{ T "exchanges_description" }}
+            </p>
+        </div>
+
     </div>
 </div>
+
 {{end}}
