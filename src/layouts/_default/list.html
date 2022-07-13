@@ -27,9 +27,15 @@
             <div class="fronta-bottom">
                 
                 <div class="socials col-md-4 d-none d-md-flex">
-                    {{/* <a class="social matrix"   href="{{ $.Site.Data.community.channels.matrix.url   }}"></a>
-                    <a class="social discord"  href="{{ $.Site.Data.community.channels.discord.url  }}"></a>
-                    <a class="social telegram" href="{{ $.Site.Data.community.channels.telegram.url }}"></a> */}}
+                    {{ range where $.Site.Data.community.channels "id" "matrix" }}
+                        <a class="social {{ .id }}" href="{{ .url }}" target="_blank" rel="noopener noreferrer"></a>
+                    {{ end }}
+                    {{ range where $.Site.Data.community.channels "id" "discord" }}
+                        <a class="social {{ .id }}" href="{{ .url }}" target="_blank" rel="noopener noreferrer"></a>
+                    {{ end }}
+                    {{ range where $.Site.Data.community.channels "id" "telegram" }}
+                        <a class="social {{ .id }}" href="{{ .url }}" target="_blank" rel="noopener noreferrer"></a>
+                    {{ end }}
                 </div>
                 
                 <div class="see-more col-12 col-md-4">

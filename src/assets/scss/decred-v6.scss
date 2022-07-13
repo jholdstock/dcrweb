@@ -1,8 +1,8 @@
-$light-blue: rgb(41, 112, 255); // #2970FF
-$turquoise: rgb(45, 216, 163); // #2DD8A3
-$dark-blue: #091440;
-$white: #FFFFFF;
-$orange: #ED6D47;
+$light-blue: rgb( 41, 112, 255); // #2970FF
+$turquoise:  rgb( 45, 216, 163); // #2DD8A3
+$white:      rgb(255, 255, 255); // #FFFFFF
+$dark-blue:  #091440;
+$orange:     #ED6D47;
 
 .navbar {
     padding: 0;
@@ -135,6 +135,18 @@ $orange: #ED6D47;
 
                 &:hover {
                     opacity: 0.55;
+                }
+                
+                &.discord {
+                    background-image: url('../images/iconDiscord.svg');
+                }
+        
+                &.telegram {
+                    background-image: url('../images/iconTelegram.svg');
+                }
+        
+                &.matrix {
+                    background-image: url('../images/iconMatrix.svg');
                 }
             }
         }
@@ -423,5 +435,6 @@ footer {
 
         }
     }
-
 }
+
+@import "wallets";

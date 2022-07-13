@@ -577,161 +577,6 @@ a {
   display: none;
 }
 
-.section-download-page {
-  margin-bottom: 20px;
-}
-
-.section-title-download-page {
-  margin-bottom: 20px;
-  color: #091440;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.section-card-download-page {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-  width: 300px;
-  height: 122px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  padding: 15px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  border-radius: 0;
-  background-color: #fff;
-  background-image: url('../images/in-house.svg');
-  background-position: 97% 10px;
-  background-repeat: no-repeat;
-  background-size: 20px;
-  box-shadow: 0 6px 15px 0 rgba(0, 0, 0, .16);
-  -webkit-transition: box-shadow 100ms ease;
-  transition: 200ms ease;
-  color: #091440;
-}
-.section-card-download-page:target {
-  border: 2px solid #2970ff;
-  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .35);
-}
-
-.section-card-download-page:hover {
-  box-shadow: 0 12px 17px 0 rgba(0, 0, 0, .16);
-  transform: translateY(-5px);
-}
-
-.section-card-download-page.third-party {
-  background-image: url('../images/wallets/3rd-party.svg');
-  background-position: 95% 10px;
-}
-
-.section-card-title-download-page {
-  padding-right: 30px;
-  padding-left: 30px;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  background-image: url('../images/wallets/placeholder.svg');
-  background-position: 0px 0px;
-  background-repeat: no-repeat;
-  color: #091440;
-  font-weight: 600;
-}
-
-.section-card-title-download-page.decrediton {
-  background-image: url('../images/wallets/decrediton.svg');
-}
-
-.section-card-title-download-page.godcr {
-  background-image: url('../images/wallets/decrediton.svg');
-}
-
-.section-card-title-download-page.mobilewallets {
-  background-image: url('../images/wallets/ic_mobile.svg');
-}
-
-.section-card-title-download-page.commandline {
-  background-image: url('../images/wallets/commandline.svg');
-}
-
-.section-card-title-download-page.exodus {
-  background-image: url('../images/wallets/exodus_symbol.png');
-  background-size: 20px 20px;
-}
-
-.section-card-title-download-page.coinomi {
-  background-image: url('../images/wallets/coinomi-color-for-loght-bg.png');
-  background-size: 20px 20px;
-}
-
-.section-card-title-download-page.ownbit {
-  background-image: url('../images/wallets/ownbit.svg');
-  background-size: 20px 20px;
-}
-
-.section-card-title-download-page.anybit {
-  background-image: url('../images/wallets/anybit-color-for-loght-bg.png');
-  background-size: 20px 20px;
-}
-
-.section-card-title-download-page.atomicwallet {
-  background-image: url('../images/wallets/atomic-color-for-loght-bg.png');
-  background-size: 20px 20px;
-}
-
-.section-card-title-download-page.guarda {
-  background-image: url('../images/wallets/guarda-shield-logo.svg');
-  background-size: 20px 20px;
-}
-
-.section-card-title-download-page.ledger {
-  background-image: url('../images/wallets/ledger_logo.png');
-  background-size: 20px 20px;
-}
-
-.section-card-title-download-page.trezor {
-  background-image: url('../images/wallets/trezor.png');
-  background-size: 20px 20px;
-}
-.section-card-title-download-page.evercoin {
-  background-image: url('../images/wallets/evercoin_logo.png');
-  background-size: 20px 20px;
-}
-
-.section-card-title-download-page.trust {
-  background-image: url('../images/wallets/trust_logo.png');
-  background-size: 20px 20px;
-}
-
-.section-card-description-download {
-  font-size: 13px;
-  line-height: 17px;
-}
-
-.section-card-download-links-download-page {
-  font-size: 13px;
-}
-
-.section-card-link-download-page {
-  display: inline-block;
-  float: left;
-  color: #2970ff;
-  line-height: 17px;
-  text-decoration: none;
-}
-
 .div-block {
   display: block;
   width: 1px;
@@ -741,20 +586,6 @@ a {
 
 .text-block {
   float: left;
-}
-
-.separator {
-  width: 1px;
-  height: 16px;
-  margin-top: 1px;
-  margin-right: 3px;
-  margin-left: 2px;
-  float: left;
-  background-color: #091440;
-}
-
-.section-card-download-links-download-page > .separator:last-child {
-  display: none;
 }
 
 .font23 {
@@ -1770,9 +1601,6 @@ p.text-block-11 {
   .modalparagraph.right {
     float: left;
   }
-  .section-card-download-page {
-    margin-right: 20px;
-  }
   .firstview-right {
     position: relative;
     margin-left: 0px;
@@ -1986,16 +1814,6 @@ p.text-block-11 {
   .modalparagraph.right {
     margin-bottom: 15px;
   }
-  .section-download-page {
-    margin-top: 30px;
-    margin-right: -20px;
-    margin-left: -20px;
-    padding-left: 20px;
-  }
-  .section-card-download-page {
-    width: 254px;
-    height: 138px;
-  }
   .platform {
     padding-top: 112px;
     -webkit-box-orient: vertical;
@@ -2147,16 +1965,6 @@ p.text-block-11 {
   }
   .icon {
     margin-top: 12px;
-  }
-  .section-download-page {
-    margin-right: 0px;
-    margin-left: 0px;
-    padding-left: 0px;
-  }
-  .section-card-download-page {
-    width: 100%;
-    height: auto;
-    min-height: 122px;
   }
   ._960.firstview {
     height: 100%;

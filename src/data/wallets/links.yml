@@ -55,7 +55,7 @@ mobilewallets:
       url: https://github.com/planetdecred/dcrandroid/releases/tag/v1.7.0
 
 commandline:
-    - title: View on GitHub
+    - title: GitHub
       url: https://github.com/decred/decred-release/releases/tag/v1.7.2
     - title: Release notes
       url: https://github.com/decred/decred-binaries/blob/master/release-notes.md#dcrwallet-v172

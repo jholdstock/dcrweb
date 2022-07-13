@@ -1,79 +1,101 @@
-- category: core
-  apps:
-    - name: Decrediton
-      id: decrediton
-      is_third_party: false
-    - name: GoDCR
-      id: godcr
-      is_third_party: false
-    - name: Mobile Wallets
-      id: mobilewallets
-      is_third_party: false
-    - name: Command-line app suite
-      id: commandline
-      is_third_party: false
+- id: decrediton
+  name: Decrediton
+  category: core
+  is_third_party: false
 
-- category: hardware_wallets
-  apps:
-    - name: Trezor
-      id: trezor
-      links:
-        - title: Decrediton
-          url: https://decred.org/wallets/#decrediton
-        - title: Exodus
-          url: https://www.exodus.io/decred-wallet
-    - name: Ledger Live
-      id: ledger
-      links:
-        - title: Ledger Live wallet
-          url: https://www.ledger.com/pages/ledger-live
+- id: godcr
+  name: GoDCR
+  category: core
+  is_third_party: false
 
-- category: 3rd_party_wallets
-  apps:
-    - name: Exodus
-      id: exodus
-      links:
-        - title: Exodus releases
-          url: https://www.exodus.io/decred-wallet
+- id: mobilewallets
+  name: Mobile Wallets
+  category: core
+  is_third_party: false
 
-    - name: Coinomi
-      id: coinomi
-      links:
-        - title: Coinomi releases
-          url: https://www.coinomi.com/downloads/
+- id: commandline
+  name: Command-line app suite
+  category: core
+  is_third_party: false
 
-    - name: Ownbit
-      id: ownbit
-      links:
-        - title: Ownbit releases
-          url: https://ownbit.io/
 
-    - name: AnyBit
-      id: anybit
-      links:
-        - title: AnyBit releases
-          url: https://www.anybit.io/
 
-    - name: Atomic
-      id: atomicwallet
-      links:
-        - title: Atomic Wallet releases
-          url: https://atomicwallet.io/
 
-    - name: Guarda
-      id: guarda
-      links:
-        - title: Guarda releases
-          url: https://guarda.com/
 
-    - name: Evercoin
-      id: evercoin
-      links:
-        - title: Evercoin wallet
-          url: https://evercoin.com/
+- id: trezor
+  name: Trezor
+  category: hardware_wallets
+  links:
+    - title: Decrediton
+      url: https://decred.org/wallets/#decrediton
+    - title: Exodus
+      url: https://www.exodus.io/decred-wallet
+      
+- id: ledger
+  name: Ledger Live
+  category: hardware_wallets
+  links:
+    - title: Ledger Live wallet
+      url: https://www.ledger.com/pages/ledger-live
 
-    - name: Trust Wallet
-      id: trust
-      links:
-        - title: Trust Wallet
-          url: https://trustwallet.com/
+
+
+
+
+
+
+- id: exodus
+  name: Exodus
+  category: 3rd_party_wallets
+  links:
+    - title: Exodus releases
+      url: https://www.exodus.io/decred-wallet
+
+- id: coinomi
+  name: Coinomi
+  category: 3rd_party_wallets
+  links:
+    - title: Coinomi releases
+      url: https://www.coinomi.com/downloads/
+
+- id: ownbit
+  name: Ownbit
+  category: 3rd_party_wallets
+  links:
+    - title: Ownbit releases
+      url: https://ownbit.io/
+
+- id: anybit
+  name: AnyBit
+  category: 3rd_party_wallets
+  links:
+    - title: AnyBit releases
+      url: https://www.anybit.io/
+
+- id: atomicwallet
+  name: Atomic
+  category: 3rd_party_wallets
+  links:
+    - title: Atomic Wallet releases
+      url: https://atomicwallet.io/
+
+- id: guarda
+  name: Guarda
+  category: 3rd_party_wallets
+  links:
+    - title: Guarda releases
+      url: https://guarda.com/
+
+- id: evercoin
+  name: Evercoin
+  category: 3rd_party_wallets
+  links:
+    - title: Evercoin wallet
+      url: https://evercoin.com/
+
+- id: trust
+  name: Trust Wallet
+  category: 3rd_party_wallets
+  links:
+    - title: Trust Wallet
+      url: https://trustwallet.com/
