@@ -151,16 +151,6 @@
   "Visual communication toolkit": "Görsel iletişim kiti",
   "Voting Service Providers": "Oylama Hizmeti Sağlayıcıları",
   "Who is Decred?": "Decred Kimdir?",
-  "Join our Matrix community": "Matrix topluluğumuza katılın",
-  "matrix_to_register_using_the_riot": "Decred'in ana sunucu bilgileri önceden doldurulmuş şekilde Riot internet uygulamasını kullanarak kaydolmak için aşağıdaki bağlantıya tıklayın.",
-  "matrix_register_with_riot": "Riot ile kaydolun.",
-  "matrix_note_you_must_register_with": "Not: şifre sıfırlamaları istiyorsanız bir e-posta adresi ile kaydolmalısınız.",
-  "matrix_if_you_already_have_an": "Zaten mevcut bir Matrix hesabınız varsa Decred'in ana sunucusunda oturum açmak için aşağıdaki bağlantıyı kullanın.",
-  "matrix_login_to_decred_homeserver": "Decred ana sunucusunda oturum açın",
-  "matrix_to_browse_decred_rooms_click": "Decred odalarına göz atmak için sol taraftaki \"Odalar\" panelinde yer alan dizin düğmesine tıklayın.",
-  "matrix_decred_rooms": "Decred Odaları",
-  "matrix_to_browse_other_available_matrix": "Diğer mevcut Matrix istemcilerine ve ana sunucularına göz atmak için <a href=\"https://matrix.org/docs/projects/try-matrix-now.html\">Matrix ile Başlangıç sayfasına</a> bakın.",
-  "matrix_matrix_is_a_secure_open": "<p>Matrix, Decred yüklenicilerinin favorisi olan, güvenli ve açık bir mesajlaşma platformudur. Matrix kullanıcıları köprü yazılımları sayesinde Slack ve Discord gibi diğer Decred platformlarındaki kullanıcılarla iletişim kurabilir. Matrix birinci taraf kaydı sunar; kaydolmak için kimlik bilgileri veya üçüncü taraf hizmetleri gerekmez. Bununla beraber kullanıcılar şifre sıfırlama gibi bazı özelliklerin bir e-posta adresi gerektirdiğinin bilincinde olmalıdır. Matrix'in güvenlik özellikleri ve mevcut istemcileri hakkında daha fazla bilgi için Matrix proje <a href=\"https://matrix.org/blog/home/\">ana sayfasına</a> bakın.</p>\n\n<p>Matrix'e katılmak için bir istemci ve ana sunucu seçmeniz gerekir. Matrix çok sayıda istemci ve ana sunucu desteklemektedir ancak ilk defa kullanacak olanlar için en iyi desteklenen Matrix istemcisi Riot'ı ve Decred'in ana sunucusunu tavsiye ederiz. Decred ana sunucusunu kullanmak Decred sohbet odalarını bulmanızı kolaylaştırır, kimliğinize \"decred.org\" ibaresini ekler ve Decred'in ana sunucusunun diğer ana sunucularla bağlantısının kopması halinde mesajlaşmaya devam etmenize izin verir.</p>",
   "Page not found": "Sayfa bulunamadı",
   "Back to home page": "Ana sayfaya geri dönün"
 }

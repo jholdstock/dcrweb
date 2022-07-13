@@ -151,16 +151,6 @@
   "Visual communication toolkit": "시각 커뮤니케이션 툴키트",
   "Voting Service Providers": "투표 서비스 제공업체",
   "Who is Decred?": "Decred는 누가 만들었나요?",
-  "Join our Matrix community": "Matrix 커뮤니티에 참여하세요",
-  "matrix_to_register_using_the_riot": "Riot 웹 앱을 사용하여 등록하려면(Decred 홈 서버 정보 미리 입력됨) 아래의 링크를 클릭하세요.",
-  "matrix_register_with_riot": "Riot으로 등록하세요.",
-  "matrix_note_you_must_register_with": "참고: 비밀번호를 재설정하려면 이메일 주소로 등록해야 합니다.",
-  "matrix_if_you_already_have_an": "이미 Matrix 계정이 있다면 아래의 링크를 사용하여 Decred 홈 서버에 로그인하세요.",
-  "matrix_login_to_decred_homeserver": "Decred 홈서버에 로그인",
-  "matrix_to_browse_decred_rooms_click": "Decred 룸을 둘러보려면 왼쪽의 '룸' 패널에 있는 디렉토리 버튼을 클릭하세요.",
-  "matrix_decred_rooms": "Decred 룸",
-  "matrix_to_browse_other_available_matrix": "사용 가능한 다른 Matrix 클라이언트와 홈 서버를 둘러보려면 <a href=\"https://matrix.org/docs/projects/try-matrix-now.html\">Matrix 시작하기 페이지</a>를 참조하세요.",
-  "matrix_matrix_is_a_secure_open": "<p>Matrix는 많은 Decred 계약자 분들이 사용하는 개방형 메시지 플랫폼입니다. Matrix 사용자는 브릿지 소프트웨어를 이용하여 Slack과 Discord 등 다른 Decred 플랫폼의 사용자와 소통할 수 있습니다. Matrix는 자체 등록을 제공하며, 식별 정보나 타사 서비스 없이도 가입할 수 있습니다. 단, 비밀번호 재설정 등 일부 기능의 경우 이메일 주소가 필요하다는 사실을 주지하세요. Matrix의 보안 기능과 사용 가능한 클라이언트에 대해 자세히 알아보려면 Matrix 프로젝트 <a href=\"https://matrix.org/blog/home/\">홈페이지</a>를 참조하시기 바랍니다.</p>\n\n<p>Matrix에 가입하려면 클라이언트와 홈 서버를 선택해야 합니다. Matrix는 다양한 클라이언트와 홈 서버를 지원하지만, 처음 사용하시는 분들의 경우 가장 널리 지원되는 Matrix 클라이언트인 Riot 및 Decred의 홈 서버를 권장합니다. Decred의 홈 서버를 사용하면 Decred 채팅방을 더욱 쉽게 찾을 수 있으며, ID에는 'decred.org'가 표시됩니다. 또한 Decred의 홈 서버와 다른 홈 서버의 연결이 해제되어도 계속해서 메시지를 주고받을 수 있습니다.</p>",
   "Page not found": "페이지를 찾을 수 없음",
   "Back to home page": "홈페이지로 돌아가기"
 }

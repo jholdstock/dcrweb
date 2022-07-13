@@ -151,16 +151,6 @@
   "Visual communication toolkit": "Паспорт стандартов фирменного стиля",
   "Voting Service Providers": "Поставщики услуг голосования",
   "Who is Decred?": "Кто стоит за Decred?",
-  "Join our Matrix community": "Присоединиться к сообществу Matrix",
-  "matrix_to_register_using_the_riot": "To register using the Riot web app, with Decred’s homeserver information pre-filled, click the link below.",
-  "matrix_register_with_riot": "Зарегистрироваться с помощью Riot.",
-  "matrix_note_you_must_register_with": "Примечание. Чтобы иметь возможность восстановить пароль, укажите при регистрации адрес электронной почты.",
-  "matrix_if_you_already_have_an": "Если у вас уже есть аккаунт Matrix, перейдите по ссылке, чтобы войти на домашний сервер Decred.",
-  "matrix_login_to_decred_homeserver": "Войти на домашний сервер Decred",
-  "matrix_to_browse_decred_rooms_click": "To browse Decred rooms, click the directory button in the ‘Rooms’ panel on the left-hand side.",
-  "matrix_decred_rooms": "Чаты Decred",
-  "matrix_to_browse_other_available_matrix": "Чтобы посмотреть остальные клиенты и домашние сервера Matrix, перейдите на страницу <a href=\"https://matrix.org/docs/projects/try-matrix-now.html\">Try Matrix Now!</a>.",
-  "matrix_matrix_is_a_secure_open": "<p>Matrix — надежная платформа для общения, популярная среди подрядчиков Decred. С помощью программ-мостов пользователи Matrix могут общаться с пользователями других платформ Decred, включая Slack и Discord. Matrix обеспечивает собственную регистрацию, вам не требуется указывать идентификационную информацию или регистрироваться через сторонние сервисы. Однако для использования ряда функций, включая сброс пароля, необходимо указать адрес электронной почты. Подробную информацию о системе безопасности Matrix и доступных клиентах можно найти на <a href=\"https://matrix.org/blog/home/\">главной странице</a> платформы.</p>\n\n<p>Чтобы воспользоваться Matrix, необходимо выбрать клиент и домашний сервер. Система поддерживает множество вариантов, но для новых пользователей мы рекомендуем Riot, клиент с лучшей службой поддержки, и домашний сервер Decred. С помощью этого сервера вы легко найдете чаты Decred. К вашему ID будет добавлена метка «decred.org». Даже если домашний сервер Decred будет отключен от других серверов, вы все равно сможете обмениваться сообщениями.</p>",
   "Page not found": "Страница не найдена",
   "Back to home page": "Вернуться на главную страницу"
 }

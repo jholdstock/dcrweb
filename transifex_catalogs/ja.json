@@ -151,16 +151,6 @@
   "Visual communication toolkit": "ビジュアルコミュニケーションツールキット",
   "Voting Service Providers": "投票サービスプロバイダー",
   "Who is Decred?": "Decredとは誰？",
-  "Join our Matrix community": "Matrixコミュニティに参加",
-  "matrix_to_register_using_the_riot": "Riotのウェブアプリから登録すると、Decredのホームサーバー情報が事前入力されます。以下のリンクをクリックしてお進みください。",
-  "matrix_register_with_riot": "Riotで登録",
-  "matrix_note_you_must_register_with": "注：パスワードをリセットするには、メールアドレスを使用して登録する必要があります。",
-  "matrix_if_you_already_have_an": "既にMatrixアカウントをお持ちの場合は、以下のリンクからDecredのホームサーバーにログインしてください。",
-  "matrix_login_to_decred_homeserver": "Decredホームサーバーにログイン",
-  "matrix_to_browse_decred_rooms_click": "画面左側の「ルーム」パネルにあるディレクトリボタンをクリックすると、Decredのルームを閲覧できます。",
-  "matrix_decred_rooms": "Decredルーム",
-  "matrix_to_browse_other_available_matrix": "その他のMatrixクライアントおよびホームサーバーについては、<a href=\"https://matrix.org/docs/projects/try-matrix-now.html\">Matrixの基本操作ガイド</a>ページでご確認ください。",
-  "matrix_matrix_is_a_secure_open": "<p>Matrixは、Decredコミュニティで人気のセキュアかつオープンなメッセージングプラットフォームです。ブリッジソフトウェア搭載で、MatrixのユーザーとSlackやDiscordなどさまざまなDecredプラットフォームを使用するユーザーとのコミュニケーションをサポートします。Matrixはファーストパーティ登録を採用しており、新規登録時の際の個人情報提供やサードパーティサービスとの連携は不要です。ただし、パスワードのリセットなど一部の機能をご利用いただくにはメールアドレスの登録が必要となります。Matrixのセキュリティ機能および利用可能なクライアントの種類など、詳細はMatrixプロジェクトの<a href=\"https://matrix.org/blog/home/\">ホームページ</a>でご確認ください。</p>\n\n<p>Matrixをご利用の際は、まずクライアントとホームサーバーの選択が必要です。Matrixはさまざまなクライアントとホームサーバーに対応していますが、初めてご利用の場合は最も互換性に優れたMatrixクライアント「Riot」とDecredのホームサーバーをお勧めします。DecredのホームサーバーならDecredチャットルームを見つけやすいほか、Decredのホームサーバーとその他ホームサーバーとの接続が切れた場合も、IDに「decred.org」をつけることでメッセージングを継続することができます。</p>",
   "Page not found": "ページが見つかりません",
   "Back to home page": "ホームページへ戻る"
 }
