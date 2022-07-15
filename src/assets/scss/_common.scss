@@ -1,0 +1,172 @@
+.navbar {
+    padding: 0;
+    background-color: $dark-blue;
+
+    .dcr-logo {
+        padding: 0;
+        margin: 0;
+        display: block;
+        height: 60px;
+        width: 60px;
+        background-image: url('../images/iconDecredWhite.svg');
+        background-size: 60px;
+        background-repeat: no-repeat;
+    }
+}
+
+.light-hyphen {
+    font-weight: 100;
+}
+
+.body-gradient {
+    background-image: url("../images/bg-gradient.svg");
+    background-position: 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer {
+    background-color: $dark-blue;
+    color: $white;
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    a {
+        display: block;
+        margin-bottom: 18px;
+        padding-top: 2px;
+        padding-bottom: 4px;
+        color: $white;
+        text-decoration: none;
+        opacity: 0.55;
+    }
+
+    a:hover {
+        color: $white;
+        opacity: 0.69;
+        text-decoration: none;
+    }
+
+    .social-icon {
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+        margin-bottom: 8px;
+        margin-left: 10px;
+        background-image: url('../images/transparent.png');
+        background-position: center center;
+        background-size: 32px;
+        background-repeat: no-repeat;
+
+        &.youtube {
+            background-image: url('../images/iconYoutube.svg');
+        }
+
+        &.discord {
+            background-image: url('../images/iconDiscord.svg');
+        }
+
+        &.telegram {
+            background-image: url('../images/iconTelegram.svg');
+        }
+
+        &.matrix {
+            background-image: url('../images/iconMatrix.svg');
+        }
+
+        &.github {
+            background-image: url('../images/iconGithub.svg');
+        }
+
+        &.twitter {
+            background-image: url('../images/iconTwitter.svg');
+        }
+
+        &.reddit {
+            background-image: url('../images/iconReddit.svg');
+        }
+
+        &.medium {
+            background-image: url('../images/iconMedium.svg');
+        }
+    }
+
+}
+
+.subpage-fronta {
+    min-height: 600px;
+    background: linear-gradient(200deg, #0f2666 0%, #091440 62%, #091440 100%);
+    background-image: url('../images/landing-bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.subpage-bg {
+
+    padding-bottom: 123px;
+}
+
+.subpage-title {
+    color: $white;
+    font-family: "dcrweb-poppins";
+    font-size: 34px;
+    padding-top: 89px;
+    padding-bottom: 42px;
+}
+
+.warning {
+    color: $white;
+    margin-top: 41px;
+    border: 1px solid $orange;
+    border-radius: 8px;
+    font-size: 13px;
+    padding: 21px;
+
+    a {
+        color: $white;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .orange {
+        color: $orange;
+    }
+}
+
+.pills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    a {
+        text-decoration: none;
+        color: white;
+
+        .pill {
+            padding: 15px 24px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            border-radius: 10000px;
+            white-space: nowrap;
+            transition: border 0.08s ease-in-out;
+
+            border: 2px solid rgba($white, 0.21);
+
+            &:hover {
+                border: 2px solid rgba($white, 0.55);
+            }
+
+            &.highlight {
+                border: 2px solid rgba($light-blue, 0.7);
+
+                &:hover {
+                    border: 2px solid rgba($light-blue, 1.0);
+                }
+            }
+
+        }
+    }
+}

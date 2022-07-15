@@ -29,12 +29,16 @@
         <link href="/images/32.png" rel="shortcut icon" type="image/x-icon">
         <link href="/images/256.png" rel="apple-touch-icon">
       
-        {{ partial "_css_builder" (dict "bundle" "main.css" "resources" (slice "css/bootstrap-5.0.2.min.css" "css/modern-normalize.css" "css/fonts.css" "css/decred-v5.css" "css/dataTables.css" )) }}
-
+        {{ partial "_css_builder" (dict "bundle" "main.css" "resources" (slice "css/decred-v5.css" "css/dataTables.css" )) }}
         
+        <!-- Compile and load scss. -->
         {{ $scssOptions := (dict "targetPath" "decred-v6.css" "outputStyle" "compressed" "enableSourceMap" true) }}
         {{ $v6Style := resources.Get "scss/decred-v6.scss" | resources.ToCSS $scssOptions | resources.Fingerprint  }}
         <link rel="stylesheet" href="{{ $v6Style.Permalink }}">
+
+        <!-- Load fonts last to ensure they take precedence. -->
+        {{ $fontStyle := resources.Get "css/fonts.css"  }}
+        <link rel="stylesheet" href="{{ $fontStyle.Permalink }}">
 
         <!--  Custom favicon  -->
         <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png?v=yHh3NA">

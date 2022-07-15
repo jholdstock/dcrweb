@@ -1,0 +1,260 @@
+.landing-fronta {
+    height: 100vh;
+
+    background: linear-gradient(200deg, #0f2666 0%, #091440 62%, #091440 100%);
+    background-image: url('../images/landing-bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    justify-content: flex-start;
+    align-items: stretch;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .fronta-center {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .title {
+            display: flex;
+            flex-direction: column;
+            margin-right: 45px;
+
+            font-family: "dcrweb-poppins";
+            font-size: 65px;
+            font-weight: bold;
+            color: white;
+
+            .dcr {
+                text-transform: uppercase;
+            }
+        }
+
+        .fronta-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            .btn {
+                padding: 10px 21px;
+                margin: 0 0 15px 0;
+                border-radius: 100px;
+                font-size: 18px;
+                font-weight: bold;
+                text-decoration: none;
+                transition: background-color 0.13s ease-in-out;
+                white-space: nowrap;
+
+                &.exchange-btn {
+                    color: $dark-blue;
+                    background-color: $turquoise;
+
+                    &:hover {
+                        background-color: rgba($turquoise, 0.89);
+                    }
+                }
+
+                &.wallet-btn {
+                    color: $white;
+                    background-color: $light-blue;
+
+                    &:hover {
+                        background-color: rgba($light-blue, 0.89);
+                    }
+
+                    &#alldl {
+                        display: block;
+                    }
+
+                    &.os-specific {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+    .fronta-bottom {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 26px;
+
+        .socials {
+            display: flex;
+            flex-direction: row;
+
+            .social {
+                margin: 8px;
+                height: 40px;
+                width: 40px;
+                background-size: 40px 40px;
+                background-repeat: no-repeat;
+                opacity: 0.33;
+                transition: opacity 0.13s ease-in-out;
+
+                &:hover {
+                    opacity: 0.55;
+                }
+
+                &.discord {
+                    background-image: url('../images/iconDiscord.svg');
+                }
+
+                &.telegram {
+                    background-image: url('../images/iconTelegram.svg');
+                }
+
+                &.matrix {
+                    background-image: url('../images/iconMatrix.svg');
+                }
+            }
+        }
+
+        .see-more a {
+            color: $white;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            opacity: 0.60;
+            transition: opacity 0.08s ease-in-out;
+
+            .down-arrow {
+                margin-top: 8px;
+                height: 16px;
+                width: 32px;
+                background-image: url("../images/white-down-arrow.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            &:hover {
+                opacity: 0.89;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        .fronta-center {
+            flex-direction: column;
+
+            .title {
+                margin-right: 0;
+                margin-bottom: 12px;
+                font-size: 55px;
+            }
+
+            .fronta-buttons {
+                flex-direction: row;
+                justify-content: start;
+
+                .btn {
+                    margin: 15px 15px 0 0;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .fronta-center {
+            flex-direction: column;
+
+            .title {
+                margin-right: 0;
+                margin-bottom: 12px;
+                font-size: 45px;
+            }
+
+            .fronta-buttons {
+                flex-direction: column;
+                justify-content: center;
+
+                .btn {
+                    width: 100%;
+                    margin: 15px 15px 0 0;
+                }
+            }
+        }
+    }
+
+}
+
+.landing-content {
+    color: $white;
+    padding-top: 144px;
+    padding-bottom: 144px;
+
+    .landing-box {
+        display: flex;
+        flex-direction: column;
+        padding: 34px;
+
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 8px;
+
+        &.green {
+            border-color: $turquoise;
+
+            .headline {
+                color: $turquoise;
+            }
+        }
+
+        &.blue {
+            border-color: $light-blue;
+
+            .headline {
+                color: $light-blue;
+            }
+        }
+
+        &.yellow {
+            border-color: #FFC84E;
+
+            .headline {
+                color: #FFC84E;
+            }
+        }
+
+        &.top-pad {
+            margin-top: 440px;
+        }
+
+        .headline {
+            font-size: 34px;
+        }
+
+        .text {
+            font-size: 30px;
+            margin-bottom: 258px;
+        }
+
+        .links {
+            a {
+                display: block;
+                font-size: 18px;
+                color: $white;
+                text-decoration: underline;
+
+                &:hover {
+                    color: #4dbeff;
+                }
+            }
+        }
+    }
+}
