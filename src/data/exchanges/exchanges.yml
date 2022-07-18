@@ -1,190 +1,223 @@
+##
+## Exchanges
+##
+##    "url"       - url for the exchange
+##    "tags"      - tags for the exchange, should exist in tags.yml
+##    "name"      - display name for the exchange, displayed on website
+##    "highlight" - whether the exchange should be highlighted on the top row
+
+
 -
   url: "https://godex.io/"
   tags:
-    - "instant-exchange"
+    - "instant_exchange"
   name: Godex
+  highlight: false
 -
   url: "https://www.livecoin.net/"
   tags:
-    - all
   name: Livecoin
+  highlight: false
 -
   url: "https://coinswitch.co/"
   tags:
-    - "instant-exchange"
+    - "instant_exchange"
   name: CoinSwitch
+  highlight: false
 -
   url: "https://bittrex.com/"
   tags:
-    - "high-liquidity"
+    - "high_liquidity"
     - "fiat"
   name: Bittrex
+  highlight: false
 -
   url: "https://poloniex.com/"
   tags:
-    - "high-liquidity"
+    - "high_liquidity"
   name: Poloniex
+  highlight: false
 -
   url: "https://holytransaction.com/"
   tags:
-    - all
   name: HolyTransaction
+  highlight: false
 -
   url: "https://www.coinspot.com.au/"
   tags:
-    - "high-liquidity"
+    - "high_liquidity"
     - fiat
   name: CoinSpot
+  highlight: false
 -
   url: "https://bisq.network"
   tags:
     - decentralized
   name: Bisq
+  highlight: false
 -
   url: "https://tuxexchange.com/"
   tags:
-    - all
   name: "Tux Exchange"
+  highlight: false
 -
   url: "https://www.kaiserex.com/"
   tags:
     - fiat
   name: Kaiserex
+  highlight: false
 -
   url: "https://braziliex.com/"
   tags:
     - fiat
   name: Braziliex
+  highlight: false
 -
   url: "https://profitfy.trade/"
   tags:
     - fiat
   name: Profitfy
+  highlight: false
 -
   url: "https://www.swyftx.com.au/"
   tags:
     - fiat
-    - "high-liquidity"
+    - "high_liquidity"
   name: Swyftx
+  highlight: false
 -
   url: "https://www.cointree.com.au/"
   tags:
-    - all
   name: CoinTree
+  highlight: false
 -
   url: "https://okx.com/"
   tags:
-    - "high-liquidity"
+    - "high_liquidity"
   name: OKX
+  highlight: false
 -
   url: "https://www.huobi.com/"
   tags:
-    - "high-liquidity"
+    - "high_liquidity"
   name: Huobi
+  highlight: false
 -
   url: "https://www.kucoin.com/"
   tags:
-    - all
   name: KuCoin
+  highlight: false
 -
   url: "https://www.coinex.com/"
   tags:
-    - all
   name: CoinEx
+  highlight: false
 -
   url: "https://changelly.com/"
   tags:
-    - all
   name: Changelly
+  highlight: false
 -
   url: "https://www.bitladon.com/"
   tags:
     - fiat
   name: Bitladon
+  highlight: false
 -
   url: "https://bitvavo.com/en/decred"
   tags:
     - fiat
   name: Bitvavo
+  highlight: false
 -
   url: "https://www.gate.io/"
   tags:
-    - all
   name: "Gate.io"
+  highlight: false
 -
   url: "https://www.binance.com/"
   tags:
-    - "high-liquidity"
+    - "high_liquidity"
   name: "Binance.com"
+  highlight: false
 -
   url: "https://simpleswap.io/"
   tags:
-    - "instant-exchange"
+    - "instant_exchange"
   name: "Simple Swap"
+  highlight: false
 -
   url: "https://www.sequoir.com/"
   tags:
     - fiat
   name: Sequoir
+  highlight: false
 -
   url: "https://stealthex.io/"
   tags:
-    - all
   name: StealthEX
+  highlight: false
 -
   url: "https://catalx.io/"
   tags:
-    - "high-liquidity"
+    - "high_liquidity"
   name: CatalX
+  highlight: false
 -
   url: "https://evercoin.com/home"
   tags:
-    - "instant-exchange"
+    - "instant_exchange"
   name: "Evercoin"
+  highlight: false
 -
  url: "https://flyp.me/"
  tags:
-   - "instant-exchange"
+   - "instant_exchange"
  name: Flyp
+ highlight: false
 -
   url: "https://www.metalpay.com/"
   tags:
-    - all
   name: "Metal Pay"
+  highlight: false
 -
   url: "https://www.novadax.com.br/"
   tags:
-    - all
   name: "Novadax"
+  highlight: false
 -
   url: "https://dex.decred.org/"
   tags:
-    - "high-liquidity"
+    - high_liquidity
     - decentralized
-    - atomic-swaps
+    - atomic_swaps
   name: "DCRDEX"
+  highlight: true
 -
   url: "https://swapzone.io/"
   tags:
-    - "instant-exchange"
+    - instant_exchange
   name: "Swapzone"
+  highlight: false
 -
   url: "https://www.hotbit.io/"
   tags:
-    - all
   name: "Hotbit"
+  highlight: false
 -
   url: "https://www.hotbit.co.kr/"
   tags:
     - "fiat"
   name: "Hotbit Korea"
+  highlight: false
 -
   url: "https://wazirx.com/"
   tags:
     - fiat
   name: WazirX
+  highlight: false
 -
   url: "https://exchange.bitcoin.com/"
   tags:
-    - all
   name: Bitcoin.com
+  highlight: false

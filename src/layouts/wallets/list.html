@@ -9,16 +9,34 @@
 {{ define "main" }}
 
 {{ $apps := .Site.Data.wallets.apps }}
+{{ $tags := .Site.Data.wallets.tags }}
 
 <div class="subpage-bg body-gradient">
-    
     <div class="container-md">
+        
+        {{/* Invisible radio buttons used for filtering */}}
+        {{ range $tag := $tags }}
+            <input class="d-none" type="radio" id="{{ $tag }}" name="toggler" />
+        {{ end }}
+
         <div class="subpage-title">{{ T "nav_downloads" }}</div>
         
-        <!-- Core downloads -->
-        <div class="wallet-cards core">
-            {{ range where $apps "category" "core"}}
-                <div class="wallet-card core">
+        <div class="filter-buttons">
+            {{ range $tag := $tags }}
+                {{ $msg_id := print "downloads_category_" $tag }}
+                <div class="message {{ $tag }}">{{ T $msg_id  }}</div>
+            {{ end }}
+
+            {{ range $tag := $tags }}
+                <label class="filter-button {{ $tag }}" for="{{ $tag }}"></label>
+            {{ end }}
+        </div>
+
+
+        <!-- Highlighted downloads -->
+        <div class="wallet-cards highlight">
+            {{ range where $apps "highlight" true }}
+                <div class="wallet-card highlight {{ range .tags }} {{.}} {{end}}">
                     <div class="wallet-card-title">{{ .name }}</div>
                     {{ $msg_id := print "downloads_app_" .id }}
                     <div class="wallet-card-description">{{ T $msg_id }}</div>
@@ -45,8 +63,8 @@
 
         <!-- All others -->
         <div class="wallet-cards">
-            {{ range where $apps "category" "!=" "core"}}
-                <div class="wallet-card">
+            {{ range where $apps "highlight" false }}
+                <div class="wallet-card {{ range .tags }} {{.}} {{end}}">
                     <div class="wallet-card-title">{{ .name }}</div>
                     {{ $msg_id := print "downloads_app_" .id }}
                     <div class="wallet-card-description">{{ T $msg_id }}</div>
@@ -70,19 +88,11 @@
                 </div>
             {{ end }}
         </div>
-            
-            {{/* 
-                <div class="">
-                    {{ $msg_id := print "downloads_category_" .category }}
-                    {{ T $msg_id  }}
-                </div>
-            */}}
-
-            
-            <div class="warning">
-                <span class="orange">{{ T "warning" }}:</span>
-                {{ safeHTML (T "downloads_description")  }}
-            </div>
+        
+        <div class="warning">
+            <span class="orange">{{ T "warning" }}:</span>
+            {{ safeHTML (T "downloads_description")  }}
+        </div>
             
         </div>
     </div>

@@ -4,7 +4,7 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    &.core {
+    &.highlight {
         margin-bottom: 16px;
     }
 
@@ -22,8 +22,13 @@
         background-color: transparent;
         color: $white;
 
-        &.core {
-            border: 1px solid #2DD8A3;
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
+
+
+        &.highlight {
+            border: 1px solid $light-blue;
         }
 
         .wallet-card-title {

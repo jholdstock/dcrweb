@@ -6,42 +6,47 @@
    <div class="subpage-fronta"></div>
 {{ end }}
 
-{{ define "content-top" }}
-    <div class="tail"></div>
-{{ end }}
-
 {{ define "main" }}
 
 {{ $exchanges := .Site.Data.exchanges.exchanges }}
-{{ $tags := .Site.Data.exchanges.tags }}
+{{ $tags      := .Site.Data.exchanges.tags }}
 
 <div class="subpage-bg body-gradient">
     <div class="container-md">
+
+        <!-- Invisible radio buttons used for filtering -->
+        {{ range $tag := $tags }}
+            <input class="d-none" type="radio" id="{{ $tag }}" name="toggler" />
+        {{ end }}
         
         <div class="subpage-title">{{ T "exchanges_subtitle" }}</div>
+        
+        <div class="filter-buttons">
+            {{ range $tag := $tags }}
+                {{ $msg_id := print "exchanges_category_" $tag }}
+                <div class="message {{ $tag }}">{{ T $msg_id  }}</div>
+            {{ end }}
 
-        <div class="ex-filter">
-            <a href="#" data-group="all" class="filter-button all is-checked exchange-button">{{ T "exchanges_showall" }}</a>
-            {{ range $id, $tag := $tags }}
-                <a href="#"
-                data-tail="{{ $tag.name }}"
-                data-group="{{ $id }}"
-                class="filter-button {{  $id }} exchange-button"></a>
+            {{ range $tag := $tags }}
+                <label class="filter-button {{ $tag }}" for="{{ $tag }}"></label>
             {{ end }}
         </div>
 
-        <div class="filter-cards-wrap">
 
-            {{ range $exchanges }}
-                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" data-groups="[&quot;{{ delimit .tags "&quot;,&quot;" }}&quot;]" class="filter-card d-inline-block">
-                <div class="filter-card-footer">
-                    <div class="filter-card-title">{{ .name }}</div>
-                
-                    {{ range .tags }}
-                    {{ $tag := index $tags . }}
-                    <div data-tail="{{ $tag.name }}" class="filter-button {{ . }} is-checked"></div>
-                    {{ end }}
-                </div>
+        <!-- Highlighted exchanges -->
+        <div class="pills">
+            {{ range where $exchanges "highlight" true }}
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="{{ range .tags }} {{.}} {{end}}">
+                    <div class="pill highlight">{{ .name }}</div>
+                </a>
+            {{ end }}
+        </div>
+
+        <!-- All others -->
+        <div class="pills">
+            {{ range where $exchanges "highlight" false }}
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="{{ range .tags }} {{.}} {{end}}">
+                    <div class="pill">{{ .name }}</div>
                 </a>
             {{ end }}
         </div>
@@ -50,19 +55,17 @@
 
         <div class="pills">
             {{ range .Site.Data.exchanges.payment }}
-            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="">
-                <div class="pill">{{ .name }}</div>
-            </a>
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="">
+                    <div class="pill">{{ .name }}</div>
+                </a>
             {{ end }}
         </div>
 
         <div class="warning">
-            <p>
-                <span class="orange">{{ T "warning" }}:</span>
-                {{ safeHTML (T "exchanges_disclaimer")  }}
-                <br /><br />
-                {{ T "exchanges_description" }}
-            </p>
+            <span class="orange">{{ T "warning" }}:</span>
+            {{ safeHTML (T "exchanges_disclaimer")  }}
+            <br /><br />
+            {{ T "exchanges_description" }}
         </div>
 
     </div>
