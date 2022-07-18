@@ -16,6 +16,32 @@ html, body {
         background-size: 60px;
         background-repeat: no-repeat;
     }
+
+    
+    .navbar-toggler {
+        border: none;
+        box-shadow: none;
+
+        .navbar-toggler-icon {
+            height: 55px;
+            width: 55px;
+            margin-top: 24px;
+            margin-bottom: 24px;
+            transition: background-image 0.14s ease-in-out;
+            background-image: url('../images/menu-close.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        &.collapsed {
+            .navbar-toggler-icon {
+                background-image: url('../images/menu-open.svg');
+            }   
+        }
+
+    }
+
 }
 
 .light-hyphen {
