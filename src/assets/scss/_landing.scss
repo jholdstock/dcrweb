@@ -233,6 +233,9 @@
 
         &.top-pad {
             margin-top: 440px;
+            @include media-breakpoint-down(md) {
+                margin-top: 0;
+            }
         }
 
         .headline {
