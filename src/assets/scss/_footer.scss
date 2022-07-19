@@ -1,0 +1,62 @@
+footer {
+    background-color: $dark-blue;
+    color: $white;
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    a,
+    a:hover {
+        display: block;
+        margin-bottom: 18px;
+        padding-top: 2px;
+        padding-bottom: 4px;
+        color: $white;
+        text-decoration: none;
+        opacity: 0.55;
+    }
+
+    .social-icon,
+    .social-icon:hover {
+        width: 34px;
+        height: 34px;
+        margin-right: 10px;
+        margin-bottom: 8px;
+        margin-left: 10px;
+        background-position: center center;
+        background-size: 34px 34px;
+        background-repeat: no-repeat;
+
+        &.youtube {
+            background-image: url('../images/social-icons/youtube.svg');
+        }
+
+        &.discord {
+            background-image: url('../images/social-icons/discord.svg');
+        }
+
+        &.telegram {
+            background-image: url('../images/social-icons/telegram.svg');
+        }
+
+        &.matrix {
+            background-image: url('../images/social-icons/matrix.svg');
+        }
+
+        &.github {
+            background-image: url('../images/social-icons/github.svg');
+        }
+
+        &.twitter {
+            background-image: url('../images/social-icons/twitter.svg');
+        }
+
+        &.reddit {
+            background-image: url('../images/social-icons/reddit.svg');
+        }
+
+        &.medium {
+            background-image: url('../images/social-icons/medium.svg');
+        }
+    }
+
+}
