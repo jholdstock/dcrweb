@@ -16,9 +16,10 @@
                 
                 <div class="fronta-buttons flex-row flex-md-column flex-lg-row flex-xl-column justify-content-start"> 
                     <a class="col-12 col-md-auto btn wallet-btn" id="alldl" href="{{ "/wallets/" | relLangURL }}">{{ T "home_download_wallet" }}</a>
-                    {{ $download_links := where (index .Site.Data.wallets.links "decrediton") "is_direct_download" true }}
-                    {{ range $download_links }}
-                        <a class="col-12 col-md-auto btn wallet-btn os-specific" id="{{ .platform }}" href="{{ .url }}">{{ T "home_download_wallet" }}</a>
+                    {{ range where .Site.Data.wallets.wallets "id" "decrediton" }}
+                        {{ range where .links "is_direct_download" true }}
+                            <a class="col-12 col-md-auto btn wallet-btn os-specific" id="{{ .platform }}" href="{{ .url }}">{{ T "home_download_wallet" }}</a>
+                        {{ end }}
                     {{ end }}
                     <a class="col-12 col-md-auto btn exchange-btn" href="{{ "/exchanges/" | relLangURL }}">{{ T "nav_exchanges" }}</a>
                 </div>

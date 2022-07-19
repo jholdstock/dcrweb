@@ -15,14 +15,17 @@
         padding: 21px;
         border: 1px solid rgba($white, 0.21);
         border-radius: 8px;
-
         background-color: transparent;
         color: $white;
+        transition: border 0.08s ease-in-out ;
 
-        @include media-breakpoint-down(sm) {
-            width: 100%;
+        &:hover {
+            border: 1px solid rgba($white, 0.55);
         }
 
+        @include media-breakpoint-down(md) {
+            padding: 13px;
+        }
 
         &.highlight {
             border: 1px solid $light-blue;
@@ -46,13 +49,42 @@
     
         .wallet-card-links {
             margin-top: auto;
-            font-size: 11px;
-            line-height: 13px;
+            font-size: 13px;
+            line-height: 15px;
 
             .wallet-link {
-                color: $white;
-                margin-right: 5px;
-                opacity: 0.89;
+                display: inline-block;
+                white-space: nowrap;
+                margin-bottom: 7px;
+                margin-right: 3px;
+                
+                a,
+                a:hover {
+                    color: $white;
+                    opacity: 0.89;
+                }
+
+                &.direct-dl {
+                    background: #FFFFFF1C;
+                    border-radius: 3px;
+                    padding: 2px 6px;
+                    margin-bottom: 3px;
+                    
+                    a {
+                        text-decoration: none;
+                        
+                        .dl-arrow {
+                            margin-left: 4px;
+                            opacity: 0.45;
+                            transition: opacity 0.08s ease-in-out;
+                        }
+                        &:hover {
+                            .dl-arrow {
+                                opacity: 0.60;
+                            }
+                        }
+                    }
+                }
             }
         }
     
