@@ -1,15 +1,27 @@
 footer {
     background-color: $dark-blue;
     color: $white;
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 55px;
+    padding-bottom: 76px;
+    
+    @include media-breakpoint-up(xl) {
+        padding-bottom: 114px;
+    }
+
+    .footer-link,
+    .footer-link:hover {
+        font-size: 15px;
+        margin-right: 10px;
+        margin-bottom: 3px;
+        @include media-breakpoint-up(xl) {
+            margin-bottom: 12px;
+        }
+    
+    }
 
     a,
     a:hover {
-        display: block;
-        margin-bottom: 18px;
-        padding-top: 2px;
-        padding-bottom: 4px;
+        margin-bottom: 14px;
         color: $white;
         text-decoration: none;
         opacity: 0.55;
@@ -19,12 +31,16 @@ footer {
     .social-icon:hover {
         width: 34px;
         height: 34px;
-        margin-right: 10px;
-        margin-bottom: 8px;
-        margin-left: 10px;
+        
+        margin-bottom: 21px;
         background-position: center center;
         background-size: 34px 34px;
         background-repeat: no-repeat;
+
+        @include media-breakpoint-up(xl) {
+            margin-right: 34px;
+            margin-bottom: 13px;
+        }
 
         &.youtube {
             background-image: url('../images/social-icons/youtube.svg');
