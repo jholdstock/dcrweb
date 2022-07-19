@@ -12,7 +12,7 @@
 {{ $tags := .Site.Data.wallets.tags }}
 
 <div class="subpage-bg body-gradient">
-    <div class="container-md">
+    <div class="container">
         
         {{/* Invisible radio buttons used for filtering */}}
         {{ range $tag := $tags }}
@@ -34,57 +34,65 @@
 
 
         <!-- Highlighted downloads -->
-        <div class="wallet-cards highlight">
+        <div class="wallet-cards row highlight">
             {{ range where $apps "highlight" true }}
-                <div class="wallet-card highlight {{ range .tags }} {{.}} {{end}}">
-                    <div class="wallet-card-title">{{ .name }}</div>
-                    {{ $msg_id := print "downloads_app_" .id }}
-                    <div class="wallet-card-description">{{ T $msg_id }}</div>
-                    <div class="wallet-card-links">
-                        {{ $links := "" }}
-                        {{ if eq .links nil }}
-                            {{ $links = index $.Site.Data.wallets.links .id }}
-                        {{ else }}
-                            {{ $links = .links }}
-                        {{ end }}
-
-                        {{ range $links }}
-                            <a {{ if ne .is_direct_download true }}target="_blank" rel="noopener noreferrer"{{end}} href="{{ .url }}" {{ if ne .id nil }}id="{{ .id }}"{{end}} class="wallet-link">
-                            {{ .title }}</a>
-                            {{/*
-                                {{ if eq .is_direct_download true }}↓{{ else }}→{{ end }}
-                            */}}
-                        {{ end }}
-
+                <div class="g-3 col-12 col-md-4 col-xl-3">
+                    
+                    <div class="wallet-card highlight {{ range .tags }} {{.}} {{end}}">
+                        <div class="wallet-card-title">{{ .name }}</div>
+                        {{ $msg_id := print "downloads_app_" .id }}
+                        <div class="wallet-card-description">{{ T $msg_id }}</div>
+                        <div class="wallet-card-links">
+                            {{ $links := "" }}
+                            {{ if eq .links nil }}
+                                {{ $links = index $.Site.Data.wallets.links .id }}
+                            {{ else }}
+                                {{ $links = .links }}
+                            {{ end }}
+    
+                            {{ range $links }}
+                                <a {{ if ne .is_direct_download true }}target="_blank" rel="noopener noreferrer"{{end}} href="{{ .url }}" {{ if ne .id nil }}id="{{ .id }}"{{end}} class="wallet-link">
+                                {{ .title }}</a>
+                                {{/*
+                                    {{ if eq .is_direct_download true }}↓{{ else }}→{{ end }}
+                                */}}
+                            {{ end }}
+    
+                        </div>
                     </div>
+                    
                 </div>
             {{ end }}
         </div>
 
         <!-- All others -->
-        <div class="wallet-cards">
+        <div class="wallet-cards row">
             {{ range where $apps "highlight" false }}
-                <div class="wallet-card {{ range .tags }} {{.}} {{end}}">
-                    <div class="wallet-card-title">{{ .name }}</div>
-                    {{ $msg_id := print "downloads_app_" .id }}
-                    <div class="wallet-card-description">{{ T $msg_id }}</div>
-                    <div class="wallet-card-links">
-                        {{ $links := "" }}
-                        {{ if eq .links nil }}
-                            {{ $links = index $.Site.Data.wallets.links .id }}
-                        {{ else }}
-                            {{ $links = .links }}
-                        {{ end }}
-
-                        {{ range $links }}
-                            <a {{ if ne .is_direct_download true }}target="_blank" rel="noopener noreferrer"{{end}} href="{{ .url }}" {{ if ne .id nil }}id="{{ .id }}"{{end}} class="wallet-link">
-                            {{ .title }}</a>
-                            {{/*
-                                {{ if eq .is_direct_download true }}↓{{ else }}→{{ end }}
-                            */}}
-                        {{ end }}
-
+                <div class="g-3 col-12 col-md-4 col-xl-3 ">
+                    
+                    <div class="wallet-card {{ range .tags }} {{.}} {{end}}">
+                        <div class="wallet-card-title">{{ .name }}</div>
+                        {{ $msg_id := print "downloads_app_" .id }}
+                        <div class="wallet-card-description">{{ T $msg_id }}</div>
+                        <div class="wallet-card-links">
+                            {{ $links := "" }}
+                            {{ if eq .links nil }}
+                                {{ $links = index $.Site.Data.wallets.links .id }}
+                            {{ else }}
+                                {{ $links = .links }}
+                            {{ end }}
+    
+                            {{ range $links }}
+                                <a {{ if ne .is_direct_download true }}target="_blank" rel="noopener noreferrer"{{end}} href="{{ .url }}" {{ if ne .id nil }}id="{{ .id }}"{{end}} class="wallet-link">
+                                {{ .title }}</a>
+                                {{/*
+                                    {{ if eq .is_direct_download true }}↓{{ else }}→{{ end }}
+                                */}}
+                            {{ end }}
+    
+                        </div>
                     </div>
+
                 </div>
             {{ end }}
         </div>

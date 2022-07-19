@@ -8,11 +8,12 @@
 
 {{ define "main" }}
 
-{{ $exchanges := .Site.Data.exchanges.exchanges }}
+{{ $exchanges :=  sort .Site.Data.exchanges.exchanges "name" "asc" }}
+{{ $payments  :=  sort .Site.Data.exchanges.payment   "name" "asc" }}
 {{ $tags      := .Site.Data.exchanges.tags }}
 
 <div class="subpage-bg body-gradient">
-    <div class="container-md">
+    <div class="container">
 
         <!-- Invisible radio buttons used for filtering -->
         {{ range $tag := $tags }}
@@ -54,7 +55,7 @@
         <div class="subpage-title">{{ T "exchanges_payment_title" }}</div>
 
         <div class="pills">
-            {{ range .Site.Data.exchanges.payment }}
+            {{ range $payments }}
                 <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="">
                     <div class="pill">{{ .name }}</div>
                 </a>

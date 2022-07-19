@@ -6,6 +6,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    background-attachment: fixed;
 
     justify-content: flex-start;
     align-items: stretch;
@@ -23,12 +24,26 @@
         .title {
             display: flex;
             flex-direction: column;
-            margin-right: 45px;
+            margin-right: 51px;
+            margin-bottom: 32px;
 
             font-family: "dcrweb-poppins";
             font-size: 65px;
+            line-height: 71px;
             font-weight: bold;
+            letter-spacing: 1.36px;
             color: white;
+
+            @include media-breakpoint-down(xl) {
+                line-height: 65px;
+                margin-right: 0;
+            }
+
+            @include media-breakpoint-down(md) {
+                font-size: 55px;
+                line-height: 55px;
+                letter-spacing: 0.71px;
+            }
 
             .dcr {
                 text-transform: uppercase;
@@ -38,14 +53,16 @@
         .fronta-buttons {
             display: flex;
             flex-direction: column;
+            flex-wrap: wrap;
             align-items: flex-start;
             justify-content: center;
 
             .btn {
                 padding: 10px 21px;
-                margin: 0 0 15px 0;
+                margin: 0 0 21px 0;
                 border-radius: 100px;
                 font-size: 18px;
+                line-height: 31px;
                 font-weight: bold;
                 text-decoration: none;
                 transition: background-color 0.13s ease-in-out;
@@ -63,7 +80,8 @@
                 &.wallet-btn {
                     color: $white;
                     background-color: $light-blue;
-
+                    margin-right: 12px;
+                    
                     &:hover {
                         background-color: rgba($light-blue, 0.89);
                     }
@@ -79,10 +97,6 @@
             }
         }
     }
-
-
-
-
 
     .fronta-bottom {
         width: 100%;
@@ -100,7 +114,7 @@
                 width: 40px;
                 background-size: 40px 40px;
                 background-repeat: no-repeat;
-                opacity: 0.33;
+                opacity: 0.34;
                 transition: opacity 0.13s ease-in-out;
 
                 &:hover {
@@ -147,56 +161,17 @@
             }
         }
     }
-
-    @include media-breakpoint-down(lg) {
-        .fronta-center {
-            flex-direction: column;
-
-            .title {
-                margin-right: 0;
-                margin-bottom: 12px;
-                font-size: 55px;
-            }
-
-            .fronta-buttons {
-                flex-direction: row;
-                justify-content: start;
-
-                .btn {
-                    margin: 15px 15px 0 0;
-                }
-            }
-        }
-    }
-
-    @include media-breakpoint-down(sm) {
-        .fronta-center {
-            flex-direction: column;
-
-            .title {
-                margin-right: 0;
-                margin-bottom: 12px;
-                font-size: 45px;
-            }
-
-            .fronta-buttons {
-                flex-direction: column;
-                justify-content: center;
-
-                .btn {
-                    width: 100%;
-                    margin: 15px 15px 0 0;
-                }
-            }
-        }
-    }
-
 }
 
 .landing-content {
     color: $white;
     padding-top: 144px;
     padding-bottom: 144px;
+
+    @include media-breakpoint-down(lg) {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
 
     .landing-box {
         display: flex;
@@ -206,6 +181,10 @@
         border-width: 1px;
         border-style: solid;
         border-radius: 8px;
+
+        @include media-breakpoint-down(md) {
+            padding: 21px;
+        }
 
         &.green {
             border-color: $turquoise;
@@ -232,27 +211,51 @@
         }
 
         &.top-pad {
-            margin-top: 440px;
-            @include media-breakpoint-down(md) {
+            margin-top: 410px;
+            @include media-breakpoint-down(lg) {
                 margin-top: 0;
             }
         }
 
         .headline {
             font-size: 34px;
+            line-height: 34px;
+            margin-bottom: 13px;
+            font-weight: bold;
+            @include media-breakpoint-down(md) {
+                font-size: 28px;
+                line-height: 33px;
+            }
         }
 
         .text {
             font-size: 30px;
+            line-height: 31px;
             margin-bottom: 258px;
+            
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 200px;
+            }
+            @include media-breakpoint-down(md) {
+                margin-bottom: 100px;
+                font-size: 24px;
+                line-height: 28px;
+            }
         }
 
         .links {
             a {
                 display: block;
                 font-size: 18px;
+                line-height: 21px;
                 color: $white;
                 text-decoration: underline;
+                margin-bottom: 5px;
+
+                @include media-breakpoint-down(md) {
+                    font-size: 13px;
+                    line-height: 16px;
+                }
 
                 &:hover {
                     color: #4dbeff;

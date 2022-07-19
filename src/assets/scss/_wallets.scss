@@ -5,16 +5,13 @@
     flex-wrap: wrap;
 
     &.highlight {
-        margin-bottom: 16px;
+        margin-bottom: 10px;
     }
 
     .wallet-card {
         display: flex;
         flex-direction: column;
-        width: 239px;
-        min-height: 187px;
-        margin-right: 16px;
-        margin-bottom: 16px;
+        height: 100%;
         padding: 21px;
         border: 1px solid rgba($white, 0.21);
         border-radius: 8px;
@@ -33,6 +30,7 @@
 
         .wallet-card-title {
             font-size: 18px;
+            line-height: 21px;
             color: $white;
             margin-bottom: 5px;
             font-weight: bold;
@@ -40,6 +38,7 @@
     
         .wallet-card-description {
             font-size: 13px;
+            line-height: 15px;
             color: $white;
             opacity: 0.45;
             margin-bottom: 16px;
@@ -48,6 +47,7 @@
         .wallet-card-links {
             margin-top: auto;
             font-size: 11px;
+            line-height: 13px;
 
             .wallet-link {
                 color: $white;
@@ -57,5 +57,4 @@
         }
     
     }
-
 }

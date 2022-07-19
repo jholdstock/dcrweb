@@ -2,25 +2,25 @@
 
 {{ define "fronta" }}
 <div class="landing-fronta">
-    <div class="container-md h-100">
+    <div class="container h-100">
 
         <div class="d-flex flex-column justify-content-between h-100">
 
             <div></div>
     
-            <div class="fronta-center">
+            <div class="fronta-center flex-column flex-xl-row">
                 <div class="title">
                     <span class="dcr">Decred&nbsp;<span class="light-hyphen">—</span></span>
                     <span>{{ T "landing_opener" }}</span>
                 </div>
                 
-                <div class="fronta-buttons"> 
-                    <a id="alldl" class="btn wallet-btn" href="{{ "/wallets/" | relLangURL }}">{{ T "home_download_wallet" }}</a>
+                <div class="fronta-buttons flex-row flex-md-column flex-lg-row flex-xl-column justify-content-start"> 
+                    <a class="col-12 col-md-auto btn wallet-btn" id="alldl" href="{{ "/wallets/" | relLangURL }}">{{ T "home_download_wallet" }}</a>
                     {{ $download_links := where (index .Site.Data.wallets.links "decrediton") "is_direct_download" true }}
                     {{ range $download_links }}
-                        <a id="{{ .platform }}" class="btn wallet-btn os-specific" href="{{ .url }}">{{ T "home_download_wallet" }}</a>
+                        <a class="col-12 col-md-auto btn wallet-btn os-specific" id="{{ .platform }}" href="{{ .url }}">{{ T "home_download_wallet" }}</a>
                     {{ end }}
-                    <a class="btn exchange-btn" href="{{ "/exchanges/" | relLangURL }}">{{ T "nav_exchanges" }}</a>
+                    <a class="col-12 col-md-auto btn exchange-btn" href="{{ "/exchanges/" | relLangURL }}">{{ T "nav_exchanges" }}</a>
                 </div>
             </div>
     
@@ -63,11 +63,11 @@
 {{ define "main" }}
 
   <div class="landing-content body-gradient">
-    <div class="container-md">
+    <div class="container">
         <div class="row gx-3 gy-5">
 
             
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6">
                 <div class="landing-box green">
                     <div>
                         <p class="headline">{{ T "landing_sovereignty_headline" }}&nbsp;<span class="light-hyphen">—</span></p>
@@ -80,7 +80,7 @@
                 </div>
             </div>
             
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6">
                 <div class="landing-box blue top-pad">
                     <div>
                         <p class="headline">{{ T "landing_privacy_headline" }}&nbsp;<span class="light-hyphen">—</span></p>
@@ -105,7 +105,7 @@
                 </div>
             </div>
             
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6">
                 <div class="landing-box green">
                     <div>
                         <p class="headline">{{ T "landing_resolve_headline" }}&nbsp;<span class="light-hyphen">—</span></p>
@@ -118,7 +118,7 @@
                 </div>
             </div>
             
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6">
                 <div class="landing-box blue top-pad">
                     <div>
                         <p class="headline">{{ T "landing_freedom_headline" }}&nbsp;<span class="light-hyphen">—</span></p>

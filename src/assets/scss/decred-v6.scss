@@ -1,12 +1,32 @@
+// Decred colors
 $light-blue: rgb( 41, 112, 255); // #2970FF
 $turquoise:  rgb( 45, 216, 163); // #2DD8A3
 $white:      rgb(255, 255, 255); // #FFFFFF
 $dark-blue:  rgb(  9,  20,  64); // #091440
 $orange:     rgb(237, 109,  71); // #ED6D47
 
+// Override some bootstrap defaults.
+$grid-breakpoints: (
+    xs: 0,
+    sm: 303px,
+    md: 609px,
+    lg: 789px,
+    xl: 1005px,
+    xxl: 999999999999999999999px
+);
+$container-max-widths: (
+    sm: 302px,
+    md: 608px,
+    lg: 788px,
+    xl: 1004px,
+);
+
+// Import bootstrap.
 @import "bootstrap-5.0.2/bootstrap";
 
+// Import dcrweb.
 @import "_common";
+@import "_navbar";
 @import "_landing";
 @import "_wallets";
 @import "_filter-buttons";

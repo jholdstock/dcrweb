@@ -2,48 +2,6 @@ html, body {
     background-color: $dark-blue;
 }
 
-.navbar {
-    padding: 0;
-    background-color: $dark-blue;
-
-    .dcr-logo {
-        padding: 0;
-        margin: 0;
-        display: block;
-        height: 60px;
-        width: 60px;
-        background-image: url('../images/iconDecredWhite.svg');
-        background-size: 60px;
-        background-repeat: no-repeat;
-    }
-
-    
-    .navbar-toggler {
-        border: none;
-        box-shadow: none;
-
-        .navbar-toggler-icon {
-            height: 55px;
-            width: 55px;
-            margin-top: 24px;
-            margin-bottom: 24px;
-            transition: background-image 0.14s ease-in-out;
-            background-image: url('../images/menu-close.svg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-
-        &.collapsed {
-            .navbar-toggler-icon {
-                background-image: url('../images/menu-open.svg');
-            }   
-        }
-
-    }
-
-}
-
 .light-hyphen {
     font-weight: 100;
 }
@@ -130,10 +88,10 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    background-attachment: fixed;
 }
 
 .subpage-bg {
-
     padding-bottom: 123px;
 }
 
@@ -151,7 +109,12 @@ footer {
     border: 1px solid $orange;
     border-radius: 8px;
     font-size: 13px;
+    line-height: 18px;
     padding: 21px;
+    
+    @include media-breakpoint-down(md) {
+        padding: 13px;
+    }
 
     a {
         color: $white;
@@ -171,20 +134,29 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
 
+    
     a {
         text-decoration: none;
         color: white;
-
+        
         .pill {
             padding: 15px 24px;
-            margin-right: 20px;
-            margin-bottom: 20px;
+            margin-right: 13px;
+            margin-bottom: 13px;
             border-radius: 10000px;
             white-space: nowrap;
             transition: border 0.08s ease-in-out;
-
+            
             border: 2px solid rgba($white, 0.21);
-
+            font-size:18px;
+            
+            @include media-breakpoint-down(md) {
+                font-size: 15px;
+                padding: 11px 19px;
+                margin-right: 8px;
+                margin-bottom: 8px;
+            }
+            
             &:hover {
                 border: 2px solid rgba($white, 0.55);
             }
