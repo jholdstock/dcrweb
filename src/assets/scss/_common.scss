@@ -41,41 +41,40 @@ footer {
         margin-right: 10px;
         margin-bottom: 8px;
         margin-left: 10px;
-        background-image: url('../images/transparent.png');
         background-position: center center;
         background-size: 32px;
         background-repeat: no-repeat;
 
         &.youtube {
-            background-image: url('../images/iconYoutube.svg');
+            background-image: url('../images/social-icons/youtube.svg');
         }
 
         &.discord {
-            background-image: url('../images/iconDiscord.svg');
+            background-image: url('../images/social-icons/discord.svg');
         }
 
         &.telegram {
-            background-image: url('../images/iconTelegram.svg');
+            background-image: url('../images/social-icons/telegram.svg');
         }
 
         &.matrix {
-            background-image: url('../images/iconMatrix.svg');
+            background-image: url('../images/social-icons/matrix.svg');
         }
 
         &.github {
-            background-image: url('../images/iconGithub.svg');
+            background-image: url('../images/social-icons/github.svg');
         }
 
         &.twitter {
-            background-image: url('../images/iconTwitter.svg');
+            background-image: url('../images/social-icons/twitter.svg');
         }
 
         &.reddit {
-            background-image: url('../images/iconReddit.svg');
+            background-image: url('../images/social-icons/reddit.svg');
         }
 
         &.medium {
-            background-image: url('../images/iconMedium.svg');
+            background-image: url('../images/social-icons/medium.svg');
         }
     }
 
