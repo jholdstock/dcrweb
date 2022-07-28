@@ -36,6 +36,11 @@
 
         <!-- Highlighted exchanges -->
         <div class="pills">
+            {{ range where $exchanges "super_highlight" true }}
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="{{ range .tags }} {{.}} {{end}}">
+                    <div class="pill super-highlight">{{ .name }}</div>
+                </a>
+            {{ end }}
             {{ range where $exchanges "highlight" true }}
                 <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="{{ range .tags }} {{.}} {{end}}">
                     <div class="pill highlight">{{ .name }}</div>

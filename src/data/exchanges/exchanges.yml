@@ -1,11 +1,11 @@
 ##
 ## Exchanges
 ##
-##    "url"       - url for the exchange
-##    "tags"      - tags for the exchange, should exist in tags.yml
-##    "name"      - display name for the exchange, displayed on website
-##    "highlight" - whether the exchange should be highlighted on the top row
-
+##    "url"             - url for the exchange
+##    "tags"            - tags for the exchange, should exist in tags.yml
+##    "name"            - display name for the exchange, displayed on website
+##    "highlight"       - whether the exchange should be highlighted on the top row
+##    "super_highlight" - whether the exchange should be *really* highlighted on the top row
 
 -
   url: "https://godex.io/"
@@ -30,7 +30,7 @@
     - "high_liquidity"
     - "fiat"
   name: Bittrex
-  highlight: false
+  highlight: true
 -
   url: "https://poloniex.com/"
   tags:
@@ -139,7 +139,7 @@
   tags:
     - "high_liquidity"
   name: "Binance.com"
-  highlight: false
+  highlight: true
 -
   url: "https://simpleswap.io/"
   tags:
@@ -193,6 +193,7 @@
     - atomic_swaps
   name: "DCRDEX"
   highlight: true
+  super_highlight: true
 -
   url: "https://swapzone.io/"
   tags:

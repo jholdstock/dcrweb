@@ -10,7 +10,7 @@
 -
   id: politeia
   url: "https://proposals.decred.org"
-  name: "Politeia"
+  name: "Proposals"
   highlight: true
   footer: false
 -

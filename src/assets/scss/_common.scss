@@ -101,6 +101,14 @@ html, body {
                 }
             }
 
+            &.super-highlight {
+                border: 2px solid rgba($turquoise, 0.7);
+
+                &:hover {
+                    border: 2px solid rgba($turquoise, 1.0);
+                }
+            }
+
         }
     }
 }
