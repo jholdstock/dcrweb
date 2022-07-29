@@ -4,15 +4,9 @@
     <head>
         <meta charset="utf-8">
 
-        {{ if .IsHome }}
-          <title>{{ T "title" }}</title>
-          <meta property="og:title"      content="{{ T "title" }}" >
-          <meta property="twitter:title" content="{{ T "title" }}" >
-        {{ else }}
-          <title>{{ block "page-title" . }}{{ end }}</title>
-          <meta property="og:title"      content="Decred - {{ block "page-title" . }}{{ end }}">
-          <meta property="twitter:title" content="{{ T "title" }}" >
-        {{ end }}
+        <title>{{ block "page-title" . }}{{ end }}</title>
+        <meta property="og:title"      content="{{ block "page-title" . }}{{ end }}">
+        <meta property="twitter:title" content="{{ block "page-title" . }}{{ end }}" >
 
         <meta name="description"         content='{{ T "description" }}'>
         <meta name="viewport"            content="width=device-width, initial-scale=1" >
@@ -66,7 +60,6 @@
     {{ block "main" . }}{{ end }}
     
     {{ partial "footer.html" . }}
-
 
     {{ partial "_js_builder" (dict "bundle" "main.js" "resources" $.Site.Params.js_resources.critical ) }}
 

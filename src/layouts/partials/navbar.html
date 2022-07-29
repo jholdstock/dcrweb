@@ -31,7 +31,9 @@
                     <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                         {{ range $.Site.Home.AllTranslations }}
                             {{ if not (eq .Language.LanguageName $.Site.Language.LanguageName) }}
+                            <li>
                                 <a class="dropdown-item" href="{{ .Permalink }}" data-language="{{ .Lang }}">{{ .Language.LanguageName }}</a>
+                            </li>
                             {{ end }}
                         {{ end }}
                     </ul>
