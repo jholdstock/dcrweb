@@ -2,8 +2,15 @@
     z-index: 0;
 }
 
-html, body {
+body {
     background-color: $dark-blue;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    outline: 0;
 }
 
 .light-hyphen {
@@ -26,9 +33,9 @@ html, body {
     background-position: center center;
     background-attachment: fixed;
 }
-
-.subpage-bg {
+.subpage-padding {
     padding-bottom: 123px;
+    flex: 1;
 }
 
 .subpage-title {
@@ -37,6 +44,18 @@ html, body {
     font-size: 34px;
     padding-top: 89px;
     padding-bottom: 42px;
+}
+
+.subpage-paragraph {
+    padding-bottom: 36px;
+    color: $white;
+    opacity: 0.75;
+    line-height: 22px;
+    text-decoration: none;
+}
+
+.orange {
+    color: $orange;
 }
 
 .warning {
@@ -58,10 +77,6 @@ html, body {
 
     p {
         margin: 0;
-    }
-
-    .orange {
-        color: $orange;
     }
 }
 

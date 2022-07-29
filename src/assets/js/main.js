@@ -1,6 +1,3 @@
-// Global vars.
-var API_ROOT = "https://api.decred.org";
-
 // Detect platform to show appropriate download links.
 document.addEventListener("DOMContentLoaded", function() {
 

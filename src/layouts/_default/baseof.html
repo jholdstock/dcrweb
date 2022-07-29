@@ -29,7 +29,7 @@
         <link href="/images/32.png" rel="shortcut icon" type="image/x-icon">
         <link href="/images/256.png" rel="apple-touch-icon">
       
-        {{ partial "_css_builder" (dict "bundle" "main.css" "resources" (slice "css/decred-v5.css" "css/dataTables.css" )) }}
+        {{ partial "_css_builder" (dict "bundle" "main.css" "resources" (slice "css/dataTables.css" )) }}
         
         <!-- Compile and load scss. -->
         {{ $scssOptions := (dict "targetPath" "decred-v6.css" "outputStyle" "compressed" "enableSourceMap" true) }}
@@ -56,12 +56,10 @@
       
     </head>
 
-  <body class="body">
+  <body>
 
     {{ partial "navbar.html" . }}
     
-    {{ block "content-top" . }}{{ end }}
-
     {{ block "fronta" . }}
     {{ end }}
 

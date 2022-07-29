@@ -2,17 +2,18 @@
    {{ .Title }}
 {{ end }}
 
+{{ define "fronta" }}
+   <div class="subpage-fronta"></div>
+{{ end }}
+
 {{ define "main" }}
-<div class="subpage">
-    <div class="full-width">
-        <div class="_960 ">
-            <div class="subpage-content-section ex">
-                <div class="press__releases-content">
-                    <h1>{{ .Title }}</h1>
-                    <p>{{ dateFormat "January 2, 2006" .Date }}</p>
-                    {{ .Content }}
-                </div>
-            </div>
+<div class="subpage-padding body-gradient">
+    <div class="container-md">
+
+        <div class="press-release-article">
+            <h1>{{ .Title }}</h1>
+            <p class="article-date">{{ dateFormat "January 2, 2006" .Date }}</p>
+            {{ .Content }}
         </div>
     </div>
 </div>
