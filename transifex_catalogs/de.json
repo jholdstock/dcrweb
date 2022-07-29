@@ -18,7 +18,6 @@
   "nav_downloads": "Downloads",
   "nav_politeia": "Proposal System",
   "nav_vsp": "Voting Service Providers",
-  "nav_networkstats": "Netzwerkstatistik",
   "nav_votingdashboard": "Voting Dashboard",
   "nav_documentation": "Dokumentation",
   "nav_community": "Community",
@@ -153,8 +152,6 @@
   "Back to home page": "Zurück zur Startseite",
   "nav_stakingvoting": "Staking und Voting",
   "nav_bugbounty": "Bug Bounty",
-  "nav_insights_resources": "Einblicke und Ressourcen",
-  "nav_news_posts": "Presse",
   "landing_seemore": "Mehr dazu",
   "landing_treasury_link1": "Beitragen und zum Kontraktor werden"
 }
