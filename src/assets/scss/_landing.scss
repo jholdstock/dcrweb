@@ -174,13 +174,110 @@
     }
 
     .landing-box {
+        position: relative;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         padding: 34px;
 
         border-width: 1px;
         border-style: solid;
         border-radius: 8px;
+
+        @include media-breakpoint-up(lg) {
+            min-height: 377px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            min-height: 430px;
+        }
+
+        .landing-img {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 100%;
+            min-height: 180px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            z-index: -1;
+
+            @include media-breakpoint-up(md) {
+                min-height: 280px;
+            }
+            @include media-breakpoint-up(lg) {
+                min-height: 238px;
+            }
+            @include media-breakpoint-up(xl) {
+                min-height: 300px;
+            }
+        }
+        
+        &.treasury {
+            .landing-img {
+                background-image: url("../images/landing/treasury-sm.png");
+
+                @include media-breakpoint-up(md) {
+                    background-image: url("../images/landing/treasury-md.png");
+                }
+                @include media-breakpoint-up(lg) {
+                    position: absolute;
+                    margin: 0;
+                    width: auto;
+                    background-image: url("../images/landing/treasury-lg.png");
+
+                    top: 40px;
+                    bottom: 52px;
+                    left: 32px;
+                    right: 32px;
+                }
+                @include media-breakpoint-up(xl) {
+                    top: 67px;
+                    bottom: 52px;
+                    left: 32px;
+                    right: 32px;
+                }
+            }
+        }
+
+        &.sovereignty {
+            .landing-img {
+                background-image: url("../images/landing/sovereignty-sm.png");
+                @include media-breakpoint-up(md) {
+                    background-image: url("../images/landing/sovereignty-md.png");
+                }
+            }
+        }
+
+        &.privacy {
+            .landing-img {
+                background-image: url("../images/landing/privacy-sm.png");
+                @include media-breakpoint-up(md) {
+                    background-image: url("../images/landing/privacy-md.png");
+                }
+            }
+        }
+
+        &.resolve {
+            .landing-img {
+                background-image: url("../images/landing/resolve-sm.png");
+                @include media-breakpoint-up(md) {
+                    background-image: url("../images/landing/resolve-md.png");
+                }
+            }
+        }
+
+        &.freedom {
+            .landing-img {
+                background-image: url("../images/landing/freedom-sm.png");
+                @include media-breakpoint-up(md) {
+                    background-image: url("../images/landing/freedom-md.png");
+                }
+                @include media-breakpoint-up(lg) {
+                    background-image: url("../images/landing/freedom-lg.png");
+                }
+            }
+        }
 
         @include media-breakpoint-down(md) {
             padding: 21px;
@@ -231,13 +328,9 @@
         .text {
             font-size: 30px;
             line-height: 31px;
-            margin-bottom: 258px;
+            margin-bottom: 0;
             
-            @include media-breakpoint-down(lg) {
-                margin-bottom: 200px;
-            }
             @include media-breakpoint-down(md) {
-                margin-bottom: 100px;
                 font-size: 24px;
                 line-height: 28px;
             }
@@ -249,7 +342,7 @@
                 font-size: 18px;
                 line-height: 21px;
                 color: $white;
-                text-decoration: underline;
+                text-decoration: none;
                 margin-bottom: 5px;
 
                 @include media-breakpoint-down(md) {
@@ -257,9 +350,22 @@
                     line-height: 16px;
                 }
 
-                &:hover {
-                    color: #4dbeff;
+                .link-text {
+                    text-decoration: underline;
                 }
+
+                .link-arrow {
+                    opacity: 0.34;
+                    font-size: 22px;
+                    transition: opacity 0.08s ease-in-out;
+                }
+
+                &:hover {
+                    .link-arrow {
+                        opacity: 0.55;
+                    }
+                }
+
             }
         }
     }
