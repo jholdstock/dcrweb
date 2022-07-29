@@ -23,16 +23,10 @@
         <link href="/images/32.png" rel="shortcut icon" type="image/x-icon">
         <link href="/images/256.png" rel="apple-touch-icon">
       
-        {{ partial "_css_builder" (dict "bundle" "main.css" "resources" (slice "css/dataTables.css" )) }}
-        
         <!-- Compile and load scss. -->
         {{ $scssOptions := (dict "targetPath" "decred-v6.css" "outputStyle" "compressed" "enableSourceMap" true) }}
-        {{ $v6Style := resources.Get "scss/decred-v6.scss" | resources.ToCSS $scssOptions | resources.Fingerprint  }}
-        <link rel="stylesheet" href="{{ $v6Style.Permalink }}">
-
-        <!-- Load fonts last to ensure they take precedence. -->
-        {{ $fontStyle := resources.Get "css/fonts.css"  }}
-        <link rel="stylesheet" href="{{ $fontStyle.Permalink }}">
+        {{ $v6Style := resources.Get "scss/decred-v6.scss" | resources.ToCSS $scssOptions | resources.Fingerprint }}
+        <link rel="stylesheet" href="{{ $v6Style.Permalink }}" integrity="{{ $v6Style.Data.Integrity }}">
 
         <!--  Custom favicon  -->
         <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png?v=yHh3NA">
@@ -60,14 +54,13 @@
     {{ block "main" . }}{{ end }}
     
     {{ partial "footer.html" . }}
-
-    {{ partial "_js_builder" (dict "bundle" "main.js" "resources" $.Site.Params.js_resources.critical ) }}
-
-    {{ if ne .IsHome true }}
-        {{ partial "_js_builder" (dict "bundle" "extra.js" "resources" $.Site.Params.js_resources.extra ) }}
+    
+    {{ $jsFiles := slice }}
+    {{ range $.Site.Params.js_resources }}
+        {{ $jsFiles = $jsFiles | append ( resources.Get . ) }}
     {{ end }}
-
-    {{ block "custom-assets" . -}}{{- end }}
+    {{ $js := $jsFiles | resources.Concat "main.js" | resources.Minify | resources.Fingerprint "sha512" }}
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 
   </body>
 </html>
