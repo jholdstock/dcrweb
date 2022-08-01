@@ -5,20 +5,25 @@ $white:      rgb(255, 255, 255); // #FFFFFF
 $dark-blue:  rgb(  9,  20,  64); // #091440
 $orange:     rgb(237, 109,  71); // #ED6D47
 
+$grid-sm: 302px;
+$grid-md: 608px;
+$grid-lg: 788px;
+$grid-xl: 1004px;
+
 // Override some bootstrap defaults.
 $grid-breakpoints: (
     xs: 0,
-    sm: 303px,
-    md: 609px,
-    lg: 789px,
-    xl: 1005px,
+    sm: $grid-sm + 100,
+    md: $grid-md + 100,
+    lg: $grid-lg + 100,
+    xl: $grid-xl + 100,
     xxl: 999999999999999999999px
 );
 $container-max-widths: (
-    sm: 302px,
-    md: 608px,
-    lg: 788px,
-    xl: 1004px,
+    sm: $grid-sm,
+    md: $grid-md,
+    lg: $grid-lg,
+    xl: $grid-xl,
 );
 
 // Import bootstrap.
