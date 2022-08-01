@@ -3,7 +3,11 @@
 {{ end }}
 
 {{ define "fronta" }}
-    <div class="subpage-fronta"></div>
+<div class="subpage-fronta">
+    <div class="gradient1"></div>
+    <div class="community-header"></div>
+    <div class="gradient2"></div>
+</div>
 {{ end }}
 
 {{ define "main" }}
@@ -11,7 +15,7 @@
 {{ $social_channels  := $.Site.Data.community.channels }}
 {{ $support_channels := $.Site.Data.community.support }}
 
-<div class="subpage-padding body-gradient">
+<div class="subpage-padding body-gradient g-0">
     <div class="container">
 
         <div class="subpage-title">{{ T "community_community_title" }}</div>

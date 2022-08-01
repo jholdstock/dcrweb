@@ -3,7 +3,11 @@
 {{ end }}
 
 {{ define "fronta" }}
-   <div class="subpage-fronta"></div>
+<div class="subpage-fronta">
+    <div class="gradient1"></div>
+    <div class="exchange-header"></div>
+    <div class="gradient2"></div>
+</div>
 {{ end }}
 
 {{ define "main" }}
@@ -12,7 +16,7 @@
 {{ $payments  :=  sort .Site.Data.exchanges.payment   "name" "asc" }}
 {{ $tags      := .Site.Data.exchanges.tags }}
 
-<div class="subpage-padding body-gradient">
+<div class="subpage-padding body-gradient g-0">
     <div class="container">
 
         <!-- Invisible radio buttons used for filtering -->

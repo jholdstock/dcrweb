@@ -3,7 +3,11 @@
 {{ end }}
 
 {{ define "fronta" }}
-   <div class="subpage-fronta"></div>
+<div class="subpage-fronta">
+    <div class="gradient1"></div>
+    <div class="wallet-header"></div>
+    <div class="gradient2"></div>
+</div>
 {{ end }}
 
 {{ define "main" }}
@@ -11,7 +15,7 @@
 {{ $wallets := .Site.Data.wallets.wallets }}
 {{ $tags    := .Site.Data.wallets.tags }}
 
-<div class="subpage-padding body-gradient">
+<div class="subpage-padding body-gradient g-0">
     <div class="container">
         
         {{/* Invisible radio buttons used for filtering */}}
@@ -34,7 +38,7 @@
 
 
         <!-- Highlighted downloads -->
-        <div class="wallet-cards row highlight">
+        <div class="wallet-cards row g-3 highlight">
             {{ range where $wallets "highlight" true }}
                 <div class="g-3 col-12 col-md-4 col-xl-3">
                     
@@ -65,7 +69,7 @@
         </div>
 
         <!-- All others -->
-        <div class="wallet-cards row">
+        <div class="wallet-cards row g-3">
             {{ range where $wallets "highlight" false }}
                 <div class="g-3 col-12 col-md-4 col-xl-3">
 

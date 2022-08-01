@@ -1,9 +1,33 @@
 .navbar {
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
     background-color: $dark-blue;
 
+    height: $navbar-height;
+
+    @include media-breakpoint-down(md) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .navbar-collapse {
+        background-color: $dark-blue;
+
+        @include media-breakpoint-down(md) {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+        }
+
+        .nav-link {
+            @include media-breakpoint-down(md) {
+                margin-left: 40px;
+            }
+        }
+    }
+
     .dcr-logo {
-        margin: 14px;
         display: block;
         height: 34px;
         width: 40px;
@@ -14,12 +38,12 @@
     .navbar-toggler {
         border: none;
         box-shadow: none;
+        padding: 0;
+        margin: 0;
 
         .navbar-toggler-icon {
-            height: 55px;
-            width: 55px;
-            margin-top: 24px;
-            margin-bottom: 24px;
+            height: 50px;
+            width: 50px;
             transition: background-image 0.14s ease-in-out;
             background-image: url('../images/menu-close.svg');
             background-size: cover;

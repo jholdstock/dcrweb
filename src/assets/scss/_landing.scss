@@ -1,5 +1,5 @@
 .landing-fronta {
-    height: 100vh;
+    height: calc(100vh - #{$navbar-height});
 
     background: linear-gradient(200deg, #0f2666 0%, #091440 62%, #091440 100%);
     background-image: url('../images/landing-bg.svg');

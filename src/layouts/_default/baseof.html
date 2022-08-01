@@ -48,18 +48,21 @@
 
     {{ partial "navbar.html" . }}
     
-    {{ block "fronta" . }}
-    {{ end }}
+  <div class="navbar-margin {{ if not .IsHome }}max-w{{ end }}">
+      {{ block "fronta" . }}
+      {{ end }}
+  
+      {{ block "main" . }}{{ end }}
+      
+      {{ partial "footer.html" . }}
+      
+      {{ $jsFiles := slice }}
+      {{ range $.Site.Params.js_resources }}
+          {{ $jsFiles = $jsFiles | append ( resources.Get . ) }}
+      {{ end }}
+      {{ $js := $jsFiles | resources.Concat "main.js" | resources.Minify | resources.Fingerprint "sha512" }}
+    </div>
 
-    {{ block "main" . }}{{ end }}
-    
-    {{ partial "footer.html" . }}
-    
-    {{ $jsFiles := slice }}
-    {{ range $.Site.Params.js_resources }}
-        {{ $jsFiles = $jsFiles | append ( resources.Get . ) }}
-    {{ end }}
-    {{ $js := $jsFiles | resources.Concat "main.js" | resources.Minify | resources.Fingerprint "sha512" }}
     <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 
   </body>

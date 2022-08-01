@@ -3,13 +3,24 @@
 }
 
 body {
-    background-color: $dark-blue;
+    background-image: url("../images/body-bg.svg");
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+}
+
+.navbar-margin {
+    margin-top: $navbar-height
+}
+
+.max-w {
+    width: 100%;
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a {
@@ -28,14 +39,80 @@ a {
 }
 
 .subpage-fronta {
-    min-height: 352px;
-    background: linear-gradient(200deg, #0f2666 0%, #091440 62%, #091440 100%);
-    background-image: url('../images/landing-bg.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
+    position: relative;
+    height: 352px;
+    width: 100%;
+
+    * {
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+
+    .gradient1 {
+        background: linear-gradient(200deg, #0f2666 0%, #091440 62%, #091440 100%);
+    }
+    
+    .gradient2 {
+        margin-top: -352px;
+        background: linear-gradient(225deg, #122E7600 0%, #112B7000 4%, #0D215B27 21%, #0B194CB2 39%, #091542F1 57%, #091440 79%, #091440 100%);
+    }
+
+    .exchange-header {
+        margin-top: -352px;
+
+        background-image: url('../images/subpage-backgrounds/xl/exchanges.svg');
+        background-position: right -98px;
+        
+        @include media-breakpoint-down(xl) {
+            background-image: url('../images/subpage-backgrounds/lg/exchanges.svg');
+        }
+        @include media-breakpoint-down(lg) {
+            background-image: url('../images/subpage-backgrounds/md/exchanges.svg');
+            background-position: right -68px;
+        }
+        @include media-breakpoint-down(md) {
+            background-image: url('../images/subpage-backgrounds/md/exchanges.svg');
+        }
+    }
+
+    .wallet-header {
+        margin-top: -352px;
+
+        background-image: url('../images/subpage-backgrounds/xl/wallets.svg');
+        background-size: cover;
+        
+        @include media-breakpoint-down(xl) {
+            background-image: url('../images/subpage-backgrounds/lg/wallets.svg');
+        }
+        @include media-breakpoint-down(lg) {
+            background-image: url('../images/subpage-backgrounds/md/wallets.svg');
+        }
+        @include media-breakpoint-down(md) {
+            background-image: url('../images/subpage-backgrounds/md/wallets.svg');
+        }
+    }
+
+    .community-header {
+        margin-top: -352px;
+
+        background-image: url('../images/subpage-backgrounds/xl/community.svg');
+        size: cover;
+        background-position: right top;
+        
+        @include media-breakpoint-down(xl) {
+            background-image: url('../images/subpage-backgrounds/lg/community.svg');
+        }
+        @include media-breakpoint-down(lg) {
+            background-image: url('../images/subpage-backgrounds/md/community.svg');
+        }
+        @include media-breakpoint-down(md) {
+            background-image: url('../images/subpage-backgrounds/md/community.svg');
+        }
+    }
+
 }
+
 .subpage-padding {
     padding-bottom: 123px;
     flex: 1;
