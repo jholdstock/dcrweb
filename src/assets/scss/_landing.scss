@@ -20,6 +20,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        padding-bottom: $navbar-height;
 
         .title {
             display: flex;
@@ -59,7 +60,6 @@
 
             .btn {
                 padding: 10px 21px;
-                margin: 0 0 21px 0;
                 border-radius: 100px;
                 font-size: 18px;
                 line-height: 31px;
@@ -67,31 +67,38 @@
                 text-decoration: none;
                 transition: background-color 0.13s ease-in-out;
                 white-space: nowrap;
-
+                
+                
                 &.exchange-btn {
                     color: $dark-blue;
                     background-color: $turquoise;
-
-                    &:hover {
+                    
+                    &:hover,
+                    &:focus {
                         background-color: rgba($turquoise, 0.89);
                     }
                 }
-
+                
                 &.wallet-btn {
                     color: $white;
                     background-color: $light-blue;
-                    margin-right: 12px;
+                    margin: 0 12px 21px 0;
                     
-                    &:hover {
+                    &:hover,
+                    &:focus {
                         background-color: rgba($light-blue, 0.89);
                     }
-
+                    
                     &#alldl {
                         display: block;
                     }
-
+                    
                     &.os-specific {
                         display: none;
+                    }
+
+                    @include media-breakpoint-down(lg) {
+                        margin: 0 0 13px 0;
                     }
                 }
             }
@@ -117,7 +124,8 @@
                 opacity: 0.34;
                 transition: opacity 0.13s ease-in-out;
 
-                &:hover {
+                &:hover,
+                &:focus {
                     opacity: 0.55;
                 }
 
@@ -156,7 +164,8 @@
                 background-position: center center;
             }
 
-            &:hover {
+            &:hover,
+            &:focus {
                 opacity: 0.89;
             }
         }
@@ -165,7 +174,7 @@
 
 .landing-content {
     color: $white;
-    padding-top: 144px;
+    padding-top: 89px;
     padding-bottom: 144px;
 
     @include media-breakpoint-down(lg) {
@@ -308,7 +317,7 @@
         }
 
         &.top-pad {
-            margin-top: 410px;
+            margin-top: 450px;
             @include media-breakpoint-down(lg) {
                 margin-top: 0;
             }
@@ -360,7 +369,8 @@
                     transition: opacity 0.08s ease-in-out;
                 }
 
-                &:hover {
+                &:hover,
+                &:focus {
                     .link-arrow {
                         opacity: 0.55;
                     }

@@ -38,9 +38,11 @@ a {
     background-repeat: no-repeat;
 }
 
+$subpage-header-height: 352px;
+
 .subpage-fronta {
     position: relative;
-    height: 352px;
+    height: $subpage-header-height;
     width: 100%;
 
     * {
@@ -54,18 +56,19 @@ a {
     }
     
     .gradient2 {
-        margin-top: -352px;
+        margin-top: -$subpage-header-height;
         background: linear-gradient(225deg, #122E7600 0%, #112B7000 4%, #0D215B27 21%, #0B194CB2 39%, #091542F1 57%, #091440 79%, #091440 100%);
     }
 
     .exchange-header {
-        margin-top: -352px;
+        margin-top: -$subpage-header-height;
 
         background-image: url('../images/subpage-backgrounds/xl/exchanges.svg');
         background-position: right -98px;
         
         @include media-breakpoint-down(xl) {
             background-image: url('../images/subpage-backgrounds/lg/exchanges.svg');
+            background-position: right -98px;
         }
         @include media-breakpoint-down(lg) {
             background-image: url('../images/subpage-backgrounds/md/exchanges.svg');
@@ -73,6 +76,7 @@ a {
         }
         @include media-breakpoint-down(md) {
             background-image: url('../images/subpage-backgrounds/md/exchanges.svg');
+            background-position: right -68px;
         }
     }
 
@@ -124,6 +128,9 @@ a {
     font-size: 34px;
     padding-top: 89px;
     padding-bottom: 42px;
+    @include media-breakpoint-down(md) {
+        padding-top: 55px;
+    }
 }
 
 .subpage-paragraph {
@@ -171,7 +178,7 @@ a {
         color: white;
         
         .pill {
-            padding: 15px 24px;
+            padding: 15px 24px 14px;
             margin-right: 13px;
             margin-bottom: 13px;
             border-radius: 10000px;
@@ -188,14 +195,16 @@ a {
                 margin-bottom: 8px;
             }
             
-            &:hover {
+            &:hover,
+            &:focus {
                 border: 2px solid rgba($white, 0.55);
             }
 
             &.highlight {
                 border: 2px solid rgba($light-blue, 0.7);
 
-                &:hover {
+                &:hover,
+                &:focus {
                     border: 2px solid rgba($light-blue, 1.0);
                 }
             }
@@ -203,7 +212,8 @@ a {
             &.super-highlight {
                 border: 2px solid rgba($turquoise, 0.7);
 
-                &:hover {
+                &:hover,
+                &:focus {
                     border: 2px solid rgba($turquoise, 1.0);
                 }
             }

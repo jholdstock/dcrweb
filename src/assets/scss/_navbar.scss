@@ -4,27 +4,72 @@
     background-color: $dark-blue;
 
     height: $navbar-height;
-
+    
     @include media-breakpoint-down(md) {
         padding-left: 40px;
         padding-right: 40px;
     }
-
+    
     .navbar-collapse {
-        background-color: $dark-blue;
-
+        height: 100%;
+        
         @include media-breakpoint-down(md) {
             position: absolute;
             top: 100%;
             left: 0;
             right: 0;
         }
+        .navbar-nav {
+            height: 100%;
+            
+            .nav-link {
+                height: 100%;
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-left: 12px;
+                padding-right: 12px;
+                line-height: 98px;
+                color: $white;
+                box-sizing: border-box;
+                transition: border-bottom 0.08s ease-in-out;
+                background-color: $dark-blue;
+                
+                @include media-breakpoint-down(md) {
+                    padding-left: 40px;
+                    height: 50px;
+                    line-height: normal;
+                }
+                @include media-breakpoint-up(md) {
+                    &:hover {
+                        border-bottom: 2px solid rgba($white, 0.55);
+                    }
+                }
+            }
 
-        .nav-link {
-            @include media-breakpoint-down(md) {
-                margin-left: 40px;
+            .dropdown-toggle {
+                color: rgba($white, 0.55);
+                border: none !important;
+            }
+
+            .dropdown-menu {
+                min-width: 0;
+                border-radius: 0;
+                background-color: $dark-blue;
+                margin-top: 0;
+                border: 0;
+                a {
+                    @include media-breakpoint-down(md) {
+                        padding-left: 40px;
+                    }
+                    color: $white;
+                    &:hover,
+                    &:focus {
+                        background-color: rgba($white, 0.05);
+                    }
+                }
             }
         }
+        
     }
 
     .dcr-logo {
@@ -59,8 +104,6 @@
 
     }
 
-    .dropdown-menu {
-        min-width: 0;
-    }
+
 
 }

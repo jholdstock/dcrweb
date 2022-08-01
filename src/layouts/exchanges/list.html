@@ -20,8 +20,8 @@
     <div class="container">
 
         <!-- Invisible radio buttons used for filtering -->
-        {{ range $tag := $tags }}
-            <input class="d-none" type="radio" id="{{ $tag }}" name="toggler" />
+        {{ range $index, $tag := $tags }}
+            <input class="d-none" type="radio" id="{{ $tag }}" name="toggler" {{ if eq $index 0 }}checked{{end}} />
         {{ end }}
         
         <div class="subpage-title">{{ T "exchanges_subtitle" }}</div>

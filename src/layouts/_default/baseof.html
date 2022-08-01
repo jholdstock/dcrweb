@@ -44,11 +44,11 @@
       
     </head>
 
-  <body>
+  <body id="top">
 
     {{ partial "navbar.html" . }}
     
-  <div class="navbar-margin {{ if not .IsHome }}max-w{{ end }}">
+    <div class="navbar-margin {{ if not .IsHome }}max-w{{ end }}">
       {{ block "fronta" . }}
       {{ end }}
   

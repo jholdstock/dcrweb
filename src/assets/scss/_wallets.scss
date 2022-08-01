@@ -5,7 +5,7 @@
     flex-wrap: wrap;
 
     &.highlight {
-        margin-bottom: 10px;
+        margin-bottom: 34px;
     }
 
     .wallet-card {
@@ -19,7 +19,8 @@
         color: $white;
         transition: border 0.08s ease-in-out ;
 
-        &:hover {
+        &:hover,
+        &:focus {
             border: 1px solid rgba($white, 0.55);
         }
 
@@ -78,7 +79,8 @@
                             opacity: 0.45;
                             transition: opacity 0.08s ease-in-out;
                         }
-                        &:hover {
+                        &:hover,
+                        &:focus {
                             .dl-arrow {
                                 opacity: 0.60;
                             }
