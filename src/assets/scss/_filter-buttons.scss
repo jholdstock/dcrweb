@@ -7,11 +7,10 @@
     margin-bottom: 14px;
     color: #8997a5;
     color: #091440;
-    flex-grow: 1;
+    width: 100%;
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         flex-direction: row-reverse;
-        margin-bottom: 30px;
     }
 
     .message {
@@ -21,15 +20,16 @@
         margin: 0 30px 0 0;
         text-align: right;
 
-        @include media-breakpoint-down(sm) {
-            flex-grow: 1;
-            margin: 0 20px 0 10px;
+        @include media-breakpoint-down(md) {
+            font-size: 13px;
+            line-height: 15px;
+            margin: 0 0 0 10px;
         }
     }
     
     .filter-button {
         padding: 12px;
-        margin-left: 15px;
+        margin: 0 15px 0 0;
 
         cursor: pointer;
         background-color: transparent;
@@ -40,6 +40,10 @@
         
         filter: grayscale(100%) brightness(10);
     
+        @include media-breakpoint-down(md) {
+            margin: 0 10px 0 0;
+        }
+
         &:hover,
         &:focus {
             opacity: 0.60;
@@ -96,17 +100,17 @@
     opacity: 1.0;
 }
 
-#high_liquidity:checked   ~ .filter-buttons .message.high_liquidity,
-#instant_exchange:checked ~ .filter-buttons .message.instant_exchange,
-#atomic_swaps:checked     ~ .filter-buttons .message.atomic_swaps,
-#fiat:checked             ~ .filter-buttons .message.fiat,
-#decentralized:checked    ~ .filter-buttons .message.decentralized {
+#high_liquidity:checked   ~ .subpage-header .filter-buttons .message.high_liquidity,
+#instant_exchange:checked ~ .subpage-header .filter-buttons .message.instant_exchange,
+#atomic_swaps:checked     ~ .subpage-header .filter-buttons .message.atomic_swaps,
+#fiat:checked             ~ .subpage-header .filter-buttons .message.fiat,
+#decentralized:checked    ~ .subpage-header .filter-buttons .message.decentralized {
     display: inline-block;
 }
 
-#hardware_wallets:checked    ~ .filter-buttons .message.hardware_wallets,
-#core_software:checked       ~ .filter-buttons .message.core_software,
-#third_party_wallets:checked ~ .filter-buttons .message.third_party_wallets {
+#hardware_wallets:checked    ~ .subpage-header .filter-buttons .message.hardware_wallets,
+#core_software:checked       ~ .subpage-header .filter-buttons .message.core_software,
+#third_party_wallets:checked ~ .subpage-header .filter-buttons .message.third_party_wallets {
     display: inline-block;
 }
 

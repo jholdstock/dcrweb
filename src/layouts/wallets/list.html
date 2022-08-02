@@ -18,22 +18,24 @@
 <div class="subpage-padding body-gradient g-0">
     <div class="container">
         
-        {{/* Invisible radio buttons used for filtering */}}
+        <!-- Invisible radio buttons used for filtering -->
         {{ range $index, $tag := $tags }}
             <input class="d-none" type="radio" id="{{ $tag }}" name="toggler"  {{ if eq $index 0 }}checked{{end}}/>
         {{ end }}
 
-        <div class="subpage-title">{{ T "nav_downloads" }}</div>
-        
-        <div class="filter-buttons">
-            {{ range $tag := $tags }}
-                {{ $msg_id := print "downloads_category_" $tag }}
-                <div class="message {{ $tag }}">{{ T $msg_id  }}</div>
-            {{ end }}
+        <div class="subpage-header">
+            <div class="subpage-title">{{ T "nav_downloads" }}</div>
 
-            {{ range $tag := $tags }}
-                <label class="filter-button {{ $tag }}" for="{{ $tag }}"></label>
-            {{ end }}
+            <div class="filter-buttons">
+                {{ range $tag := $tags }}
+                    {{ $msg_id := print "downloads_category_" $tag }}
+                    <div class="message {{ $tag }}">{{ T $msg_id  }}</div>
+                {{ end }}
+    
+                {{ range $tag := $tags }}
+                    <label class="filter-button {{ $tag }}" for="{{ $tag }}"></label>
+                {{ end }}
+            </div>
         </div>
 
 

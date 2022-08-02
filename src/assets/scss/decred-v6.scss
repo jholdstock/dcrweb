@@ -23,6 +23,7 @@ $grid-breakpoints: (
     xxl: 999999999999999999999px
 );
 $container-max-widths: (
+    xs: $grid-sm - 1,
     sm: $grid-sm,
     md: $grid-md,
     lg: $grid-lg,

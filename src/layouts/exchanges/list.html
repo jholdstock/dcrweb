@@ -24,17 +24,19 @@
             <input class="d-none" type="radio" id="{{ $tag }}" name="toggler" {{ if eq $index 0 }}checked{{end}} />
         {{ end }}
         
-        <div class="subpage-title">{{ T "exchanges_subtitle" }}</div>
-        
-        <div class="filter-buttons">
-            {{ range $tag := $tags }}
-                {{ $msg_id := print "exchanges_category_" $tag }}
-                <div class="message {{ $tag }}">{{ T $msg_id  }}</div>
-            {{ end }}
+        <div class="subpage-header">
+            <div class="subpage-title">{{ T "nav_exchanges" }}</div>
 
-            {{ range $tag := $tags }}
-                <label class="filter-button {{ $tag }}" for="{{ $tag }}"></label>
-            {{ end }}
+            <div class="filter-buttons">
+                {{ range $tag := $tags }}
+                    {{ $msg_id := print "exchanges_category_" $tag }}
+                    <div class="message {{ $tag }}">{{ T $msg_id  }}</div>
+                {{ end }}
+    
+                {{ range $tag := $tags }}
+                    <label class="filter-button {{ $tag }}" for="{{ $tag }}"></label>
+                {{ end }}
+            </div>
         </div>
 
 
@@ -61,7 +63,9 @@
             {{ end }}
         </div>
 
-        <div class="subpage-title">{{ T "exchanges_payment_title" }}</div>
+        <div class="subpage-header">
+            <div class="subpage-title">{{ T "exchanges_payment_title" }}</div>
+        </div>
 
         <div class="pills">
             {{ range $payments }}
