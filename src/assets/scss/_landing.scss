@@ -8,13 +8,10 @@
     background-position: center center;
     background-attachment: fixed;
 
-    justify-content: flex-start;
-    align-items: stretch;
-
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+    position: relative;
 
     .fronta-center {
         display: flex;
@@ -106,6 +103,10 @@
     }
 
     .fronta-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
         width: 100%;
         display: flex;
         flex-direction: row;
