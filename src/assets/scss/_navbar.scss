@@ -43,6 +43,9 @@
                     &:hover {
                         border-bottom: 2px solid rgba($white, 0.55);
                     }
+                    &.active {
+                        border-bottom: 2px solid rgba($white, 0.55);
+                    }
                 }
             }
 
