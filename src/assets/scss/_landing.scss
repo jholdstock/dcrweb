@@ -2,16 +2,26 @@
     height: calc(100vh - #{$navbar-height});
 
     background: linear-gradient(200deg, #0f2666 0%, #091440 62%, #091440 100%);
-    background-image: url('../images/landing-bg.svg');
+    background-image: url('../images/landing-bg/xl.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center $navbar-height;
     background-attachment: fixed;
 
     display: flex;
     flex-direction: column;
 
     position: relative;
+
+    @include media-breakpoint-down(xl) {
+        background-image: url('../images/landing-bg/lg.svg');
+    }
+    @include media-breakpoint-down(lg) {
+        background-image: url('../images/landing-bg/md.svg');
+    }
+    @include media-breakpoint-down(md) {
+        background-image: url('../images/landing-bg/sm.svg');
+    }
 
     .fronta-center {
         display: flex;
