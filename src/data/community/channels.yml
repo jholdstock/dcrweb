@@ -50,32 +50,8 @@
   highlight: false
   footer: true
 -
-  id: facebook
-  url: "https://facebook.com/decredproject"
-  name: Facebook
-  highlight: false
-  footer: false
--
   id: reddit
   url: "https://reddit.com/r/decred"
   name: Reddit
   highlight: false
   footer: true
--
-  id: youtube
-  url: "https://www.youtube.com/decredchannel"
-  name: YouTube
-  highlight: false
-  footer: true
--
-  id: medium
-  url: "https://medium.com/decred"
-  name: Medium
-  highlight: false
-  footer: true
--
-  id: keybase
-  url: "https://keybase.io/team/decred"
-  name: Keybase
-  highlight: false
-  footer: false

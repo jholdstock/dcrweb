@@ -14,11 +14,6 @@
   name: Godex
   highlight: false
 -
-  url: "https://www.livecoin.net/"
-  tags:
-  name: Livecoin
-  highlight: false
--
   url: "https://coinswitch.co/"
   tags:
     - "instant_exchange"
@@ -32,51 +27,15 @@
   name: Bittrex
   highlight: true
 -
-  url: "https://poloniex.com/"
-  tags:
-    - "high_liquidity"
-  name: Poloniex
-  highlight: false
--
   url: "https://holytransaction.com/"
   tags:
   name: HolyTransaction
-  highlight: false
--
-  url: "https://www.coinspot.com.au/"
-  tags:
-    - "high_liquidity"
-    - fiat
-  name: CoinSpot
-  highlight: false
--
-  url: "https://bisq.network"
-  tags:
-    - decentralized
-  name: Bisq
-  highlight: false
--
-  url: "https://tuxexchange.com/"
-  tags:
-  name: "Tux Exchange"
   highlight: false
 -
   url: "https://www.kaiserex.com/"
   tags:
     - fiat
   name: Kaiserex
-  highlight: false
--
-  url: "https://braziliex.com/"
-  tags:
-    - fiat
-  name: Braziliex
-  highlight: false
--
-  url: "https://profitfy.trade/"
-  tags:
-    - fiat
-  name: Profitfy
   highlight: false
 -
   url: "https://www.swyftx.com.au/"
@@ -108,11 +67,6 @@
   name: KuCoin
   highlight: false
 -
-  url: "https://www.coinex.com/"
-  tags:
-  name: CoinEx
-  highlight: false
--
   url: "https://changelly.com/"
   tags:
   name: Changelly
@@ -138,7 +92,7 @@
   url: "https://www.binance.com/"
   tags:
     - "high_liquidity"
-  name: "Binance.com"
+  name: "Binance"
   highlight: true
 -
   url: "https://simpleswap.io/"
@@ -192,7 +146,6 @@
     - decentralized
     - atomic_swaps
   name: "DCRDEX"
-  highlight: false
   super_highlight: true
 -
   url: "https://swapzone.io/"
@@ -204,12 +157,6 @@
   url: "https://www.hotbit.io/"
   tags:
   name: "Hotbit"
-  highlight: false
--
-  url: "https://www.hotbit.co.kr/"
-  tags:
-    - "fiat"
-  name: "Hotbit Korea"
   highlight: false
 -
   url: "https://wazirx.com/"

@@ -30,6 +30,9 @@
                     {{ range where $.Site.Data.community.channels "footer" true }}
                         <a href="{{ .url }}" class="social-icon d-inline-block {{ .id }}" target="_blank" rel="noopener noreferrer"></a>
                     {{ end }}
+                    {{ range where $.Site.Data.community.publications "footer" true }}
+                        <a href="{{ .url }}" class="social-icon d-inline-block {{ .id }}" target="_blank" rel="noopener noreferrer"></a>
+                    {{ end }}
                 </div>
             </div>
 

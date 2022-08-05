@@ -13,6 +13,7 @@
 {{ define "main" }}
 
 {{ $social_channels  := $.Site.Data.community.channels }}
+{{ $publications     := $.Site.Data.community.publications }}
 {{ $support_channels := $.Site.Data.community.support }}
 
 <div class="subpage-padding body-gradient g-0">
@@ -24,7 +25,7 @@
 
         <div class="pills">
             {{ range where $social_channels "highlight" true }}
-                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="">
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">
                     <div class="pill highlight">{{ .name }}</div>
                 </a>
             {{ end }}
@@ -33,19 +34,40 @@
         
         <div class="pills">
             {{ range where $social_channels "highlight" false }}
-                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="">
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">
                     <div class="pill">{{ .name }}</div>
                 </a>
             {{ end }}
         </div>
         
         <div class="subpage-header">
+            <div class="subpage-title">{{ T "community_publications_title" }}</div>
+        </div>
+
+        <div class="pills">
+            {{ range where $publications "highlight" true }}
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+                    <div class="pill highlight">{{ .name }}</div>
+                </a>
+            {{ end }}
+        </div>
+        
+        
+        <div class="pills">
+            {{ range where $publications "highlight" false }}
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+                    <div class="pill">{{ .name }}</div>
+                </a>
+            {{ end }}
+        </div>
+
+        <div class="subpage-header">
             <div class="subpage-title">{{ T "community_support_title" }}</div>
         </div>
 
         <div class="pills">
             {{ range where $support_channels "highlight" true }}
-                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="">
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">
                     <div class="pill highlight">{{ .name }}</div>
                 </a>
             {{ end }}
@@ -53,7 +75,7 @@
 
         <div class="pills">
             {{ range where $support_channels "highlight" false }}
-                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="">
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">
                     <div class="pill">{{ .name }}</div>
                  </a>
             {{ end }}
