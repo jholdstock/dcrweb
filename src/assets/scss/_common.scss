@@ -19,10 +19,10 @@ body {
 }
 
 .max-w {
-    width: 100%;
-    max-width: $max-width;
-    margin-left: auto;
-    margin-right: auto;
+    // width: 100%;
+    // max-width: $max-width;
+    // margin-left: auto;
+    // margin-right: auto;
 }
 
 a {
@@ -65,25 +65,23 @@ $subpage-header-height: 352px;
     .exchange-header {
         margin-top: -$subpage-header-height;
 
-        background-image: url('../images/subpage-backgrounds/xl/exchanges.svg');
-        background-position: right -98px;
-        
+        background-image: url('../images/subpage-backgrounds/exchanges-extrawide.svg');
+        background-position: calc(50% + 300px) $navbar-height;
+        background-attachment: fixed;
+
         @include media-breakpoint-down(xl) {
-            background-image: url('../images/subpage-backgrounds/lg/exchanges.svg');
-            background-position: right -98px;
+            background-position: calc(50% + 230px) $navbar-height;
         }
         @include media-breakpoint-down(lg) {
-            background-image: url('../images/subpage-backgrounds/md/exchanges.svg');
-            background-position: right -68px;
+            background-position: calc(50% + 120px) $navbar-height;
         }
         @include media-breakpoint-down(md) {
-            background-image: url('../images/subpage-backgrounds/md/exchanges.svg');
-            background-position: right -68px;
+            background-position: calc(50% + 25px) $navbar-height;
         }
     }
 
     .wallet-header {
-        margin-top: -352px;
+        margin-top: -$subpage-header-height;
 
         background-image: url('../images/subpage-backgrounds/xl/wallets.svg');
         background-size: cover;
@@ -100,7 +98,7 @@ $subpage-header-height: 352px;
     }
 
     .community-header {
-        margin-top: -352px;
+        margin-top: -$subpage-header-height;
 
         background-image: url('../images/subpage-backgrounds/xl/community.svg');
         size: cover;
