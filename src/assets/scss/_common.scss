@@ -25,6 +25,9 @@ a {
 
 .light-hyphen {
     font-weight: 100;
+    &.translucent {
+        color: rgba($white, 0.34);
+    }
 }
 
 .body-gradient {
