@@ -191,6 +191,10 @@
     }
 }
 
+$left-grad:  transparent linear-gradient(270deg, #09144021 0%, #091440   100%) 0% 0% no-repeat padding-box;
+$right-grad: transparent linear-gradient(270deg, #091440   0%, #09144021 100%) 0% 0% no-repeat padding-box;
+$down-grad:  transparent linear-gradient(0deg,   #09144021 0%, #091440   100%) 0% 0% no-repeat padding-box;
+
 .landing-content {
     color: $white;
     height: 377px;
@@ -218,13 +222,26 @@
         bottom: 0;
         left: 0;
         right: 0;
+        background: $left-grad;
+        @include media-breakpoint-down(md) {
+            background: $down-grad !important;
+        }
+    }
+    
+    &.right {
+        .landing-grad {
+            background: $right-grad;
+        }
+        .landing-box {
+            @include media-breakpoint-up(md) {
+                align-items: flex-end;
+                text-align: right;
+            }
+        }
     }
 
-    &.sovereignty {
-        .landing-grad {
-            background: transparent linear-gradient(270deg, #09144021 0%, #091440 100%) 0% 0% no-repeat padding-box;
-        }
 
+    &.sovereignty {
         background-image: url("../images/landing/sm/sovereignty.jpg");
         
         @include media-breakpoint-up(md) {
@@ -239,10 +256,6 @@
     }
     
     &.privacy {
-        .landing-grad {
-            background: transparent linear-gradient(270deg, #091440 0%, #09144021 100%) 0% 0% no-repeat padding-box;
-        }
-
         background-image: url("../images/landing/sm/privacy.jpg");
         
         @include media-breakpoint-up(md) {
@@ -257,10 +270,6 @@
     }
 
     &.treasury {
-        .landing-grad {
-            background: transparent linear-gradient(270deg, #09144021 0%, #091440 100%) 0% 0% no-repeat padding-box;
-        }
-
         background-image: url("../images/landing/sm/treasury.jpg");
 
         @include media-breakpoint-up(md) {
@@ -275,10 +284,6 @@
     }
 
     &.resolve {
-        .landing-grad {
-            background: transparent linear-gradient(270deg, #091440 0%, #09144021 100%) 0% 0% no-repeat padding-box;
-        }
-
         background-image: url("../images/landing/sm/resolve.jpg");
 
         @include media-breakpoint-up(md) {
@@ -293,10 +298,6 @@
     }
 
     &.freedom {
-        .landing-grad {
-            background: transparent linear-gradient(270deg, #09144021 0%, #091440 100%) 0% 0% no-repeat padding-box;
-        }
-
         background-image: url("../images/landing/sm/freedom.jpg");
 
         @include media-breakpoint-up(md) {
@@ -311,10 +312,6 @@
     }
 
     &.insights {
-        .landing-grad {
-            background: transparent linear-gradient(270deg, #091440 0%, #09144021 100%) 0% 0% no-repeat padding-box;
-        }
-
         background-image: url("../images/landing/sm/powerful-insights.jpg");
 
         @include media-breakpoint-up(md) {
@@ -337,12 +334,6 @@
             justify-content: space-between;
             height: 100%;
             
-            &.right {
-                @include media-breakpoint-up(md) {
-                    align-items: flex-end;
-                    text-align: right;
-                }
-            }
 
             .landing-wrapper {
 
