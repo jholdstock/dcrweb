@@ -242,86 +242,158 @@ $down-grad:  transparent linear-gradient(0deg,   #09144021 0%, #091440   100%) 0
 
 
     &.sovereignty {
-        background-image: url("../images/landing/sm/sovereignty.jpg");
+        background-image: -webkit-image-set(
+            url("../images/landing/sm/sovereignty.jpg") 1x,
+            url("../images/landing/sm/sovereignty@2x.jpg") 2x
+        );
         
         @include media-breakpoint-up(md) {
-            background-image: url("../images/landing/md/sovereignty.jpg");
+            background-image: -webkit-image-set(
+                url("../images/landing/md/sovereignty.jpg") 1x,
+                url("../images/landing/md/sovereignty@2x.jpg") 2x
+            );
         }
         @include media-breakpoint-up(lg) {
-            background-image: url("../images/landing/lg/sovereignty.jpg");
+            background-image: -webkit-image-set(
+                url("../images/landing/lg/sovereignty.jpg") 1x,
+                url("../images/landing/lg/sovereignty@2x.jpg") 2x
+            );
         }
         @include media-breakpoint-up(xl) {
-            background-image: url("../images/landing/xl/sovereignty.jpg");
+            background-image: -webkit-image-set(
+                url("../images/landing/xl/sovereignty.jpg") 1x,
+                url("../images/landing/xl/sovereignty@2x.jpg") 2x
+            );
         }
     }
     
     &.privacy {
-        background-image: url("../images/landing/sm/privacy.jpg");
+        background-image: -webkit-image-set(
+            url("../images/landing/sm/privacy.jpg") 1x,
+            url("../images/landing/sm/privacy@2x.jpg") 2x
+        );
         
         @include media-breakpoint-up(md) {
-            background-image: url("../images/landing/md/privacy.jpg");
+            background-image: -webkit-image-set(
+                url("../images/landing/md/privacy.jpg") 1x,
+                url("../images/landing/md/privacy@2x.jpg") 2x
+            );
         }
         @include media-breakpoint-up(lg) {
-            background-image: url("../images/landing/lg/privacy.jpg");
+            background-image: -webkit-image-set(
+                url("../images/landing/lg/privacy.jpg") 1x,
+                url("../images/landing/lg/privacy@2x.jpg") 2x
+            );
         }
         @include media-breakpoint-up(xl) {
-            background-image: url("../images/landing/xl/privacy.jpg");
+            background-image: -webkit-image-set(
+                url("../images/landing/xl/privacy.jpg") 1x,
+                url("../images/landing/xl/privacy@2x.jpg") 2x
+            );
         }
     }
 
     &.treasury {
-        background-image: url("../images/landing/sm/treasury.jpg");
+        background-image: -webkit-image-set(
+            url("../images/landing/sm/treasury.jpg") 1x,
+            url("../images/landing/sm/treasury@2x.jpg") 2x
+        );
 
         @include media-breakpoint-up(md) {
-            background-image: url("../images/landing/md/treasury.jpg");
+            background-image: -webkit-image-set(
+                url("../images/landing/md/treasury.jpg") 1x,
+                url("../images/landing/md/treasury@2x.jpg") 2x
+            );
         }
         @include media-breakpoint-up(lg) {
-            background-image: url("../images/landing/lg/treasury.jpg");
+            background-image: -webkit-image-set(
+                url("../images/landing/lg/treasury.jpg") 1x,
+                url("../images/landing/lg/treasury@2x.jpg") 2x
+            );
         }
         @include media-breakpoint-up(xl) {
-            background-image: url("../images/landing/xl/treasury.jpg");
+            background-image: -webkit-image-set(
+                url("../images/landing/xl/treasury.jpg") 1x,
+                url("../images/landing/xl/treasury@2x.jpg") 2x
+            );
         }
     }
 
     &.resolve {
-        background-image: url("../images/landing/sm/resolve.jpg");
+        background-image: -webkit-image-set(
+            url("../images/landing/sm/resolve.jpg") 1x,
+            url("../images/landing/sm/resolve@2x.jpg") 2x
+        );
 
         @include media-breakpoint-up(md) {
-            background-image: url("../images/landing/md/resolve.jpg");
+            background-image: -webkit-image-set(
+                url("../images/landing/md/resolve.jpg") 1x,
+                url("../images/landing/md/resolve@2x.jpg") 2x
+            );
         }
         @include media-breakpoint-up(lg) {
-            background-image: url("../images/landing/lg/resolve.jpg");
+            background-image: -webkit-image-set(
+                url("../images/landing/lg/resolve.jpg") 1x,
+                url("../images/landing/lg/resolve@2x.jpg") 2x
+            );
         }
         @include media-breakpoint-up(xl) {
-            background-image: url("../images/landing/xl/resolve.jpg");
+            background-image: -webkit-image-set(
+                url("../images/landing/xl/resolve.jpg") 1x,
+                url("../images/landing/xl/resolve@2x.jpg") 2x
+            );
         }
     }
 
     &.freedom {
-        background-image: url("../images/landing/sm/freedom.jpg");
+        background-image: -webkit-image-set(
+            url("../images/landing/sm/freedom.jpg") 1x,
+            url("../images/landing/sm/freedom@2x.jpg") 2x
+        );
 
         @include media-breakpoint-up(md) {
-            background-image: url("../images/landing/md/freedom.jpg");
+            background-image: -webkit-image-set(
+                url("../images/landing/md/freedom.jpg") 1x,
+                url("../images/landing/md/freedom@2x.jpg") 2x
+            );
         }
         @include media-breakpoint-up(lg) {
-            background-image: url("../images/landing/lg/freedom.jpg");
+            background-image: -webkit-image-set(
+                url("../images/landing/lg/freedom.jpg") 1x,
+                url("../images/landing/lg/freedom@2x.jpg") 2x
+            );
         }
         @include media-breakpoint-up(xl) {
-            background-image: url("../images/landing/xl/freedom.jpg");
+            background-image: -webkit-image-set(
+                url("../images/landing/xl/freedom.jpg") 1x,
+                url("../images/landing/xl/freedom@2x.jpg") 2x
+            );
         }
     }
 
     &.insights {
-        background-image: url("../images/landing/sm/powerful-insights.jpg");
+        background-image: -webkit-image-set(
+            url("../images/landing/sm/powerful-insights.jpg") 1x,
+            url("../images/landing/sm/powerful-insights@2x.jpg") 2x
+        );
 
         @include media-breakpoint-up(md) {
-            background-image: url("../images/landing/md/powerful-insights.jpg");
+            background-image: -webkit-image-set(
+                url("../images/landing/md/powerful-insights.jpg") 1x,
+                url("../images/landing/md/powerful-insights@2x.jpg") 2x
+            );
         }
         @include media-breakpoint-up(lg) {
-            background-image: url("../images/landing/lg/powerful-insights.jpg");
+            background-image: -webkit-image-set(
+                url("../images/landing/lg/powerful-insights.jpg") 1x,
+                url("../images/landing/lg/powerful-insights@2x.jpg") 2x
+            );
         }
         @include media-breakpoint-up(xl) {
-            background-image: url("../images/landing/xl/powerful-insights.jpg");
+            background-image: -webkit-image-set(
+                url("../images/landing/xl/powerful-insights.jpg") 1x,
+                url("../images/landing/xl/powerful-insights@2x.jpg") 2x
+            );
         }
     }    
 
