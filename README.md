@@ -44,6 +44,8 @@ The most frequently updated content sections live in the below locations:
 | Press coverage     | `src/data/press/coverage.yml` |
 | Wallets            | `src/data/wallets/wallets.yml` |
 | Community channels | `src/data/community/channels.yml` |
+| Support channels   | `src/data/community/support.yml` |
+| Publications       | `src/data/community/publications.yml` |
 | Exchanges          | `src/data/exchanges/*.yml` |
 
 The other sections live under `src/layouts`.
