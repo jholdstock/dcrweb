@@ -1,46 +1,50 @@
 # dcrweb
 
-This is the code for the [decred.org](https://decred.org) website.
-
 [![Build Status](https://travis-ci.org/decred/dcrweb.png?branch=master)](https://travis-ci.org/decred/dcrweb)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 
+## Overview
+
+This is the code for the [decred.org](https://decred.org) website.
+It is built using the static site generator [Hugo](https://gohugo.io/) and
+utilizes [Docker](https://www.docker.com/) for testing and deployment.
+
 ## Development
 
-1. Install prerequisites:
+To start a development web server at <http://localhost:1313>:
 
-   * [Hugo](https://gohugo.io/)
-   * Docker
+```sh
+bin/watch.sh
+```
 
-2. Clone repo:
+Run the HTML validator to ensure all of the generated files are syntactically
+correct:
 
-    ```sh
-    git clone https://github.com/decred/dcrweb
-    cd dcrweb
-    ```
+```sh
+./bin/test.sh
+```
 
-3. Start development web server:
+## Deployment with Docker
 
-    ```sh
-    bin/watch.sh
-    ```
+```sh
+# Build the decred/dcrweb image.
+bin/build.sh
 
-You should now be able to access the site at <http://localhost:1313>.
+# Start the container.
+docker run -d -p <local port>:80 decred/dcrweb:latest
+```
 
-#### Editing content
+## Editing content
 
-`dcrweb` is built using the [Hugo](https://gohugo.io/) site generator framework.
 The most frequently updated content sections live in the below locations:
 
-| Section | File | Comments |
-| ------- | ---- | -------- |
-| Press releases | `src/content/press/*.md` | When adding a new release, please follow the file naming convention in the directory.
-| Press coverage | `src/data/press/coverage.yml` ||
-| Download links | `src/data/wallets/links.yml` ||
-| Current release | `src/data/wallets/current_release.yml` | The current release as it appears in the footer|
-| Community channels    | `src/data/community/channels.yml` |Logo images: `src/assets/images/community` |
-| Exchanges             | `src/data/exchanges.*.yml` | Logo images: `src/assets/images/exchanges`|
-| History | `src/data/history/*.yml` | Edit timeline and stats section.
+| Section            | File |
+| ------------------ | ---- |
+| Press releases     | `src/content/press/*.md` |
+| Press coverage     | `src/data/press/coverage.yml` |
+| Wallets            | `src/data/wallets/wallets.yml` |
+| Community channels | `src/data/community/channels.yml` |
+| Exchanges          | `src/data/exchanges.*.yml` |
 
 The other sections live under `src/layouts`.
 These pages are implemented as [Hugo templates](https://gohugo.io/templates/)
@@ -49,15 +53,6 @@ and are
 The message catalogs can be found in `src/i18n`, when making changes in the
 templates, you'll want to keep the strings in the catalogs, please follow the
 naming scheme in the existing templates.
-
-## Testing
-
-Run the HTML validator to make sure all of the generated files are syntactically
-correct (the script depends on `docker` being installed).
-
-```sh
-./bin/test.sh
-```
 
 ## Localization
 
@@ -89,29 +84,6 @@ localized message catalogs:
 
 ```sh
 bin/transifex_push.sh
-```
-
-## Deployment
-
-A Docker configuration is included for building deployable images of dcrweb.
-
-### Prerequisites
-
-- docker
-
-### Building the Docker image for deployment
-
-```sh
-```
-
-This builds the docker image `decred/dcrweb`, which can then be run using:
-
-```sh
-# Build
-bin/build.sh
-
-# Run
-docker run -d -p <local port>:80 decred/dcrweb:latest
 ```
 
 ## License
