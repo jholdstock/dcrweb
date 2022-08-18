@@ -14,7 +14,7 @@ utilizes [Docker](https://www.docker.com/) for testing and deployment.
 To start a development web server at <http://localhost:1313>:
 
 ```sh
-bin/watch.sh
+./bin/watch.sh
 ```
 
 Run the HTML validator to ensure all of the generated files are syntactically
@@ -28,7 +28,7 @@ correct:
 
 ```sh
 # Build the decred/dcrweb image.
-bin/build.sh
+./bin/build.sh
 
 # Start the container.
 docker run -d -p <local port>:80 decred/dcrweb:latest
@@ -44,30 +44,33 @@ The most frequently updated content sections live in the below locations:
 | Press coverage     | `src/data/press/coverage.yml` |
 | Wallets            | `src/data/wallets/wallets.yml` |
 | Community channels | `src/data/community/channels.yml` |
-| Exchanges          | `src/data/exchanges.*.yml` |
+| Exchanges          | `src/data/exchanges/*.yml` |
 
 The other sections live under `src/layouts`.
 These pages are implemented as [Hugo templates](https://gohugo.io/templates/)
 and are
 [localized](https://gohugo.io/content-management/multilingual/#translation-of-strings).
-The message catalogs can be found in `src/i18n`, when making changes in the
-templates, you'll want to keep the strings in the catalogs, please follow the
-naming scheme in the existing templates.
+The message catalogs can be found in `src/i18n`.
+When making changes in the templates, you'll want to keep the strings in the
+catalogs, please follow the naming scheme in the existing templates.
 
 ## Localization
 
-The below commands must be run when either the content changes or there are updates in the translations in Transifex.
+The below commands must be run when either the content changes or there are
+updates in the translations in Transifex.
 You'll first need to install the [Transifex client](https://docs.transifex.com/client/installing-the-client).
 
 #### Importing new translations and content updates
 
-When translations are added/updated in [Transifex](https://www.transifex.com/decred/public/), pull the updates:
+When translations are added/updated in [Transifex](https://www.transifex.com/decred/public/),
+pull the updates:
 
 ```sh
-bin/transifex_pull.sh
+./bin/transifex_pull.sh
 ```
 
-When you run this for the first time, you'll be asked to log in with your Transifex username/password.
+When you run this for the first time, you'll be asked to log in with your
+Transifex username/password.
 
 To push the changes to staging:
 
@@ -83,7 +86,7 @@ the message catalog and push it to Transifex so that translators can update the
 localized message catalogs:
 
 ```sh
-bin/transifex_push.sh
+./bin/transifex_push.sh
 ```
 
 ## License
