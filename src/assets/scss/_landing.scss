@@ -2,38 +2,129 @@
     position: absolute; top: calc(100vh - #{$navbar-height});
 }
 
+body {
+    background:
+        // Top.
+        linear-gradient(237deg, #122E7600 0%, #0B194CB2 29%, #091542F1 57%, #091440 79%, #091440 100%),
+        linear-gradient(237deg, #122E7600 0%, #112B7000 4%, #0D215B27 21%, #0B194CB2 39%, #091542F1 57%, #091440 79%, #091440 100%),
+        url('../images/landing-bg/privacy.png'),
+        // linear-gradient(200deg, #0f2666 0%, #091440 62%, #091440 100%),
+        // Bottom.
+            ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 20% top;
+    background-attachment: 
+        local,
+        fixed,
+        fixed,
+        // local
+    ;
+
+    // @include media-breakpoint-down(xl) {
+    //     background-image: url('../images/landing-bg/lg.svg');
+    // }
+    // @include media-breakpoint-down(lg) {
+    //     background-image: url('../images/landing-bg/md.svg');
+    // }
+    // @include media-breakpoint-down(md) {
+    //     background-image: url('../images/landing-bg/sm.svg');
+    // }
+}
+
+.landing-btns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+
+    .btn {
+        padding: 10px 21px;
+        border-radius: 100px;
+        font-size: 18px;
+        line-height: 31px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background-color 0.13s ease-in-out;
+        white-space: nowrap;
+        margin: 0 12px 21px 0;
+        
+        
+        &.exchange-btn {
+            color: $dark-blue;
+            background-color: $turquoise;
+            
+            &:hover,
+            &:focus {
+                background-color: rgba($turquoise, 0.89);
+            }
+        }
+        
+        &.wallet-btn {
+            color: $white;
+            background-color: $light-blue;
+            
+            &:hover,
+            &:focus {
+                background-color: rgba($light-blue, 0.89);
+            }
+            
+            &#alldl {
+                display: block;
+            }
+            
+            &.os-specific {
+                display: none;
+            }
+
+
+        }
+    }
+}
+
+.footer-button-bg {
+    margin-top: 120px;
+    background-color: $another-blue;
+    padding-top: 48px;
+    padding-bottom: 27px;
+
+    .landing-btns {
+        .btn {
+            width: 194px;
+
+        @include media-breakpoint-down(md) {
+            width: 100%;
+        }
+        }
+    }
+}
+
+
+.fronta-buttons {
+    flex-direction: column;
+    &.wallet-btn {
+        margin: 0 12px 21px 0;
+
+        @include media-breakpoint-down(lg) {
+            margin: 0 0 13px 0;
+        }
+    }
+}
+
 .landing-fronta {
     height: calc(100vh - #{$navbar-height});
 
-    background: linear-gradient(200deg, #0f2666 0%, #091440 62%, #091440 100%);
-    background-image: url('../images/landing-bg/xl.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-attachment: fixed;
-
     display: flex;
     flex-direction: column;
-
     position: relative;
 
-    @include media-breakpoint-down(xl) {
-        background-image: url('../images/landing-bg/lg.svg');
-    }
-    @include media-breakpoint-down(lg) {
-        background-image: url('../images/landing-bg/md.svg');
-    }
-    @include media-breakpoint-down(md) {
-        background-image: url('../images/landing-bg/sm.svg');
-    }
-
     .fronta-center {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        color: white;
         padding-bottom: $navbar-height;
+        width: min-content;
 
         .title {
+            white-space: nowrap;
             display: flex;
             flex-direction: column;
             margin-right: 51px;
@@ -44,7 +135,6 @@
             line-height: 71px;
             font-weight: bold;
             letter-spacing: 1.36px;
-            color: white;
 
             @include media-breakpoint-down(xl) {
                 line-height: 65px;
@@ -62,58 +152,19 @@
             }
         }
 
-        .fronta-buttons {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            justify-content: center;
-
-            .btn {
-                padding: 10px 21px;
-                border-radius: 100px;
-                font-size: 18px;
-                line-height: 31px;
-                font-weight: bold;
-                text-decoration: none;
-                transition: background-color 0.13s ease-in-out;
-                white-space: nowrap;
-                
-                
-                &.exchange-btn {
-                    color: $dark-blue;
-                    background-color: $turquoise;
-                    
-                    &:hover,
-                    &:focus {
-                        background-color: rgba($turquoise, 0.89);
-                    }
-                }
-                
-                &.wallet-btn {
-                    color: $white;
-                    background-color: $light-blue;
-                    margin: 0 12px 21px 0;
-                    
-                    &:hover,
-                    &:focus {
-                        background-color: rgba($light-blue, 0.89);
-                    }
-                    
-                    &#alldl {
-                        display: block;
-                    }
-                    
-                    &.os-specific {
-                        display: none;
-                    }
-
-                    @include media-breakpoint-down(lg) {
-                        margin: 0 0 13px 0;
-                    }
-                }
-            }
+        .intro-line {
+            color: $gray-text;
+            font-size: 21px;
+            line-height: 25px;
+            padding-top: 12px;
+            padding-bottom: 12px;
         }
+
+        .pills {
+            align-self: flex-start;
+            padding-top: 10px;
+        }
+
     }
 
     .fronta-bottom {
@@ -191,252 +242,269 @@
     }
 }
 
-$left-grad:  transparent linear-gradient(270deg, #09144021 0%, #091440   100%) 0% 0% no-repeat padding-box;
-$right-grad: transparent linear-gradient(270deg, #091440   0%, #09144021 100%) 0% 0% no-repeat padding-box;
-$down-grad:  transparent linear-gradient(0deg,   #09144021 0%, #091440   100%) 0% 0% no-repeat padding-box;
+.section-header {
+    font-size: 34px;
+    font-weight: 100;
+    color: $faded-white;
+}
 
-.landing-content {
-    color: $white;
-    height: 377px;
+$left-grad:  rgba(0, 0, 0, 0.1) linear-gradient(270deg, #09144036 0%, #091440E3 50%, #091440 100%)   0% 0% no-repeat padding-box;
+$right-grad: rgba(0, 0, 0, 0.1) linear-gradient(270deg, #091440   0%, #091440E3 50%, #09144036 100%) 0% 0% no-repeat padding-box;
+$down-grad:  rgba(0, 0, 0, 0.3) linear-gradient(0deg,   #09144021 0%, #091440   100%) 0% 0% no-repeat padding-box;
 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    position: relative;
+.large-boxes-section{
+
+    .landing-content {
+        height: 377px;
+        
+        @include media-breakpoint-down(lg) {
+            height: 425px;
+        }
     
-    padding-top: 34px;
-    padding-bottom: 34px;
-
-    @include media-breakpoint-down(xl) {
-        height: 322px;
-    }
-    
-    @include media-breakpoint-down(md) {
-        padding-top: 21px;
-        padding-bottom: 21px;
-    }
-
-    .landing-grad {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: $left-grad;
         @include media-breakpoint-down(md) {
-            background: $down-grad !important;
+            height: 500px;
         }
-    }
     
-    &.right {
-        .landing-grad {
-            background: $right-grad;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        position: relative;
+        
+        padding: 34px;
+    
+        margin-top: 21px;
+        margin-bottom: 21px;
+        border: 2px solid #2E375C;
+        border-radius: 8px;
+        
+        @include media-breakpoint-down(md) {
+            padding-top: 21px;
+            padding-bottom: 21px;
         }
-        .landing-box {
-            @include media-breakpoint-up(md) {
-                align-items: flex-end;
-                text-align: right;
+    
+        .landing-grad {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: $left-grad;
+            border-radius: 8px;
+            @include media-breakpoint-down(md) {
+                background: $down-grad !important;
             }
         }
-    }
-
-
-    &.sovereignty {
-        background-image: -webkit-image-set(
-            url("../images/landing/sm/sovereignty.jpg") 1x,
-            url("../images/landing/sm/sovereignty@2x.jpg") 2x
-        );
         
-        @include media-breakpoint-up(md) {
-            background-image: -webkit-image-set(
-                url("../images/landing/md/sovereignty.jpg") 1x,
-                url("../images/landing/md/sovereignty@2x.jpg") 2x
-            );
+        &.right {
+            .landing-grad {
+                background: $right-grad;
+            }
+            .paragraph {
+                @include media-breakpoint-up(md) {
+                    align-items: flex-end;
+                    text-align: right;
+                }
+            }
         }
-        @include media-breakpoint-up(lg) {
-            background-image: -webkit-image-set(
-                url("../images/landing/lg/sovereignty.jpg") 1x,
-                url("../images/landing/lg/sovereignty@2x.jpg") 2x
-            );
-        }
-        @include media-breakpoint-up(xl) {
-            background-image: -webkit-image-set(
-                url("../images/landing/xl/sovereignty.jpg") 1x,
-                url("../images/landing/xl/sovereignty@2x.jpg") 2x
-            );
-        }
-    }
     
-    &.privacy {
-        background-image: -webkit-image-set(
-            url("../images/landing/sm/privacy.jpg") 1x,
-            url("../images/landing/sm/privacy@2x.jpg") 2x
-        );
+    
+        &.landing-bg1 {
+            background-image: -webkit-image-set(
+                url("../images/landing/sm/sovereignty.jpg") 1x,
+                url("../images/landing/sm/sovereignty@2x.jpg") 2x
+            );
+            
+            @include media-breakpoint-up(md) {
+                background-image: -webkit-image-set(
+                    url("../images/landing/md/sovereignty.jpg") 1x,
+                    url("../images/landing/md/sovereignty@2x.jpg") 2x
+                );
+            }
+            @include media-breakpoint-up(lg) {
+                background-image: -webkit-image-set(
+                    url("../images/landing/lg/sovereignty.jpg") 1x,
+                    url("../images/landing/lg/sovereignty@2x.jpg") 2x
+                );
+            }
+            @include media-breakpoint-up(xl) {
+                background-image: -webkit-image-set(
+                    url("../images/landing/xl/sovereignty.jpg") 1x,
+                    url("../images/landing/xl/sovereignty@2x.jpg") 2x
+                );
+            }
+        }
         
-        @include media-breakpoint-up(md) {
+        &.landing-bg2 {
             background-image: -webkit-image-set(
-                url("../images/landing/md/privacy.jpg") 1x,
-                url("../images/landing/md/privacy@2x.jpg") 2x
+                url("../images/landing/sm/privacy.jpg") 1x,
+                url("../images/landing/sm/privacy@2x.jpg") 2x
             );
+            
+            @include media-breakpoint-up(md) {
+                background-image: -webkit-image-set(
+                    url("../images/landing/md/privacy.jpg") 1x,
+                    url("../images/landing/md/privacy@2x.jpg") 2x
+                );
+            }
+            @include media-breakpoint-up(lg) {
+                background-image: -webkit-image-set(
+                    url("../images/landing/lg/privacy.jpg") 1x,
+                    url("../images/landing/lg/privacy@2x.jpg") 2x
+                );
+            }
+            @include media-breakpoint-up(xl) {
+                background-image: -webkit-image-set(
+                    url("../images/landing/xl/privacy.jpg") 1x,
+                    url("../images/landing/xl/privacy@2x.jpg") 2x
+                );
+            }
         }
-        @include media-breakpoint-up(lg) {
+    
+        &.landing-bg3 {
             background-image: -webkit-image-set(
-                url("../images/landing/lg/privacy.jpg") 1x,
-                url("../images/landing/lg/privacy@2x.jpg") 2x
+                url("../images/landing/sm/treasury.jpg") 1x,
+                url("../images/landing/sm/treasury@2x.jpg") 2x
             );
+    
+            @include media-breakpoint-up(md) {
+                background-image: -webkit-image-set(
+                    url("../images/landing/md/treasury.jpg") 1x,
+                    url("../images/landing/md/treasury@2x.jpg") 2x
+                );
+            }
+            @include media-breakpoint-up(lg) {
+                background-image: -webkit-image-set(
+                    url("../images/landing/lg/treasury.jpg") 1x,
+                    url("../images/landing/lg/treasury@2x.jpg") 2x
+                );
+            }
+            @include media-breakpoint-up(xl) {
+                background-image: -webkit-image-set(
+                    url("../images/landing/xl/treasury.jpg") 1x,
+                    url("../images/landing/xl/treasury@2x.jpg") 2x
+                );
+            }
         }
-        @include media-breakpoint-up(xl) {
+    
+        &.landing-bg4 {
             background-image: -webkit-image-set(
-                url("../images/landing/xl/privacy.jpg") 1x,
-                url("../images/landing/xl/privacy@2x.jpg") 2x
+                url("../images/landing/sm/resolve.jpg") 1x,
+                url("../images/landing/sm/resolve@2x.jpg") 2x
             );
+    
+            @include media-breakpoint-up(md) {
+                background-image: -webkit-image-set(
+                    url("../images/landing/md/resolve.jpg") 1x,
+                    url("../images/landing/md/resolve@2x.jpg") 2x
+                );
+            }
+            @include media-breakpoint-up(lg) {
+                background-image: -webkit-image-set(
+                    url("../images/landing/lg/resolve.jpg") 1x,
+                    url("../images/landing/lg/resolve@2x.jpg") 2x
+                );
+            }
+            @include media-breakpoint-up(xl) {
+                background-image: -webkit-image-set(
+                    url("../images/landing/xl/resolve.jpg") 1x,
+                    url("../images/landing/xl/resolve@2x.jpg") 2x
+                );
+            }
         }
-    }
-
-    &.treasury {
-        background-image: -webkit-image-set(
-            url("../images/landing/sm/treasury.jpg") 1x,
-            url("../images/landing/sm/treasury@2x.jpg") 2x
-        );
-
-        @include media-breakpoint-up(md) {
+    
+        &.landing-bg5 {
             background-image: -webkit-image-set(
-                url("../images/landing/md/treasury.jpg") 1x,
-                url("../images/landing/md/treasury@2x.jpg") 2x
+                url("../images/landing/sm/freedom.jpg") 1x,
+                url("../images/landing/sm/freedom@2x.jpg") 2x
             );
+    
+            @include media-breakpoint-up(md) {
+                background-image: -webkit-image-set(
+                    url("../images/landing/md/freedom.jpg") 1x,
+                    url("../images/landing/md/freedom@2x.jpg") 2x
+                );
+            }
+            @include media-breakpoint-up(lg) {
+                background-image: -webkit-image-set(
+                    url("../images/landing/lg/freedom.jpg") 1x,
+                    url("../images/landing/lg/freedom@2x.jpg") 2x
+                );
+            }
+            @include media-breakpoint-up(xl) {
+                background-image: -webkit-image-set(
+                    url("../images/landing/xl/freedom.jpg") 1x,
+                    url("../images/landing/xl/freedom@2x.jpg") 2x
+                );
+            }
         }
-        @include media-breakpoint-up(lg) {
+    
+        &.landing-bg6 {
             background-image: -webkit-image-set(
-                url("../images/landing/lg/treasury.jpg") 1x,
-                url("../images/landing/lg/treasury@2x.jpg") 2x
+                url("../images/landing/sm/powerful-insights.jpg") 1x,
+                url("../images/landing/sm/powerful-insights@2x.jpg") 2x
             );
-        }
-        @include media-breakpoint-up(xl) {
-            background-image: -webkit-image-set(
-                url("../images/landing/xl/treasury.jpg") 1x,
-                url("../images/landing/xl/treasury@2x.jpg") 2x
-            );
-        }
-    }
-
-    &.resolve {
-        background-image: -webkit-image-set(
-            url("../images/landing/sm/resolve.jpg") 1x,
-            url("../images/landing/sm/resolve@2x.jpg") 2x
-        );
-
-        @include media-breakpoint-up(md) {
-            background-image: -webkit-image-set(
-                url("../images/landing/md/resolve.jpg") 1x,
-                url("../images/landing/md/resolve@2x.jpg") 2x
-            );
-        }
-        @include media-breakpoint-up(lg) {
-            background-image: -webkit-image-set(
-                url("../images/landing/lg/resolve.jpg") 1x,
-                url("../images/landing/lg/resolve@2x.jpg") 2x
-            );
-        }
-        @include media-breakpoint-up(xl) {
-            background-image: -webkit-image-set(
-                url("../images/landing/xl/resolve.jpg") 1x,
-                url("../images/landing/xl/resolve@2x.jpg") 2x
-            );
-        }
-    }
-
-    &.freedom {
-        background-image: -webkit-image-set(
-            url("../images/landing/sm/freedom.jpg") 1x,
-            url("../images/landing/sm/freedom@2x.jpg") 2x
-        );
-
-        @include media-breakpoint-up(md) {
-            background-image: -webkit-image-set(
-                url("../images/landing/md/freedom.jpg") 1x,
-                url("../images/landing/md/freedom@2x.jpg") 2x
-            );
-        }
-        @include media-breakpoint-up(lg) {
-            background-image: -webkit-image-set(
-                url("../images/landing/lg/freedom.jpg") 1x,
-                url("../images/landing/lg/freedom@2x.jpg") 2x
-            );
-        }
-        @include media-breakpoint-up(xl) {
-            background-image: -webkit-image-set(
-                url("../images/landing/xl/freedom.jpg") 1x,
-                url("../images/landing/xl/freedom@2x.jpg") 2x
-            );
-        }
-    }
-
-    &.insights {
-        background-image: -webkit-image-set(
-            url("../images/landing/sm/powerful-insights.jpg") 1x,
-            url("../images/landing/sm/powerful-insights@2x.jpg") 2x
-        );
-
-        @include media-breakpoint-up(md) {
-            background-image: -webkit-image-set(
-                url("../images/landing/md/powerful-insights.jpg") 1x,
-                url("../images/landing/md/powerful-insights@2x.jpg") 2x
-            );
-        }
-        @include media-breakpoint-up(lg) {
-            background-image: -webkit-image-set(
-                url("../images/landing/lg/powerful-insights.jpg") 1x,
-                url("../images/landing/lg/powerful-insights@2x.jpg") 2x
-            );
-        }
-        @include media-breakpoint-up(xl) {
-            background-image: -webkit-image-set(
-                url("../images/landing/xl/powerful-insights.jpg") 1x,
-                url("../images/landing/xl/powerful-insights@2x.jpg") 2x
-            );
-        }
-    }    
-
-    .container {
-        height: 100%;
-
+    
+            @include media-breakpoint-up(md) {
+                background-image: -webkit-image-set(
+                    url("../images/landing/md/powerful-insights.jpg") 1x,
+                    url("../images/landing/md/powerful-insights@2x.jpg") 2x
+                );
+            }
+            @include media-breakpoint-up(lg) {
+                background-image: -webkit-image-set(
+                    url("../images/landing/lg/powerful-insights.jpg") 1x,
+                    url("../images/landing/lg/powerful-insights@2x.jpg") 2x
+                );
+            }
+            @include media-breakpoint-up(xl) {
+                background-image: -webkit-image-set(
+                    url("../images/landing/xl/powerful-insights.jpg") 1x,
+                    url("../images/landing/xl/powerful-insights@2x.jpg") 2x
+                );
+            }
+        }    
+    
         .landing-box {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             height: 100%;
-            
-
-            .landing-wrapper {
-
-                max-width: 45%;
-
+    
+            .paragraph {
+                display: flex;
+                flex-direction: column;
+    
                 @include media-breakpoint-down(lg) {
                     max-width: 100%;
                 }
-
+    
                 .headline {
+                    color: $white;
                     font-size: 34px;
                     line-height: 41px;
                     margin-bottom: 13px;
-                    font-weight: bold;
+                    font-weight: 100;
                     @include media-breakpoint-down(md) {
-                        font-size: 30px;
+                        font-size: 28px;
                         line-height: 36px;
                     }
                 }
         
                 .text {
-                    font-size: 21px;
-                    line-height: 25px;
+                    color: $white;
+                    max-width: 75%;
+
+                    font-size: 15px;
+                    line-height: 20px;
                     margin-bottom: 0;
                     
                     @include media-breakpoint-down(lg) {
-                        font-size: 18px;
-                        line-height: 21px;
+                        max-width: 100%;
+                        font-size: 14px;
+                        line-height: 18px;
                     }
                 }
-
+    
             }
             
     
@@ -445,7 +513,7 @@ $down-grad:  transparent linear-gradient(0deg,   #09144021 0%, #091440   100%) 0
                     display: block;
                     font-size: 15px;
                     line-height: 19px;
-                    color: $white;
+                    color: $gray-text;
                     text-decoration: none;
                     margin-bottom: 5px;
     
@@ -468,6 +536,60 @@ $down-grad:  transparent linear-gradient(0deg,   #09144021 0%, #091440   100%) 0
     
                 }
             }
+        }
+    }
+}
+
+
+.why-section {
+    padding-top: 144px;
+    padding-bottom: 55px;
+    
+    h1 {
+        font-family: "dcrweb-poppins", "Verdana", sans-serif;
+        color: $light-blue;
+        font-size: 34px;
+        line-height: 34px;
+        text-align: center;
+        padding-bottom: 34px;
+    }
+    
+    p {
+        margin: 0 auto;
+        color: $gray-text;
+        text-align: left;
+        font-size: 21px;
+        line-height: 29px;
+    }
+}
+
+.quote-section {
+    padding-bottom: 155px;
+    
+    .quote-box {
+        margin-bottom: 13px;
+        border-radius: 5px;
+        padding: 24px;
+        padding-left: 34px;
+        background-color: $darker-blue;
+        border-left: 5px solid $light-blue;
+    }
+
+    .quote {
+        font-weight: bold;
+        color: white;
+        font-style: italic;
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .citation {
+        color: $another-gray;
+        font-size: 15px;
+        line-height: 21px;
+
+        .ul {
+            text-decoration: underline;
         }
     }
 }
