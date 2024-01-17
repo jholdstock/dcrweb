@@ -83,6 +83,195 @@
 {{ define "main" }}
 <div id="content"></div>
 
+<div class="section-header pt-5 mt-5">
+    <div class="container">
+        {{ T "landing_features" }}
+    </div>
+</div>
+
+<div class="features-section">
+    <div class="container">
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 mb-3">
+            <div class="col">
+                <div class="feature feature1">
+                    <div class="feature-heading">{{ T "landing_feature1" }}</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="feature feature2">
+                    <div class="feature-heading">{{ T "landing_feature2" }}</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="feature feature3">
+                    <div class="feature-heading">{{ T "landing_feature3" }}</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="feature feature4">
+                    <div class="feature-heading">{{ T "landing_feature4" }}</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 mb-3">
+            <div class="col">
+                <div class="feature feature5">
+                    <div class="feature-heading">{{ T "landing_feature5" }}</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="feature feature6">
+                    <div class="feature-heading">{{ T "landing_feature6" }}</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="feature feature7">
+                    <div class="feature-heading">{{ T "landing_feature7" }}</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="feature feature8">
+                    <div class="feature-heading">{{ T "landing_feature8" }}</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="section-header">
+    <div class="container">
+        {{ T "landing_stats" }}
+    </div>
+</div>
+
+<div class="stats-section">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-auto">
+                <div class="row">
+                    <div class="col-auto d-flex align-items-center">
+                        <div class="big-name">
+                            {{ T "landing_stats_supply" }}
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="big-stat">
+                            12{{ T "landing_stats_mil" }}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-auto">
+                        <span class="gray-name">
+                            {{ T "landing_stats_mined" }}
+                        </span>
+                        <span class="gray-stat pe-2">
+                            88%
+                        </span>
+                    </div>
+                    <div class="col-auto">
+                        <span class="gray-name">
+                            {{ T "landing_stats_emission" }}
+                        </span>
+                        <span class="gray-stat">
+                            +1%/{{ T "landing_stats_year" }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-auto flex-grow-1">
+                {{ partial "elbow-right.html" }}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-auto flex-grow-1">
+                {{ partial "elbow-left.html" }}
+            </div>
+            
+            <div class="col-auto">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="big-stat">
+                            65%
+                        </div>
+                    </div>
+                    <div class="col-auto d-flex align-items-center">
+                        <div class="big-name text-end">
+                            {{ T "landing_stats_staked" }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-auto">
+                <div class="row">
+                    <div class="col-auto d-flex align-items-center">
+                        <div class="big-name">
+                            {{ T "landing_stats_treasury" }}
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="big-stat">
+                            200{{ T "landing_stats_mil" }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-auto flex-grow-1">
+                {{ partial "elbow-right.html" }}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-auto flex-grow-1">
+                {{ partial "elbow-left.html" }}
+            </div>
+            
+            <div class="col-auto">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="big-stat">
+                            5% {{ T "landing_stats_apy" }}
+                        </div>
+                    </div>
+                    <div class="col-auto d-flex align-items-center">
+                        <div class="big-name text-end">
+                            {{ T "landing_stats_reward" }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-auto">
+                <div class="row">
+                    <div class="col-auto d-flex align-items-center">
+                        <div class="big-name">
+                            {{ T "landing_stats_reduction" }}
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="big-stat">
+                            -1%/3{{ T "landing_stats_days" }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 <div class="why-section">
     <div class="container">
         <div class="col-12 col-lg-10 mx-auto">
@@ -110,20 +299,21 @@
     </div>
 </div>
 
-<!-- <div class="section-header">
-    {{ T "landing_explore"}}
-</div> -->
+<div class="section-header">
+    <div class="container">
+        {{ T "landing_explore" }}
+    </div>
+</div>
 
 <div class="large-boxes-section">
-    
-        
+
     <div class="landing-content landing-bg1 g-0">
         <div class="landing-grad"></div>
         <div class="container">
             <div class="landing-box">
                 <div class="paragraph">
                     <p class="headline">{{ T "landing_sovereignty_headline" }}&nbsp;<span class="light-hyphen translucent">—</span></p>
-                    <p class="text">{{ T "landing_sovereignty_text"}}</p>
+                    <p class="text">{{ T "landing_sovereignty_text" }}</p>
                 </div>
                 <div class="links">
                     <a href="https://docs.decred.org/governance/overview/" target="_blank" rel="noopener noreferrer">
@@ -143,7 +333,7 @@
             <div class="landing-box">
                 <div class="paragraph">
                     <p class="headline">{{ T "landing_development_headline" }}&nbsp;<span class="light-hyphen translucent">—</span></p>
-                    <p class="text">{{ T "landing_development_text"}}</p>
+                    <p class="text">{{ T "landing_development_text" }}</p>
                 </div>
                 <div class="links">
                     <a href="https://dcrdata.decred.org/treasury" target="_blank" rel="noopener noreferrer">
@@ -160,7 +350,7 @@
             <div class="landing-box">
                 <div class="paragraph">
                     <p class="headline">{{ T "landing_proposals_headline" }}&nbsp;<span class="light-hyphen translucent">—</span></p>
-                    <p class="text">{{ T "landing_proposals_text"}}</p>
+                    <p class="text">{{ T "landing_proposals_text" }}</p>
                 </div>
                 <div class="links">
                     <a href="https://proposals.decred.org/?tab=approved" target="_blank" rel="noopener noreferrer">
@@ -177,14 +367,14 @@
             <div class="landing-box">
                 <div class="paragraph">
                     <p class="headline">{{ T "landing_dao_headline" }}&nbsp;<span class="light-hyphen translucent">—</span></p>
-                    <p class="text">{{ T "landing_dao_text"}}</p>
+                    <p class="text">{{ T "landing_dao_text" }}</p>
                 </div>
                 <div class="links">
                     <a href="https://docs.decred.org/contributing/overview/" target="_blank" rel="noopener noreferrer">
-                        <span class="link-text">{{ T "landing_dao_link1"}}</span><span class="link-arrow">&nbsp;→</span>
+                        <span class="link-text">{{ T "landing_dao_link1" }}</span><span class="link-arrow">&nbsp;→</span>
                     </a>
                     <a href="https://docs.decred.org/proof-of-stake/overview/" target="_blank" rel="noopener noreferrer">
-                        <span class="link-text">{{ T "landing_dao_link2"}}</span><span class="link-arrow">&nbsp;→</span>
+                        <span class="link-text">{{ T "landing_dao_link2" }}</span><span class="link-arrow">&nbsp;→</span>
                     </a>
                 </div>
             </div>
@@ -197,7 +387,7 @@
             <div class="landing-box">
                 <div class="paragraph">
                     <p class="headline">{{ T "landing_privacy_headline" }}&nbsp;<span class="light-hyphen translucent">—</span></p>
-                    <p class="text">{{ T "landing_privacy_text"}} </p>
+                    <p class="text">{{ T "landing_privacy_text" }} </p>
                 </div>
                 <div class="links">
                     <a href="https://docs.decred.org/privacy/cspp/overview/" target="_blank" rel="noopener noreferrer">
@@ -217,7 +407,7 @@
             <div class="landing-box">
                 <div class="paragraph">
                     <p class="headline">{{ T "landing_dex_headline" }}&nbsp;<span class="light-hyphen translucent">—</span></p>
-                    <p class="text">{{ T "landing_dex_text"}}</p>
+                    <p class="text">{{ T "landing_dex_text" }}</p>
                 </div>
                 <div class="links">
                     <a href="https://dex.decred.org/" target="_blank" rel="noopener noreferrer">
@@ -234,7 +424,7 @@
             <div class="landing-box">
                 <div class="paragraph">
                     <p class="headline">{{ T "landing_security_headline" }}&nbsp;<span class="light-hyphen translucent">—</span></p>
-                    <p class="text">{{ T "landing_security_text"}}</p>
+                    <p class="text">{{ T "landing_security_text" }}</p>
                 </div>
                 <div class="links">
                     <a href="https://dcrdata.decred.org/attack-cost" target="_blank" rel="noopener noreferrer">
@@ -251,7 +441,7 @@
             <div class="landing-box">
                 <div class="paragraph">
                     <p class="headline">{{ T "landing_lightning_headline" }}&nbsp;<span class="light-hyphen translucent">—</span></p>
-                    <p class="text">{{ T "landing_lightning_text"}}</p>
+                    <p class="text">{{ T "landing_lightning_text" }}</p>
                 </div>
                 <div class="links">
                     <a href="https://bisonrelay.org/" target="_blank" rel="noopener noreferrer">
@@ -274,9 +464,7 @@
         {{ end }}
 
         <a class="col-12 col-md-auto btn exchange-btn" href="{{ "/exchanges/" | relLangURL }}">{{ T "nav_exchanges" }}</a>
-
     </div>
-
 </div>
 
 {{ end }}

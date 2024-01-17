@@ -99,7 +99,6 @@ body {
     }
 }
 
-
 .fronta-buttons {
     flex-direction: column;
     &.wallet-btn {
@@ -244,13 +243,163 @@ body {
 
 .section-header {
     font-size: 34px;
-    font-weight: 100;
+    font-weight: 300;
     color: $faded-white;
+    margin-bottom: 24px;
+}
+
+.features-section {
+    margin-bottom: 126px;
+
+    .feature {
+        text-align: center;
+        height: 261px;
+        border: 2px solid $gray-again;
+        border-radius: 8px;
+
+        .feature-heading {
+            margin-top: 21px;
+            color: $white;
+            font-size: 21px;
+            line-height: 25px;
+        }
+    }
+}
+
+.stats-section {
+    .elbow {
+        display: flex;
+        height: 300px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        &.left {
+            margin-left: 100px;
+        }
+
+        &.right {
+            margin-right: 100px;
+        }
+
+        .circle {
+            height: 34px;
+            width: 34px;
+            border: 2px solid $light-blue;
+            border-radius: 20px;
+        }
+
+        .circle-bottom-right {
+            justify-self: flex-end;
+            align-self: flex-end;
+        }
+
+        .line {
+            flex-grow: 1;
+            margin-top: 17px;
+            border-top: 2px solid $light-blue;
+
+            &.right {
+                margin-right: 17px;
+                border-right: 2px solid $light-blue;
+                border-radius: 0 80px 0 0;
+            }
+    
+            &.left {
+                margin-left: 17px;
+                border-left: 2px solid $light-blue;
+                border-radius: 80px 0 0 0;
+            }
+        }
+    }
+    
+    .big-name {
+        font-size: 52px;
+        width: min-content;
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 100;
+        line-height: 52px;
+    }
+
+    .big-stat {
+        font-size: 120px;
+        line-height: 120px;
+        color: $light-blue;
+    }
+
+    .gray-name {
+        color: $gray-again;
+        font-size: 34px;
+        line-height: 34px;
+        text-transform: uppercase;
+        font-weight: 200;
+    }
+
+    .gray-stat {
+        color: $another-gray;
+        font-size: 34px;
+        line-height: 34px;
+        text-transform: uppercase;
+        font-weight: 200;
+    }
 }
 
 $left-grad:  rgba(0, 0, 0, 0.1) linear-gradient(270deg, #09144036 0%, #091440E3 50%, #091440 100%)   0% 0% no-repeat padding-box;
 $right-grad: rgba(0, 0, 0, 0.1) linear-gradient(270deg, #091440   0%, #091440E3 50%, #09144036 100%) 0% 0% no-repeat padding-box;
 $down-grad:  rgba(0, 0, 0, 0.3) linear-gradient(0deg,   #09144021 0%, #091440   100%) 0% 0% no-repeat padding-box;
+
+.why-section {
+    padding-top: 144px;
+    padding-bottom: 55px;
+    
+    h1 {
+        font-family: "dcrweb-poppins", "Verdana", sans-serif;
+        color: $light-blue;
+        font-size: 34px;
+        line-height: 34px;
+        text-align: center;
+        padding-bottom: 34px;
+    }
+    
+    p {
+        margin: 0 auto;
+        color: $gray-text;
+        text-align: left;
+        font-size: 21px;
+        line-height: 29px;
+    }
+}
+
+.quote-section {
+    padding-bottom: 155px;
+    
+    .quote-box {
+        margin-bottom: 13px;
+        border-radius: 5px;
+        padding: 24px;
+        padding-left: 34px;
+        background-color: $darker-blue;
+        border-left: 5px solid $light-blue;
+    }
+
+    .quote {
+        font-weight: bold;
+        color: white;
+        font-style: italic;
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .citation {
+        color: $another-gray;
+        font-size: 15px;
+        line-height: 21px;
+
+        .ul {
+            text-decoration: underline;
+        }
+    }
+}
 
 .large-boxes-section{
 
@@ -484,7 +633,7 @@ $down-grad:  rgba(0, 0, 0, 0.3) linear-gradient(0deg,   #09144021 0%, #091440   
                     font-size: 34px;
                     line-height: 41px;
                     margin-bottom: 13px;
-                    font-weight: 100;
+                    font-weight: 300;
                     @include media-breakpoint-down(md) {
                         font-size: 28px;
                         line-height: 36px;
@@ -537,60 +686,6 @@ $down-grad:  rgba(0, 0, 0, 0.3) linear-gradient(0deg,   #09144021 0%, #091440   
     
                 }
             }
-        }
-    }
-}
-
-
-.why-section {
-    padding-top: 144px;
-    padding-bottom: 55px;
-    
-    h1 {
-        font-family: "dcrweb-poppins", "Verdana", sans-serif;
-        color: $light-blue;
-        font-size: 34px;
-        line-height: 34px;
-        text-align: center;
-        padding-bottom: 34px;
-    }
-    
-    p {
-        margin: 0 auto;
-        color: $gray-text;
-        text-align: left;
-        font-size: 21px;
-        line-height: 29px;
-    }
-}
-
-.quote-section {
-    padding-bottom: 155px;
-    
-    .quote-box {
-        margin-bottom: 13px;
-        border-radius: 5px;
-        padding: 24px;
-        padding-left: 34px;
-        background-color: $darker-blue;
-        border-left: 5px solid $light-blue;
-    }
-
-    .quote {
-        font-weight: bold;
-        color: white;
-        font-style: italic;
-        font-size: 15px;
-        line-height: 21px;
-    }
-
-    .citation {
-        color: $another-gray;
-        font-size: 15px;
-        line-height: 21px;
-
-        .ul {
-            text-decoration: underline;
         }
     }
 }
