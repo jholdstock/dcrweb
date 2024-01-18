@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="239"
+   height="261"
+   viewBox="0 0 239 261"
+   version="1.1"
+   id="svg129"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs7">
+    <style
+       id="style2">.a,.c,.e,.f{fill:none;}.b{clip-path:url(#a);}.c{stroke:#2dd8a3;}.c,.e,.f{stroke-linecap:round;stroke-linejoin:round;}.c,.e{stroke-width:2px;}.d{fill:#091440;}.e{stroke:#fff;stroke-dasharray:2 5;}.f{stroke:#091440;stroke-width:9px;}.g{fill:rgba(255,255,255,0.89);font-size:21px;font-family:Inter-Regular, Inter;}</style>
+    <clipPath
+       id="a">
+      <rect
+         class="a"
+         width="239"
+         height="261"
+         rx="8"
+         transform="translate(1105.954 307.121)"
+         id="rect4" />
+    </clipPath>
+  </defs>
+  <g
+     class="b"
+     clip-path="url(#a)"
+     id="g121"
+     transform="translate(-1105.954,-307.121)">
+    <line
+       class="c"
+       x1="34.220001"
+       y2="9.7049999"
+       transform="translate(1280.016,447.527)"
+       id="line9"
+       y1="0"
+       x2="0" />
+    <line
+       class="c"
+       x1="36.749001"
+       y1="10.906"
+       transform="translate(1277.487,436.621)"
+       id="line11"
+       x2="0"
+       y2="0" />
+    <line
+       class="c"
+       x1="41.303001"
+       y2="66.316002"
+       transform="translate(1272.933,447.527)"
+       id="line13"
+       y1="0"
+       x2="0" />
+    <line
+       class="c"
+       x1="35.582001"
+       y2="37.59"
+       transform="translate(1278.654,415.425)"
+       id="line15"
+       y1="0"
+       x2="0" />
+    <line
+       class="c"
+       x1="37.219002"
+       y2="16.756001"
+       transform="translate(1277.017,415.425)"
+       id="line17"
+       y1="0"
+       x2="0" />
+    <line
+       class="c"
+       x1="43.089001"
+       y1="11.879"
+       transform="translate(1271.147,403.546)"
+       id="line19"
+       x2="0"
+       y2="0" />
+    <line
+       class="c"
+       x1="39.903999"
+       y1="3.609"
+       transform="translate(1274.332,507.918)"
+       id="line21"
+       x2="0"
+       y2="0" />
+    <line
+       class="c"
+       x1="41.609001"
+       y2="10.403"
+       transform="translate(1272.627,511.527)"
+       id="line23"
+       y1="0"
+       x2="0" />
+    <line
+       class="c"
+       x1="36.993999"
+       y1="22.298"
+       transform="translate(1277.242,489.229)"
+       id="line25"
+       x2="0"
+       y2="0" />
+    <line
+       class="c"
+       x1="36.738998"
+       y2="7.039"
+       transform="translate(1277.497,479.652)"
+       id="line27"
+       y1="0"
+       x2="0" />
+    <line
+       class="c"
+       x1="39.110001"
+       y2="24.278"
+       transform="translate(1275.126,479.652)"
+       id="line29"
+       y1="0"
+       x2="0" />
+    <line
+       class="c"
+       x1="35.613998"
+       y1="22.105"
+       transform="translate(1278.622,457.547)"
+       id="line31"
+       x2="0"
+       y2="0" />
+    <path
+       class="d"
+       d="m 1321.236,516.527 v -10 a 2,2 0 0 0 -2,-2 h -10 a 2,2 0 0 0 -2,2 v 10 a 2,2 0 0 0 2,2 h 10 a 2,2 0 0 0 2,-2"
+       id="path33" />
+    <rect
+       class="c"
+       width="14"
+       height="14"
+       rx="2"
+       transform="translate(1307.236,504.527)"
+       id="rect35"
+       x="0"
+       y="0" />
+    <path
+       class="d"
+       d="m 1321.236,452.425 v -10 a 2,2 0 0 0 -2,-2 h -10 a 2,2 0 0 0 -2,2 v 10 a 2,2 0 0 0 2,2 h 10 a 2,2 0 0 0 2,-2"
+       id="path37" />
+    <rect
+       class="c"
+       width="14"
+       height="14"
+       rx="2"
+       transform="translate(1307.236,440.425)"
+       id="rect39"
+       x="0"
+       y="0" />
+    <path
+       class="d"
+       d="m 1321.236,420.425 v -10 a 2,2 0 0 0 -2,-2 h -10 a 2,2 0 0 0 -2,2 v 10 a 2,2 0 0 0 2,2 h 10 a 2,2 0 0 0 2,-2"
+       id="path41" />
+    <rect
+       class="c"
+       width="14"
+       height="14"
+       rx="2"
+       transform="translate(1307.236,408.425)"
+       id="rect43"
+       x="0"
+       y="0" />
+    <path
+       class="d"
+       d="m 1321.236,484.527 v -10 a 2,2 0 0 0 -2,-2 h -10 a 2,2 0 0 0 -2,2 v 10 a 2,2 0 0 0 2,2 h 10 a 2,2 0 0 0 2,-2"
+       id="path45" />
+    <rect
+       class="c"
+       width="14"
+       height="14"
+       rx="2"
+       transform="translate(1307.236,472.527)"
+       id="rect47"
+       x="0"
+       y="0" />
+    <line
+       class="c"
+       x2="44.081001"
+       transform="translate(1314.236,447.425)"
+       id="line49"
+       x1="0"
+       y1="0"
+       y2="0" />
+    <line
+       class="c"
+       x2="41.723"
+       transform="translate(1314.236,511.527)"
+       id="line51"
+       x1="0"
+       y1="0"
+       y2="0" />
+    <line
+       class="c"
+       x2="44.081001"
+       transform="translate(1314.236,415.425)"
+       id="line53"
+       x1="0"
+       y1="0"
+       y2="0" />
+    <line
+       class="c"
+       x2="41.723"
+       transform="translate(1314.236,479.527)"
+       id="line55"
+       x1="0"
+       y1="0"
+       y2="0" />
+    <ellipse
+       class="e"
+       cx="20.107"
+       cy="74.627998"
+       rx="20.107"
+       ry="74.627998"
+       transform="translate(1238.44,387.079)"
+       id="ellipse57" />
+    <ellipse
+       class="e"
+       cx="20.107"
+       cy="74.627998"
+       rx="20.107"
+       ry="74.627998"
+       transform="translate(1167.031,387.079)"
+       id="ellipse59" />
+    <line
+       class="c"
+       x1="43.081001"
+       transform="translate(1092.954,447.527)"
+       id="line61"
+       y1="0"
+       x2="0"
+       y2="0" />
+    <line
+       class="c"
+       x1="40.723"
+       transform="translate(1095.313,511.527)"
+       id="line63"
+       y1="0"
+       x2="0"
+       y2="0" />
+    <path
+       class="d"
+       d="m 1129.036,516.527 v -10 a 2,2 0 0 1 2,-2 h 10 a 2,2 0 0 1 2,2 v 10 a 2,2 0 0 1 -2,2 h -10 a 2,2 0 0 1 -2,-2"
+       id="path65" />
+    <rect
+       class="c"
+       width="14"
+       height="14"
+       rx="2"
+       transform="translate(1129.036,504.527)"
+       id="rect67"
+       x="0"
+       y="0" />
+    <path
+       class="d"
+       d="m 1129.036,452.527 v -10 a 2,2 0 0 1 2,-2 h 10 a 2,2 0 0 1 2,2 v 10 a 2,2 0 0 1 -2,2 h -10 a 2,2 0 0 1 -2,-2"
+       id="path69" />
+    <rect
+       class="c"
+       width="14"
+       height="14"
+       rx="2"
+       transform="translate(1129.036,440.527)"
+       id="rect71"
+       x="0"
+       y="0" />
+    <line
+       class="c"
+       x1="43.081001"
+       transform="translate(1092.954,415.425)"
+       id="line73"
+       y1="0"
+       x2="0"
+       y2="0" />
+    <line
+       class="c"
+       x1="40.723"
+       transform="translate(1095.313,479.527)"
+       id="line75"
+       y1="0"
+       x2="0"
+       y2="0" />
+    <line
+       class="c"
+       x2="70.084"
+       y2="4.1799998"
+       transform="translate(1136.036,447.527)"
+       id="line77"
+       x1="0"
+       y1="0" />
+    <line
+       class="c"
+       y1="26.743999"
+       x2="67.918999"
+       transform="translate(1136.036,420.783)"
+       id="line79"
+       x1="0"
+       y2="0" />
+    <line
+       class="c"
+       x2="68.753998"
+       y2="42.403"
+       transform="translate(1136.036,447.527)"
+       id="line81"
+       x1="0"
+       y1="0" />
+    <path
+       class="d"
+       d="m 1129.036,420.425 v -10 a 2,2 0 0 1 2,-2 h 10 a 2,2 0 0 1 2,2 v 10 a 2,2 0 0 1 -2,2 h -10 a 2,2 0 0 1 -2,-2"
+       id="path83" />
+    <rect
+       class="c"
+       width="14"
+       height="14"
+       rx="2"
+       transform="translate(1129.036,408.425)"
+       id="rect85"
+       x="0"
+       y="0" />
+    <line
+       class="c"
+       x2="64.882004"
+       y2="100.626"
+       transform="translate(1136.036,415.425)"
+       id="line87"
+       x1="0"
+       y1="0" />
+    <line
+       class="c"
+       x2="70.886002"
+       y2="32.901001"
+       transform="translate(1136.036,415.425)"
+       id="line89"
+       x1="0"
+       y1="0" />
+    <line
+       class="c"
+       y1="12.191"
+       x2="63.597"
+       transform="translate(1136.036,403.234)"
+       id="line91"
+       x1="0"
+       y2="0" />
+    <line
+       class="c"
+       y1="77.123001"
+       x2="69.82"
+       transform="translate(1136.036,434.404)"
+       id="line93"
+       x1="0"
+       y2="0" />
+    <line
+       class="c"
+       x2="68.417999"
+       y2="0.093999997"
+       transform="translate(1136.035,511.527)"
+       id="line95"
+       x1="0"
+       y1="0" />
+    <line
+       class="c"
+       y1="39.597"
+       x2="70.084"
+       transform="translate(1136.036,471.93)"
+       id="line97"
+       x1="0"
+       y2="0" />
+    <path
+       class="d"
+       d="m 1129.036,484.527 v -10 a 2,2 0 0 1 2,-2 h 10 a 2,2 0 0 1 2,2 v 10 a 2,2 0 0 1 -2,2 h -10 a 2,2 0 0 1 -2,-2"
+       id="path99" />
+    <rect
+       class="c"
+       width="14"
+       height="14"
+       rx="2"
+       transform="translate(1129.036,472.527)"
+       id="rect101"
+       x="0"
+       y="0" />
+    <line
+       class="c"
+       x2="67.977997"
+       y2="20.92"
+       transform="translate(1136.036,479.527)"
+       id="line103"
+       x1="0"
+       y1="0" />
+    <line
+       class="c"
+       x2="60.439999"
+       y2="47.080002"
+       transform="translate(1136.036,479.527)"
+       id="line105"
+       x1="0"
+       y1="0" />
+    <line
+       class="c"
+       y1="12.777"
+       x2="71.303001"
+       transform="translate(1136.036,466.75)"
+       id="line107"
+       x1="0"
+       y2="0" />
+    <path
+       class="f"
+       d="m 1187.138,387.078 c 11.105,0 20.107,33.412 20.107,74.629 0,41.217 -9,74.628 -20.107,74.628"
+       id="path109" />
+    <path
+       class="e"
+       d="m 1187.138,387.078 c 11.105,0 20.107,33.412 20.107,74.629 0,41.217 -9,74.628 -20.107,74.628"
+       id="path111" />
+    <path
+       class="f"
+       d="m 1258.547,387.078 c 11.1,0 20.107,33.412 20.107,74.629 0,41.217 -9,74.628 -20.107,74.628"
+       id="path113" />
+    <line
+       class="e"
+       x2="71.408997"
+       transform="translate(1187.138,536.335)"
+       id="line115"
+       x1="0"
+       y1="0"
+       y2="0" />
+    <line
+       class="e"
+       x2="71.408997"
+       transform="translate(1187.138,387.078)"
+       id="line117"
+       x1="0"
+       y1="0"
+       y2="0" />
+    <path
+       class="e"
+       d="m 1258.547,387.078 c 11.1,0 20.107,33.412 20.107,74.629 0,41.217 -9,74.628 -20.107,74.628"
+       id="path119" />
+  </g>
+</svg>
