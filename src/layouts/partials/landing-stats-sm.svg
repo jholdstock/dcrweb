@@ -1,4 +1,4 @@
-<svg id="Group_515" xmlns="http://www.w3.org/2000/svg" width="376" height="1127" viewBox="0 0 376 1127">
+<svg xmlns="http://www.w3.org/2000/svg" width="376" height="1127" viewBox="0 0 376 1127">
   <defs>
     <style>
       .cls-sm-1, .cls-sm-5 {
@@ -52,80 +52,80 @@
       }
     </style>
   </defs>
-  <g id="Group_507">
-    <g id="Group_340" transform="translate(1 -22)">
-      <text id="_12Mil" class="cls-sm-1" transform="translate(99 124)"><tspan x="0" y="0">12Mil</tspan></text>
-      <text id="CIRCULATING_SUPPLY" class="cls-sm-2" transform="translate(348 51)"><tspan x="-319.719" y="0">CIRCULATING SUPPLY</tspan></text>
+  <g>
+    <g transform="translate(1 -22)">
+      <text class="cls-sm-1" transform="translate(99 124)"><tspan x="0" y="0">12Mil</tspan></text>
+      <text class="cls-sm-2" transform="translate(348 51)"><tspan x="-319.719" y="0">CIRCULATING SUPPLY</tspan></text>
     </g>
-    <g id="Group_339" transform="translate(-102 -26)">
-      <text id="COINS_MINED_88_" class="cls-sm-3" transform="translate(290 165)"><tspan x="-98.199" y="0">COINS MINED </tspan><tspan class="cls-sm-4" y="0">88%</tspan></text>
-      <text id="EMISSION_1_YEAR" class="cls-sm-3" transform="translate(290 191)"><tspan x="-108.02" y="0">EMISSION </tspan><tspan class="cls-sm-4" y="0">+1%/YEAR</tspan></text>
-    </g>
-  </g>
-  <g id="Group_509">
-    <g id="Group_342" transform="translate(-260 123)">
-      <text id="_200Mil" class="cls-sm-1" transform="translate(448 495)"><tspan x="-115.527" y="0">200Mil</tspan></text>
-      <text id="TREASURY" class="cls-sm-2" transform="translate(448 423)"><tspan x="-75.932" y="0">TREASURY</tspan></text>
+    <g transform="translate(-102 -26)">
+      <text class="cls-sm-3" transform="translate(290 165)"><tspan x="-98.199" y="0">COINS MINED </tspan><tspan class="cls-sm-4" y="0">88%</tspan></text>
+      <text class="cls-sm-3" transform="translate(290 191)"><tspan x="-108.02" y="0">EMISSION </tspan><tspan class="cls-sm-4" y="0">+1%/YEAR</tspan></text>
     </g>
   </g>
-  <g id="Group_510">
-    <g id="Group_343" transform="translate(-666 -49)">
-      <text id="_5_APY" class="cls-sm-1" transform="translate(975 893)"><tspan x="-243.036" y="0">5%APY</tspan></text>
-      <text id="VOTE_REWARD" class="cls-sm-2" transform="translate(854 821)"><tspan x="-102.875" y="0">VOTE REWARD</tspan></text>
+  <g>
+    <g transform="translate(-260 123)">
+      <text class="cls-sm-1" transform="translate(448 495)"><tspan x="-115.527" y="0">200Mil</tspan></text>
+      <text class="cls-sm-2" transform="translate(448 423)"><tspan x="-75.932" y="0">TREASURY</tspan></text>
     </g>
   </g>
-  <g id="Group_511">
-    <g id="Group_344" transform="translate(-218 -35)">
-      <text id="_-1_3DAYS" class="cls-sm-5" transform="translate(218 1145)"><tspan x="0" y="0">-1%/3DAYS</tspan></text>
-      <text id="BLOCK_REWARD_REDUCTION" class="cls-sm-6" transform="translate(406 1031)"><tspan x="-112.841" y="0">BLOCK REWARD</tspan><tspan x="-86.548" y="40">REDUCTION</tspan></text>
+  <g>
+    <g transform="translate(-666 -49)">
+      <text class="cls-sm-1" transform="translate(975 893)"><tspan x="-243.036" y="0">5%APY</tspan></text>
+      <text class="cls-sm-2" transform="translate(854 821)"><tspan x="-102.875" y="0">VOTE REWARD</tspan></text>
     </g>
   </g>
-  <g id="Group_508">
-    <g id="Group_341" transform="translate(-582 140)">
-      <text id="_65_" class="cls-sm-1" transform="translate(770 251)"><tspan x="-72.933" y="0">65%</tspan></text>
-      <text id="TOTAL_STAKED" class="cls-sm-2" transform="translate(770 178)"><tspan x="-105.916" y="0">TOTAL STAKED</tspan></text>
+  <g>
+    <g transform="translate(-218 -35)">
+      <text class="cls-sm-5" transform="translate(218 1145)"><tspan x="0" y="0">-1%/3DAYS</tspan></text>
+      <text class="cls-sm-6" transform="translate(406 1031)"><tspan x="-112.841" y="0">BLOCK REWARD</tspan><tspan x="-86.548" y="40">REDUCTION</tspan></text>
     </g>
   </g>
-  <g id="Group_348" transform="translate(-197 26)">
-    <g id="Ellipse_54" class="cls-sm-7" transform="translate(374 160)">
+  <g>
+    <g transform="translate(-582 140)">
+      <text class="cls-sm-1" transform="translate(770 251)"><tspan x="-72.933" y="0">65%</tspan></text>
+      <text class="cls-sm-2" transform="translate(770 178)"><tspan x="-105.916" y="0">TOTAL STAKED</tspan></text>
+    </g>
+  </g>
+  <g transform="translate(-197 26)">
+    <g class="cls-sm-7" transform="translate(374 160)">
       <circle class="cls-sm-9" cx="10.5" cy="10.5" r="10.5"/>
       <circle class="cls-sm-10" cx="10.5" cy="10.5" r="9.5"/>
     </g>
-    <path id="Path_2423" class="cls-sm-8" d="M44.895,56v48.154" transform="translate(339.605 125)"/>
-    <g id="Ellipse_58" class="cls-sm-7" transform="translate(374 228)">
-      <circle class="cls-sm-9" cx="10.5" cy="10.5" r="10.5"/>
-      <circle class="cls-sm-10" cx="10.5" cy="10.5" r="9.5"/>
-    </g>
-  </g>
-  <g id="Group_352" transform="translate(-197 253)">
-    <g id="Ellipse_54-2" class="cls-sm-7" transform="translate(374 160)">
-      <circle class="cls-sm-9" cx="10.5" cy="10.5" r="10.5"/>
-      <circle class="cls-sm-10" cx="10.5" cy="10.5" r="9.5"/>
-    </g>
-    <path id="Path_2423-2" class="cls-sm-8" d="M44.895,56v48.154" transform="translate(339.605 125)"/>
-    <g id="Ellipse_58-2" class="cls-sm-7" transform="translate(374 228)">
+    <path class="cls-sm-8" d="M44.895,56v48.154" transform="translate(339.605 125)"/>
+    <g class="cls-sm-7" transform="translate(374 228)">
       <circle class="cls-sm-9" cx="10.5" cy="10.5" r="10.5"/>
       <circle class="cls-sm-10" cx="10.5" cy="10.5" r="9.5"/>
     </g>
   </g>
-  <g id="Group_353" transform="translate(-197 480)">
-    <g id="Ellipse_54-3" class="cls-sm-7" transform="translate(374 160)">
+  <g transform="translate(-197 253)">
+    <g class="cls-sm-7" transform="translate(374 160)">
       <circle class="cls-sm-9" cx="10.5" cy="10.5" r="10.5"/>
       <circle class="cls-sm-10" cx="10.5" cy="10.5" r="9.5"/>
     </g>
-    <path id="Path_2423-3" class="cls-sm-8" d="M44.895,56v48.154" transform="translate(339.605 125)"/>
-    <g id="Ellipse_58-3" class="cls-sm-7" transform="translate(374 228)">
+    <path class="cls-sm-8" d="M44.895,56v48.154" transform="translate(339.605 125)"/>
+    <g class="cls-sm-7" transform="translate(374 228)">
       <circle class="cls-sm-9" cx="10.5" cy="10.5" r="10.5"/>
       <circle class="cls-sm-10" cx="10.5" cy="10.5" r="9.5"/>
     </g>
   </g>
-  <g id="Group_354" transform="translate(-197 704)">
-    <g id="Ellipse_54-4" class="cls-sm-7" transform="translate(374 160)">
+  <g transform="translate(-197 480)">
+    <g class="cls-sm-7" transform="translate(374 160)">
       <circle class="cls-sm-9" cx="10.5" cy="10.5" r="10.5"/>
       <circle class="cls-sm-10" cx="10.5" cy="10.5" r="9.5"/>
     </g>
-    <path id="Path_2423-4" class="cls-sm-8" d="M44.895,56v48.154" transform="translate(339.605 125)"/>
-    <g id="Ellipse_58-4" class="cls-sm-7" transform="translate(374 228)">
+    <path class="cls-sm-8" d="M44.895,56v48.154" transform="translate(339.605 125)"/>
+    <g class="cls-sm-7" transform="translate(374 228)">
+      <circle class="cls-sm-9" cx="10.5" cy="10.5" r="10.5"/>
+      <circle class="cls-sm-10" cx="10.5" cy="10.5" r="9.5"/>
+    </g>
+  </g>
+  <g transform="translate(-197 704)">
+    <g class="cls-sm-7" transform="translate(374 160)">
+      <circle class="cls-sm-9" cx="10.5" cy="10.5" r="10.5"/>
+      <circle class="cls-sm-10" cx="10.5" cy="10.5" r="9.5"/>
+    </g>
+    <path class="cls-sm-8" d="M44.895,56v48.154" transform="translate(339.605 125)"/>
+    <g class="cls-sm-7" transform="translate(374 228)">
       <circle class="cls-sm-9" cx="10.5" cy="10.5" r="10.5"/>
       <circle class="cls-sm-10" cx="10.5" cy="10.5" r="9.5"/>
     </g>

@@ -55,81 +55,81 @@
       }
     </style>
   </defs>
-  <g id="Group_514" transform="translate(-100)">
-    <g id="Group_502">
-      <g id="Group_340" transform="translate(1 -22)">
-        <text id="_12Mil" class="cls-md-1" transform="translate(413 119)"><tspan x="0" y="0">12Mil</tspan></text>
-        <text id="CIRCULATING_SUPPLY" class="cls-md-2" transform="translate(402 79)"><tspan x="-295.888" y="0">CIRCULATING</tspan><tspan x="-167.28" y="40">SUPPLY</tspan></text>
+  <g transform="translate(-100)">
+    <g>
+      <g transform="translate(1 -22)">
+        <text class="cls-md-1" transform="translate(413 119)"><tspan x="0" y="0">12Mil</tspan></text>
+        <text class="cls-md-2" transform="translate(402 79)"><tspan x="-295.888" y="0">CIRCULATING</tspan><tspan x="-167.28" y="40">SUPPLY</tspan></text>
       </g>
-      <g id="Group_339" transform="translate(-38 -26)">
-        <text id="COINS_MINED_88_" class="cls-md-3" transform="translate(138 165)"><tspan x="0" y="0">COINS MINED </tspan><tspan class="cls-md-4" y="0">88%</tspan></text>
-        <text id="EMISSION_1_YEAR" class="cls-md-3" transform="translate(417 165)"><tspan x="0" y="0">EMISSION </tspan><tspan class="cls-md-4" y="0">+1%/YEAR</tspan></text>
-      </g>
-    </g>
-    <g id="Group_504">
-      <g id="Group_342" transform="translate(-100 -8)">
-        <text id="_200Mil" class="cls-md-1" transform="translate(589 667)"><tspan x="-165.039" y="0">200Mil</tspan></text>
-        <text id="TREASURY" class="cls-md-5" transform="translate(314 645)"><tspan x="-99.716" y="0">TREASURY</tspan></text>
+      <g transform="translate(-38 -26)">
+        <text class="cls-md-3" transform="translate(138 165)"><tspan x="0" y="0">COINS MINED </tspan><tspan class="cls-md-4" y="0">88%</tspan></text>
+        <text class="cls-md-3" transform="translate(417 165)"><tspan x="0" y="0">EMISSION </tspan><tspan class="cls-md-4" y="0">+1%/YEAR</tspan></text>
       </g>
     </g>
-    <g id="Group_505">
-      <g id="Group_343" transform="translate(-586 -32)">
-        <text id="_5_APY" class="cls-md-1" transform="translate(1226 950)"><tspan x="-347.195" y="0">5%APY</tspan></text>
-        <text id="VOTE_REWARD" class="cls-md-5" transform="translate(873 908)"><tspan x="-99.886" y="0">VOTE</tspan><tspan x="-159.205" y="40">REWARD</tspan></text>
+    <g>
+      <g transform="translate(-100 -8)">
+        <text class="cls-md-1" transform="translate(589 667)"><tspan x="-165.039" y="0">200Mil</tspan></text>
+        <text class="cls-md-5" transform="translate(314 645)"><tspan x="-99.716" y="0">TREASURY</tspan></text>
       </g>
     </g>
-    <g id="Group_506">
-      <g id="Group_344" transform="translate(-58 62)">
-        <text id="_-1_3DAYS" class="cls-md-6" transform="translate(174 1165)"><tspan x="0" y="0">-1%/3DAYS</tspan></text>
-        <text id="BLOCK_REWARD_REDUCTION" class="cls-md-5" transform="translate(442 1072)"><tspan x="-271.477" y="0">BLOCK REWARD REDUCTION</tspan></text>
+    <g>
+      <g transform="translate(-586 -32)">
+        <text class="cls-md-1" transform="translate(1226 950)"><tspan x="-347.195" y="0">5%APY</tspan></text>
+        <text class="cls-md-5" transform="translate(873 908)"><tspan x="-99.886" y="0">VOTE</tspan><tspan x="-159.205" y="40">REWARD</tspan></text>
       </g>
     </g>
-    <g id="Group_503">
-      <g id="Group_341" transform="translate(-422 9)">
-        <text id="_65_" class="cls-md-1" transform="translate(893 391)"><tspan x="-104.19" y="0">65%</tspan></text>
-        <text id="TOTAL_STAKED" class="cls-md-2" transform="translate(781 351)"><tspan x="-135.384" y="0">TOTAL</tspan><tspan x="-165.234" y="40">STAKED</tspan></text>
+    <g>
+      <g transform="translate(-58 62)">
+        <text class="cls-md-6" transform="translate(174 1165)"><tspan x="0" y="0">-1%/3DAYS</tspan></text>
+        <text class="cls-md-5" transform="translate(442 1072)"><tspan x="-271.477" y="0">BLOCK REWARD REDUCTION</tspan></text>
       </g>
     </g>
-    <g id="Group_348">
-      <g id="Ellipse_54" class="cls-md-7" transform="translate(374 160)">
+    <g>
+      <g transform="translate(-422 9)">
+        <text class="cls-md-1" transform="translate(893 391)"><tspan x="-104.19" y="0">65%</tspan></text>
+        <text class="cls-md-2" transform="translate(781 351)"><tspan x="-135.384" y="0">TOTAL</tspan><tspan x="-165.234" y="40">STAKED</tspan></text>
+      </g>
+    </g>
+    <g>
+      <g class="cls-md-7" transform="translate(374 160)">
         <circle class="cls-md-9" cx="10.5" cy="10.5" r="10.5"/>
         <circle class="cls-md-10" cx="10.5" cy="10.5" r="9.5"/>
       </g>
-      <path id="Path_2423" class="cls-md-8" d="M44.895,56V158" transform="translate(339.605 125)"/>
-      <g id="Ellipse_58" class="cls-md-7" transform="translate(374 283)">
-        <circle class="cls-md-9" cx="10.5" cy="10.5" r="10.5"/>
-        <circle class="cls-md-10" cx="10.5" cy="10.5" r="9.5"/>
-      </g>
-    </g>
-    <g id="Group_349" transform="translate(0 262)">
-      <g id="Ellipse_54-2" class="cls-md-7" transform="translate(374 160)">
-        <circle class="cls-md-9" cx="10.5" cy="10.5" r="10.5"/>
-        <circle class="cls-md-10" cx="10.5" cy="10.5" r="9.5"/>
-      </g>
-      <path id="Path_2423-2" class="cls-md-8" d="M44.895,56V158" transform="translate(339.605 125)"/>
-      <g id="Ellipse_58-2" class="cls-md-7" transform="translate(374 283)">
+      <path class="cls-md-8" d="M44.895,56V158" transform="translate(339.605 125)"/>
+      <g class="cls-md-7" transform="translate(374 283)">
         <circle class="cls-md-9" cx="10.5" cy="10.5" r="10.5"/>
         <circle class="cls-md-10" cx="10.5" cy="10.5" r="9.5"/>
       </g>
     </g>
-    <g id="Group_350" transform="translate(0 520)">
-      <g id="Ellipse_54-3" class="cls-md-7" transform="translate(374 160)">
+    <g transform="translate(0 262)">
+      <g class="cls-md-7" transform="translate(374 160)">
         <circle class="cls-md-9" cx="10.5" cy="10.5" r="10.5"/>
         <circle class="cls-md-10" cx="10.5" cy="10.5" r="9.5"/>
       </g>
-      <path id="Path_2423-3" class="cls-md-8" d="M44.895,56V158" transform="translate(339.605 125)"/>
-      <g id="Ellipse_58-3" class="cls-md-7" transform="translate(374 283)">
+      <path class="cls-md-8" d="M44.895,56V158" transform="translate(339.605 125)"/>
+      <g class="cls-md-7" transform="translate(374 283)">
         <circle class="cls-md-9" cx="10.5" cy="10.5" r="10.5"/>
         <circle class="cls-md-10" cx="10.5" cy="10.5" r="9.5"/>
       </g>
     </g>
-    <g id="Group_351" transform="translate(0 779)">
-      <g id="Ellipse_54-4" class="cls-md-7" transform="translate(374 160)">
+    <g transform="translate(0 520)">
+      <g class="cls-md-7" transform="translate(374 160)">
         <circle class="cls-md-9" cx="10.5" cy="10.5" r="10.5"/>
         <circle class="cls-md-10" cx="10.5" cy="10.5" r="9.5"/>
       </g>
-      <path id="Path_2423-4" class="cls-md-8" d="M44.895,56V158" transform="translate(339.605 125)"/>
-      <g id="Ellipse_58-4" class="cls-md-7" transform="translate(374 283)">
+      <path class="cls-md-8" d="M44.895,56V158" transform="translate(339.605 125)"/>
+      <g class="cls-md-7" transform="translate(374 283)">
+        <circle class="cls-md-9" cx="10.5" cy="10.5" r="10.5"/>
+        <circle class="cls-md-10" cx="10.5" cy="10.5" r="9.5"/>
+      </g>
+    </g>
+    <g transform="translate(0 779)">
+      <g class="cls-md-7" transform="translate(374 160)">
+        <circle class="cls-md-9" cx="10.5" cy="10.5" r="10.5"/>
+        <circle class="cls-md-10" cx="10.5" cy="10.5" r="9.5"/>
+      </g>
+      <path class="cls-md-8" d="M44.895,56V158" transform="translate(339.605 125)"/>
+      <g class="cls-md-7" transform="translate(374 283)">
         <circle class="cls-md-9" cx="10.5" cy="10.5" r="10.5"/>
         <circle class="cls-md-10" cx="10.5" cy="10.5" r="9.5"/>
       </g>
