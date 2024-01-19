@@ -54,35 +54,35 @@
   </defs>
   <g>
     <g transform="translate(1 -22)">
-      <text class="cls-sm-1" transform="translate(99 124)"><tspan x="0" y="0">12Mil</tspan></text>
+      <text class="cls-sm-1" transform="translate(99 124)"><tspan x="0" y="0" data-stat-name="circulating-supply">12Mil</tspan></text>
       <text class="cls-sm-2" transform="translate(348 51)"><tspan x="-319.719" y="0">CIRCULATING SUPPLY</tspan></text>
     </g>
     <g transform="translate(-102 -26)">
-      <text class="cls-sm-3" transform="translate(290 165)"><tspan x="-98.199" y="0">COINS MINED </tspan><tspan class="cls-sm-4" y="0">88%</tspan></text>
-      <text class="cls-sm-3" transform="translate(290 191)"><tspan x="-108.02" y="0">EMISSION </tspan><tspan class="cls-sm-4" y="0">+1%/YEAR</tspan></text>
+      <text class="cls-sm-3" transform="translate(290 165)"><tspan x="-98.199" y="0">COINS MINED </tspan><tspan class="cls-sm-4" y="0" data-stat-name="coins-mined">88%</tspan></text>
+      <text class="cls-sm-3" transform="translate(290 191)"><tspan x="-108.02" y="0">EMISSION </tspan><tspan class="cls-sm-4" y="0" data-stat-name="coins-emission">+1%/YEAR</tspan></text>
     </g>
   </g>
   <g>
     <g transform="translate(-260 123)">
-      <text class="cls-sm-1" transform="translate(448 495)"><tspan x="-115.527" y="0">200Mil</tspan></text>
+      <text class="cls-sm-1" transform="translate(448 495)"><tspan x="-115.527" y="0" data-stat-name="treasury">200Mil</tspan></text>
       <text class="cls-sm-2" transform="translate(448 423)"><tspan x="-75.932" y="0">TREASURY</tspan></text>
     </g>
   </g>
   <g>
     <g transform="translate(-666 -49)">
-      <text class="cls-sm-1" transform="translate(975 893)"><tspan x="-243.036" y="0">5%APY</tspan></text>
+      <text class="cls-sm-1" transform="translate(975 893)"><tspan x="-243.036" y="0" data-stat-name="stake-reward">5%APY</tspan></text>
       <text class="cls-sm-2" transform="translate(854 821)"><tspan x="-102.875" y="0">VOTE REWARD</tspan></text>
     </g>
   </g>
   <g>
     <g transform="translate(-218 -35)">
-      <text class="cls-sm-5" transform="translate(218 1145)"><tspan x="0" y="0">-1%/3DAYS</tspan></text>
+      <text class="cls-sm-5" transform="translate(218 1145)"><tspan x="0" y="0" data-stat-name="reward-reduction">-1%/3DAYS</tspan></text>
       <text class="cls-sm-6" transform="translate(406 1031)"><tspan x="-112.841" y="0">BLOCK REWARD</tspan><tspan x="-86.548" y="40">REDUCTION</tspan></text>
     </g>
   </g>
   <g>
     <g transform="translate(-582 140)">
-      <text class="cls-sm-1" transform="translate(770 251)"><tspan x="-72.933" y="0">65%</tspan></text>
+      <text class="cls-sm-1" transform="translate(770 251)"><tspan x="-72.933" y="0" data-stat-name="reward-total-staked">65%</tspan></text>
       <text class="cls-sm-2" transform="translate(770 178)"><tspan x="-105.916" y="0">TOTAL STAKED</tspan></text>
     </g>
   </g>
