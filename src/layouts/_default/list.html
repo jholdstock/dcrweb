@@ -149,126 +149,28 @@
 
 <div class="stats-section">
     <div class="container">
-
-        <div class="row">
-            <div class="col-auto">
-                <div class="row">
-                    <div class="col-auto d-flex align-items-center">
-                        <div class="big-name">
-                            {{ T "landing_stats_supply" }}
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <div class="big-stat">
-                            12{{ T "landing_stats_mil" }}
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-auto">
-                        <span class="gray-name">
-                            {{ T "landing_stats_mined" }}
-                        </span>
-                        <span class="gray-stat pe-2">
-                            88%
-                        </span>
-                    </div>
-                    <div class="col-auto">
-                        <span class="gray-name">
-                            {{ T "landing_stats_emission" }}
-                        </span>
-                        <span class="gray-stat">
-                            +1%/{{ T "landing_stats_year" }}
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-auto flex-grow-1">
-                {{ partial "elbow-right.html" }}
+        
+        <div class="d-none d-xl-block">
+            <div class="svg-wrap">
+                {{ partial "landing-stats-xl.svg" }}
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-auto flex-grow-1">
-                {{ partial "elbow-left.html" }}
-            </div>
-            
-            <div class="col-auto">
-                <div class="row">
-                    <div class="col-auto">
-                        <div class="big-stat">
-                            65%
-                        </div>
-                    </div>
-                    <div class="col-auto d-flex align-items-center">
-                        <div class="big-name text-end">
-                            {{ T "landing_stats_staked" }}
-                        </div>
-                    </div>
-                </div>
+        <div class="d-none d-lg-block d-xl-none">
+            <div class="svg-wrap">
+                {{ partial "landing-stats-lg.svg" }}
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-auto">
-                <div class="row">
-                    <div class="col-auto d-flex align-items-center">
-                        <div class="big-name">
-                            {{ T "landing_stats_treasury" }}
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <div class="big-stat">
-                            200{{ T "landing_stats_mil" }}
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-auto flex-grow-1">
-                {{ partial "elbow-right.html" }}
+        <div class="d-none d-md-block d-lg-none">
+            <div class="svg-wrap">
+                {{ partial "landing-stats-md.svg" }}
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-auto flex-grow-1">
-                {{ partial "elbow-left.html" }}
-            </div>
-            
-            <div class="col-auto">
-                <div class="row">
-                    <div class="col-auto">
-                        <div class="big-stat">
-                            5% {{ T "landing_stats_apy" }}
-                        </div>
-                    </div>
-                    <div class="col-auto d-flex align-items-center">
-                        <div class="big-name text-end">
-                            {{ T "landing_stats_reward" }}
-                        </div>
-                    </div>
-                </div>
+        <div class="d-block d-md-none">
+            <div class="svg-wrap">
+                {{ partial "landing-stats-sm.svg" }}
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-auto">
-                <div class="row">
-                    <div class="col-auto d-flex align-items-center">
-                        <div class="big-name">
-                            {{ T "landing_stats_reduction" }}
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <div class="big-stat">
-                            -1%/3{{ T "landing_stats_days" }}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        
     </div>
 </div>
 

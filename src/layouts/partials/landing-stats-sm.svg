@@ -1,133 +1,183 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="376" height="1127" viewBox="0 0 376 1127">
+<svg xmlns="http://www.w3.org/2000/svg" width="324" height="1363" viewBox="0 0 324 1363">
   <defs>
     <style>
-      .cls-sm-1, .cls-sm-5 {
+      .cls-sm-1 {
         fill: #2970ff;
         font-size: 70px;
         font-weight: 500;
       }
 
-      .cls-sm-2, .cls-sm-6 {
+      .cls-sm-2,
+      .cls-sm-6,
+      .cls-sm-7 {
         fill: #fff;
-        font-size: 30px;
-        font-weight: 200;
       }
 
       .cls-sm-2 {
+        font-size: 28px;
       }
 
-      .cls-sm-3 {
+      .cls-sm-2,
+      .cls-sm-6 {
+        font-weight: 200;
+      }
+
+      .cls-sm-3,
+      .cls-sm-4 {
         fill: #787f98;
-        font-size: 22px;
-        font-weight: 300;
       }
 
       .cls-sm-4 {
-        fill: #b7b7b7;
+        font-size: 21px;
+        font-weight: 300;
       }
 
       .cls-sm-5 {
-        letter-spacing: -0.007em;
+        fill: #b7b7b7;
       }
 
       .cls-sm-6 {
-      }
-
-      .cls-sm-10, .cls-sm-7, .cls-sm-8 {
-        fill: none;
-      }
-
-      .cls-sm-7, .cls-sm-8 {
-        stroke: #2970ff;
-        stroke-width: 2px;
+        font-size: 30px;
       }
 
       .cls-sm-8 {
-        stroke-linecap: round;
-        stroke-linejoin: round;
+        fill: #091440;
+        stroke: #2970ff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-sm-8,
+      .cls-sm-9 {
+        stroke-width: 2px;
       }
 
       .cls-sm-9 {
-        stroke: none;
+        fill: none;
+        stroke: #787f98;
+        stroke-linecap: round;
       }
     </style>
   </defs>
-  <g>
-    <g transform="translate(1 -22)">
-      <text class="cls-sm-1" transform="translate(99 124)"><tspan x="0" y="0" data-stat-name="circulating-supply">12Mil</tspan></text>
-      <text class="cls-sm-2" transform="translate(348 51)"><tspan x="-319.719" y="0">CIRCULATING SUPPLY</tspan></text>
+  <g transform="translate(-25 -27)">
+    <g>
+      <g transform="translate(-206)">
+        <g>
+          <text class="cls-sm-1" transform="translate(394 126)">
+            <tspan x="-86.854" y="0" data-stat-name="circulating-supply">todo</tspan>
+          </text>
+          <text class="cls-sm-2" transform="translate(393 54)">
+            <tspan x="-161.83" y="0">CIRCULATING SUPPLY</tspan>
+            <tspan class="cls-sm-3" y="0">DCR</tspan>
+          </text>
+        </g>
+        <text class="cls-sm-4" transform="translate(395 162)">
+          <tspan x="-93.736" y="0">COINS MINED</tspan>
+          <tspan class="cls-sm-5" y="0" data-stat-name="coins-mined">todo</tspan>
+          <tspan x="-103.11" y="22">EMISSION</tspan>
+          <tspan class="cls-sm-5" y="22" xml:space="preserve" data-stat-name="coins-emission">todo</tspan>
+        </text>
+      </g>
+      <g transform="translate(-255 345)">
+        <g transform="translate(-11 57)">
+          <text class="cls-sm-1" transform="translate(453 925)">
+            <tspan x="-114.931" y="0" data-stat-name="reward-reduction-days">todo</tspan>
+          </text>
+          <text class="cls-sm-6" transform="translate(453 823)">
+            <tspan x="-114.071" y="0">BLOCK REWARD</tspan>
+            <tspan x="-106.449" y="30">REDUCTION IN</tspan>
+          </text>
+        </g>
+        <text class="cls-sm-4" transform="translate(442 1018)">
+          <tspan x="-132.339" y="0">BLOCK REWARD REDUCES</tspan>
+          <tspan x="-108.762" y="22">BY</tspan>
+          <tspan class="cls-sm-7" y="22">1%</tspan>
+          <tspan y="22" xml:space="preserve">EVERY</tspan>
+          <tspan class="cls-sm-7" y="22">21 DAYS</tspan>
+        </text>
+      </g>
+      <g transform="translate(-255 14)">
+        <g transform="translate(38)">
+          <text class="cls-sm-1" transform="translate(404 684)">
+            <tspan x="-115.527" y="0" data-stat-name="treasury">todo</tspan>
+          </text>
+          <text class="cls-sm-6" transform="translate(404 612)">
+            <tspan x="-89.462" y="0">TREASURY</tspan>
+            <tspan class="cls-sm-3" y="0">$</tspan>
+          </text>
+        </g>
+        <text class="cls-sm-4" transform="translate(442 720)">
+          <tspan x="-128.297" y="0">SELF-FUNDED FROM</tspan>
+          <tspan class="cls-sm-7" y="0">10%</tspan>
+          <tspan x="-121.358" y="22">OF THE BLOCK REWARD</tspan>
+        </text>
+      </g>
+      <g transform="translate(-700 15)">
+        <g transform="translate(12 3)">
+          <text class="cls-sm-1" transform="translate(875 994)">
+            <tspan x="-121.518" y="0" data-stat-name="stake-reward">todo</tspan>
+          </text>
+          <text class="cls-sm-6" transform="translate(875 892)">
+            <tspan x="-45.176" y="0">STAKE</tspan>
+            <tspan x="-60.618" y="30">REWARD</tspan>
+          </text>
+        </g>
+        <text class="cls-sm-4" transform="translate(887 1033)">
+          <tspan x="-104.127" y="0">GET REWARDED FOR</tspan>
+          <tspan x="-112.051" y="22">STAKING AND VOTING</tspan>
+        </text>
+      </g>
+      <g transform="translate(-737 5)">
+        <g transform="translate(97)">
+          <text class="cls-sm-1" transform="translate(827 405)">
+            <tspan x="-72.933" y="0" data-stat-name="total-staked">todo</tspan>
+          </text>
+          <text class="cls-sm-2" transform="translate(827 333)">
+            <tspan x="-98.855" y="0">TOTAL STAKED</tspan>
+          </text>
+        </g>
+        <text class="cls-sm-4" transform="translate(924 441)">
+          <tspan x="-128.431" y="0">STAKING IS COMPLETELY</tspan>
+          <tspan x="-89.03" y="22">SELF-CUSTODIAL</tspan>
+        </text>
+      </g>
     </g>
-    <g transform="translate(-102 -26)">
-      <text class="cls-sm-3" transform="translate(290 165)"><tspan x="-98.199" y="0">COINS MINED </tspan><tspan class="cls-sm-4" y="0" data-stat-name="coins-mined">88%</tspan></text>
-      <text class="cls-sm-3" transform="translate(290 191)"><tspan x="-108.02" y="0">EMISSION </tspan><tspan class="cls-sm-4" y="0" data-stat-name="coins-emission">+1%/YEAR</tspan></text>
-    </g>
-  </g>
-  <g>
-    <g transform="translate(-260 123)">
-      <text class="cls-sm-1" transform="translate(448 495)"><tspan x="-115.527" y="0" data-stat-name="treasury">200Mil</tspan></text>
-      <text class="cls-sm-2" transform="translate(448 423)"><tspan x="-75.932" y="0">TREASURY</tspan></text>
-    </g>
-  </g>
-  <g>
-    <g transform="translate(-666 -49)">
-      <text class="cls-sm-1" transform="translate(975 893)"><tspan x="-243.036" y="0" data-stat-name="stake-reward">5%APY</tspan></text>
-      <text class="cls-sm-2" transform="translate(854 821)"><tspan x="-102.875" y="0">VOTE REWARD</tspan></text>
-    </g>
-  </g>
-  <g>
-    <g transform="translate(-218 -35)">
-      <text class="cls-sm-5" transform="translate(218 1145)"><tspan x="0" y="0" data-stat-name="reward-reduction">-1%/3DAYS</tspan></text>
-      <text class="cls-sm-6" transform="translate(406 1031)"><tspan x="-112.841" y="0">BLOCK REWARD</tspan><tspan x="-86.548" y="40">REDUCTION</tspan></text>
-    </g>
-  </g>
-  <g>
-    <g transform="translate(-582 140)">
-      <text class="cls-sm-1" transform="translate(770 251)"><tspan x="-72.933" y="0" data-stat-name="reward-total-staked">65%</tspan></text>
-      <text class="cls-sm-2" transform="translate(770 178)"><tspan x="-105.916" y="0">TOTAL STAKED</tspan></text>
-    </g>
-  </g>
-  <g transform="translate(-197 26)">
-    <g class="cls-sm-7" transform="translate(374 160)">
-      <circle class="cls-sm-9" cx="10.5" cy="10.5" r="10.5"/>
-      <circle class="cls-sm-10" cx="10.5" cy="10.5" r="9.5"/>
-    </g>
-    <path class="cls-sm-8" d="M44.895,56v48.154" transform="translate(339.605 125)"/>
-    <g class="cls-sm-7" transform="translate(374 228)">
-      <circle class="cls-sm-9" cx="10.5" cy="10.5" r="10.5"/>
-      <circle class="cls-sm-10" cx="10.5" cy="10.5" r="9.5"/>
-    </g>
-  </g>
-  <g transform="translate(-197 253)">
-    <g class="cls-sm-7" transform="translate(374 160)">
-      <circle class="cls-sm-9" cx="10.5" cy="10.5" r="10.5"/>
-      <circle class="cls-sm-10" cx="10.5" cy="10.5" r="9.5"/>
-    </g>
-    <path class="cls-sm-8" d="M44.895,56v48.154" transform="translate(339.605 125)"/>
-    <g class="cls-sm-7" transform="translate(374 228)">
-      <circle class="cls-sm-9" cx="10.5" cy="10.5" r="10.5"/>
-      <circle class="cls-sm-10" cx="10.5" cy="10.5" r="9.5"/>
-    </g>
-  </g>
-  <g transform="translate(-197 480)">
-    <g class="cls-sm-7" transform="translate(374 160)">
-      <circle class="cls-sm-9" cx="10.5" cy="10.5" r="10.5"/>
-      <circle class="cls-sm-10" cx="10.5" cy="10.5" r="9.5"/>
-    </g>
-    <path class="cls-sm-8" d="M44.895,56v48.154" transform="translate(339.605 125)"/>
-    <g class="cls-sm-7" transform="translate(374 228)">
-      <circle class="cls-sm-9" cx="10.5" cy="10.5" r="10.5"/>
-      <circle class="cls-sm-10" cx="10.5" cy="10.5" r="9.5"/>
-    </g>
-  </g>
-  <g transform="translate(-197 704)">
-    <g class="cls-sm-7" transform="translate(374 160)">
-      <circle class="cls-sm-9" cx="10.5" cy="10.5" r="10.5"/>
-      <circle class="cls-sm-10" cx="10.5" cy="10.5" r="9.5"/>
-    </g>
-    <path class="cls-sm-8" d="M44.895,56v48.154" transform="translate(339.605 125)"/>
-    <g class="cls-sm-7" transform="translate(374 228)">
-      <circle class="cls-sm-9" cx="10.5" cy="10.5" r="10.5"/>
-      <circle class="cls-sm-10" cx="10.5" cy="10.5" r="9.5"/>
+    <g>
+      <g transform="translate(-402.5 -790)">
+        <path class="cls-sm-8"
+          d="M1.273,0H12.728A1.272,1.272,0,0,1,14,1.272V12.727A1.273,1.273,0,0,1,12.727,14H1.273A1.273,1.273,0,0,1,0,12.727V1.273A1.273,1.273,0,0,1,1.273,0Z"
+          transform="translate(582.5 996)" />
+        <line class="cls-sm-9" y2="75" transform="translate(589.5 1003)" />
+        <path class="cls-sm-8"
+          d="M1.273,0H12.728A1.272,1.272,0,0,1,14,1.272V12.727A1.273,1.273,0,0,1,12.727,14H1.273A1.273,1.273,0,0,1,0,12.727V1.273A1.273,1.273,0,0,1,1.273,0Z"
+          transform="translate(582.5 1071)" />
+      </g>
+      <g transform="translate(-402.5 -506)">
+        <path class="cls-sm-8"
+          d="M1.273,0H12.728A1.272,1.272,0,0,1,14,1.272V12.727A1.273,1.273,0,0,1,12.727,14H1.273A1.273,1.273,0,0,1,0,12.727V1.273A1.273,1.273,0,0,1,1.273,0Z"
+          transform="translate(582.5 996)" />
+        <line class="cls-sm-9" y2="75" transform="translate(589.5 1003)" />
+        <path class="cls-sm-8"
+          d="M1.273,0H12.728A1.272,1.272,0,0,1,14,1.272V12.727A1.273,1.273,0,0,1,12.727,14H1.273A1.273,1.273,0,0,1,0,12.727V1.273A1.273,1.273,0,0,1,1.273,0Z"
+          transform="translate(582.5 1071)" />
+      </g>
+      <g transform="translate(-402.5 -218)">
+        <path class="cls-sm-8"
+          d="M1.273,0H12.728A1.272,1.272,0,0,1,14,1.272V12.727A1.273,1.273,0,0,1,12.727,14H1.273A1.273,1.273,0,0,1,0,12.727V1.273A1.273,1.273,0,0,1,1.273,0Z"
+          transform="translate(582.5 996)" />
+        <line class="cls-sm-9" y2="75" transform="translate(589.5 1003)" />
+        <path class="cls-sm-8"
+          d="M1.273,0H12.728A1.272,1.272,0,0,1,14,1.272V12.727A1.273,1.273,0,0,1,12.727,14H1.273A1.273,1.273,0,0,1,0,12.727V1.273A1.273,1.273,0,0,1,1.273,0Z"
+          transform="translate(582.5 1071)" />
+      </g>
+      <g transform="translate(-402.5 96)">
+        <path class="cls-sm-8"
+          d="M1.273,0H12.728A1.272,1.272,0,0,1,14,1.272V12.727A1.273,1.273,0,0,1,12.727,14H1.273A1.273,1.273,0,0,1,0,12.727V1.273A1.273,1.273,0,0,1,1.273,0Z"
+          transform="translate(582.5 996)" />
+        <line class="cls-sm-9" y2="75" transform="translate(589.5 1003)" />
+        <path class="cls-sm-8"
+          d="M1.273,0H12.728A1.272,1.272,0,0,1,14,1.272V12.727A1.273,1.273,0,0,1,12.727,14H1.273A1.273,1.273,0,0,1,0,12.727V1.273A1.273,1.273,0,0,1,1.273,0Z"
+          transform="translate(582.5 1071)" />
+      </g>
     </g>
   </g>
 </svg>
