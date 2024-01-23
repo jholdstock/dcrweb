@@ -324,6 +324,8 @@ body {
 
 .stats-section {
 
+    padding-bottom: 114px;
+
     .svg-wrap {
         svg {
             width: 100%;
@@ -331,12 +333,16 @@ body {
     }
 }
 
+.hide-stats {
+    display: none;
+}
+
+
 $left-grad:  rgba(0, 0, 0, 0.1) linear-gradient(270deg, #09144036 0%, #091440E3 50%, #091440 100%)   0% 0% no-repeat padding-box;
 $right-grad: rgba(0, 0, 0, 0.1) linear-gradient(270deg, #091440   0%, #091440E3 50%, #09144036 100%) 0% 0% no-repeat padding-box;
 $down-grad:  rgba(0, 0, 0, 0.3) linear-gradient(0deg,   #09144021 0%, #091440   100%) 0% 0% no-repeat padding-box;
 
 .why-section {
-    padding-top: 144px;
     padding-bottom: 55px;
     
     h1 {

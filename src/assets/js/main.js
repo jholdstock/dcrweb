@@ -40,91 +40,79 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 $(document).ready(function () {
-	// var API = 'https://api.decred.org/?c=info';
-	var API = 'http://localhost:8080/api?c=info';
+	// var API = 'https://api.decred.org/?c=webinfo';
+	var API = 'http://localhost:8080/api?c=webinfo';
 	
 	$.ajax({
 		url: API,
 		dataType: "json",
-		error:  drawStatsError,
-		success: drawStats,
+		success: function(data) {
+			// Circulating Supply.
+		
+			var circulating = Math.round(data.circulatingsupply/1000000);
+			$('[data-stat-name="circulating-supply"]').each(function(){
+				this.innerHTML = circulating + "Mil";
+			});
+		
+			// Total coins mined.
+		
+			var mined = Math.round(100 * (data.circulatingsupply / data.ultimatesupply));
+			$('[data-stat-name="coins-mined"]').each(function(){
+				this.innerHTML = mined + "%";
+			});
+			
+			// Emission per year (very rough estimate).
+			
+			const blocksPerYear = 105120;
+			var annualReward = data.blockreward * blocksPerYear;
+			var emission = Math.round(100 * (annualReward / data.circulatingsupply));
+			$('[data-stat-name="coins-emission"]').each(function(){
+				this.innerHTML = emission + "%/YEAR";
+			});
+		
+			// Percentage staked.
+		
+			var staked = Math.round(100 * (data.stakedsupply / data.circulatingsupply));
+			$('[data-stat-name="total-staked"]').each(function(){
+				this.innerHTML = staked + "%";
+			});
+		
+			// Treasury balance.
+		
+			var treasury = Math.round(data.treasuryusd/1000000);
+			$('[data-stat-name="treasury"]').each(function(){
+				this.innerHTML = treasury + "Mil";
+			});
+		
+			// Stake reward per year (very rough estimate).
+			var voteReward = data.blockreward / 100 * 89 / 5;
+		
+			var voteRewardDecimal = voteReward / data.ticketprice;
+		
+			var x = 1 + voteRewardDecimal;
+			var y = 365 / 29.07;
+			var annualRewardPercent = Math.round(100 * (Math.pow(x,y) - 1));
+			$('[data-stat-name="stake-reward"]').each(function(){
+				this.innerHTML = annualRewardPercent + "%APY";
+			});
+		
+			// Block reward reduction in X days.
+		
+			var days = data.daysuntilrewardchange;
+			$('[data-stat-name="reward-reduction-days"]').each(function(){
+				var d = " DAY";
+				if (days != 1) {
+					d += "S";
+				}
+		
+				this.innerHTML = days + d;
+			});
+		
+			$(".hide-stats").removeClass("hide-stats");
+		},
 	});
 });
 
-var drawStats = function(data) {
-	
-	// Circulating Supply.
-
-	var circulating = Math.round(data.circulatingsupply/100000000000000);
-	$('[data-stat-name="circulating-supply"]').each(function(){
-		this.innerHTML = circulating + "Mil";
-	});
-
-	// Total coins mined.
-
-	var mined = Math.round(100 * (data.circulatingsupply / data.supplyultimate));
-	mined = Math.round(mined);
-	$('[data-stat-name="coins-mined"]').each(function(){
-		this.innerHTML = mined + "%";
-	});
-	
-	// Emission per year.
-	
-	var blockReward = data.blockreward;
-	const blocksPerYear = 105120;
-	var annualReward = blockReward * blocksPerYear;
-	var emission = Math.round(100 * (annualReward / data.circulatingsupply));
-	$('[data-stat-name="coins-emission"]').each(function(){
-		this.innerHTML = emission + "%/YEAR";
-	});
-
-	// Percentage staked.
-
-	var staked = data.staked;
-	staked = Math.round(staked / (data.circulatingsupply/10000000000));
-	$('[data-stat-name="total-staked"]').each(function(){
-		this.innerHTML = staked + "%";
-	});
-
-	// Treasury balance.
-
-	var treasury = Math.round(data.treasury/100000000000000);
-	$('[data-stat-name="treasury"]').each(function(){
-		this.innerHTML = treasury + "Mil";
-	});
-
-	// Stake reward per year.
-	var voteReward = data.blockreward / 100 * 89 / 5 / 100000000;
-
-	var voteRewardDecimal = voteReward / data.ticketprice;
-
-	var x = 1 + voteRewardDecimal;
-	var y = 365 / 29.07;
-	var annualRewardPercent = Math.round((Math.pow(x,y) - 1) * 100);
-	$('[data-stat-name="stake-reward"]').each(function(){
-		this.innerHTML = annualRewardPercent + "%APY";
-	});
-
-	// Block reward reduction in X days.
-
-	var days = data.daysuntilrewardchange;
-	$('[data-stat-name="reward-reduction-days"]').each(function(){
-		var d = " DAY";
-		if (days != 1) {
-			d += "S";
-		}
-
-		this.innerHTML = days + d;
-	});
-}
-
-var drawStatsError = function(jqXHR) {
-	alert(error);
-	// var errorMarkup = '<div class="ui-widget"><div class="ui-state-error ui-corner-all">' +
-	// 	'<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>' +
-	// 	'<strong>Error:</strong> ' + jqXHR.status + '</p></div></div>';
-	// $("#vspd-data").html(errorMarkup);
-};
 
 var consolestyle = [
 	'background: linear-gradient(to right, #2970ff, #2ED6A1);',
