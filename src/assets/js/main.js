@@ -109,7 +109,12 @@ var drawStats = function(data) {
 
 	var days = data.daysuntilrewardchange;
 	$('[data-stat-name="reward-reduction-days"]').each(function(){
-		this.innerHTML = days + "DAYS";
+		var d = " DAY";
+		if (days != 1) {
+			d += "S";
+		}
+
+		this.innerHTML = days + d;
 	});
 }
 

@@ -120,20 +120,23 @@ body {
     .fronta-center {
         color: white;
         padding-bottom: $navbar-height;
-        width: min-content;
 
         .title {
-            white-space: nowrap;
+
             display: flex;
             flex-direction: column;
             margin-right: 51px;
             margin-bottom: 32px;
 
-            font-family: "dcrweb-poppins", "Verdana", sans-serif;;
+            font-family: "dcrweb-poppins", "Verdana", sans-serif;
             font-size: 65px;
             line-height: 71px;
             font-weight: bold;
             letter-spacing: 1.36px;
+
+            @include media-breakpoint-up(md) {
+                white-space: nowrap;
+            }
 
             @include media-breakpoint-down(xl) {
                 line-height: 65px;
@@ -162,6 +165,10 @@ body {
         .pills {
             align-self: flex-start;
             padding-top: 10px;
+            
+            @include media-breakpoint-up(xl) {
+                flex-wrap: nowrap;
+            }
         }
 
     }
@@ -414,7 +421,6 @@ $down-grad:  rgba(0, 0, 0, 0.3) linear-gradient(0deg,   #09144021 0%, #091440   
             left: 0;
             right: 0;
             background: $left-grad;
-            border-radius: 8px;
             @include media-breakpoint-down(md) {
                 background: $down-grad !important;
             }

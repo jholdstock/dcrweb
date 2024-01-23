@@ -8,15 +8,15 @@
 
         <div class="d-flex flex-column justify-content-center align-items-center h-100">
 
-            <div class="fronta-center d-flex flex-column justify-content-center align-items-center">
+            <div class="fronta-center col-12 col-lg-10  d-flex flex-column justify-content-center align-items-center">
                 
-                <div class="d-flex flex-column flex-xl-row">
+                <div class="d-flex flex-column flex-xl-row align-self-start">
                     <div class="title">
                         <span class="dcr">Decred&nbsp;<span class="light-hyphen">—</span></span>
                         <span>{{ T "landing_opener" }}</span>
                     </div>
                     
-                    <div class="fronta-buttons landing-btns flex-row flex-md-column flex-lg-row flex-xl-column justify-content-start"> 
+                    <div class="fronta-buttons landing-btns flex-row flex-sm-column flex-md-row flex-xl-column justify-content-start"> 
                         <a class="col-12 col-md-auto btn wallet-btn alldl" href="{{ "/wallets/" | relLangURL }}">{{ T "home_download_wallet" }}</a>
                         {{ range where .Site.Data.wallets.wallets "id" "decrediton" }}
                             {{ range where .links "is_direct_download" true }}
@@ -37,6 +37,7 @@
                     <div class="pill highlight">{{ T "landing_pill_3" }}</div>
                     <div class="pill highlight">{{ T "landing_pill_4" }}</div>
                     <div class="pill highlight">{{ T "landing_pill_5" }}</div>
+                    <div class="pill highlight">{{ T "landing_pill_6" }}</div>
                 </div>
                 
             </div>
@@ -189,7 +190,7 @@
         <div class="col-12 col-lg-10 mx-auto">
             
             <div class="quote-box">
-                <div class="quote">“If I understand it correctly, #Decred could solve most of #Bitcoin’s structural problems.”</div>
+                <div class="quote">“If I understand it correctly, Decred could solve most of Bitcoin’s structural problems.”</div>
                 <div class="citation">- <span class="ul">Cathie Wood, ARK Invest</span></div>
             </div>
             <div class="quote-box">
