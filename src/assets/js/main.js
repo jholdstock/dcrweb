@@ -40,8 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 $(document).ready(function () {
-	// var API = 'https://api.decred.org/?c=webinfo';
-	var API = 'http://localhost:8080';
+	var API = 'https://api.decred.org';
 	
 	$.ajax({
 		url: API + "/api?c=webinfo",
