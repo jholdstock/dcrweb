@@ -6,7 +6,7 @@
 <div class="landing-fronta g-0">
     <div class="container h-100">
 
-        <div class="d-flex flex-column justify-content-center align-items-center h-100">
+        <div class="fronta-wrapper pt-5 pt-md-0">
 
             <div class="fronta-center col-12 col-lg-10  d-flex flex-column justify-content-center align-items-center">
                 
@@ -43,7 +43,7 @@
             </div>
             
     
-            <div class="fronta-bottom">
+            <div class="fronta-bottom d-none d-md-block">
                 <div class="container d-flex flex-row">
                     <div class="socials col-md-4 d-none d-md-flex">
                         {{ range where $.Site.Data.community.channels "id" "matrix" }}
@@ -69,7 +69,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-4 d-none d-md-flex"></div>
+                    <div class="col-4"></div>
                 </div>
             </div>
 
@@ -93,7 +93,7 @@
 <div class="features-section">
     <div class="container">
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 mb-3">
+        <div class="row row-cols-2 row-cols-lg-4 g-3 mb-3">
             <div class="col">
                 <div class="feature feature1">
                     <div class="feature-heading">{{ T "landing_feature1" }}</div>
@@ -116,7 +116,7 @@
             </div>
         </div>
         
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 mb-3">
+        <div class="row row-cols-2 row-cols-lg-4 g-3 mb-3">
             <div class="col">
                 <div class="feature feature5">
                     <div class="feature-heading">{{ T "landing_feature5" }}</div>
