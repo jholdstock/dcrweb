@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
 $(document).ready(function () {
 	var API = 'https://api.decred.org';
 	
+	// Collect data from web api to populate "Quick Stats" section of the homepage.
 	$.ajax({
 		url: API + "/api?c=webinfo",
 		dataType: "json",
@@ -57,6 +58,9 @@ $(document).ready(function () {
 	});
 });
 
+// drawStats accepts data collected from dcrwebapi and populates the "Quick
+// Stats" section of the homepage. The section is only displayed if javascript
+// is enabled and everything completes, otherwise it remains hidden.
 function drawStats(webinfo, priceinfo){
 
 	// Circulating Supply.
