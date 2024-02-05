@@ -61,9 +61,14 @@ function drawStats(webinfo, priceinfo){
 
 	// Circulating Supply.
 			
-	var circulating = Math.round(webinfo.circulatingsupply/1000000);
-	$('[data-stat-name="circulating-supply"]').each(function(){
-		this.innerHTML = circulating + "Mil";
+	var circulatingDcr = Math.round(webinfo.circulatingsupply);
+	$('[data-stat-name="circulating-supply-dcr"]').each(function(){
+		this.innerHTML = circulatingDcr.toLocaleString("en-US");
+	});
+
+	var circulatingUsd = Math.round(webinfo.circulatingsupply * priceinfo.decred_usd/1000000);
+	$('[data-stat-name="circulating-supply-usd"]').each(function(){
+		this.innerHTML = "USD " + circulatingUsd + "M";
 	});
 
 	// Total coins mined.
@@ -91,9 +96,14 @@ function drawStats(webinfo, priceinfo){
 
 	// Treasury balance.
 
-	var treasury = Math.round(webinfo.treasury * priceinfo.decred_usd/1000000);
-	$('[data-stat-name="treasury"]').each(function(){
-		this.innerHTML = treasury + "Mil";
+	var treasuryDcr = Math.round(webinfo.treasury/1000);
+	$('[data-stat-name="treasury-dcr"]').each(function(){
+		this.innerHTML = treasuryDcr + "k";
+	});
+
+	var treasuryUsd = Math.round(webinfo.treasury * priceinfo.decred_usd/1000000);
+	$('[data-stat-name="treasury-usd"]').each(function(){
+		this.innerHTML = "$" + treasuryUsd + "M";
 	});
 
 	// Stake reward per year (very rough estimate).
