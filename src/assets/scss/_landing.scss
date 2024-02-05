@@ -7,8 +7,8 @@ body {
         // Top.
         linear-gradient(237deg, #122E7600 0%, #0B194CB2 29%, #091542F1 57%, #091440 79%, #091440 100%),
         linear-gradient(237deg, #122E7600 0%, #112B7000 4%, #0D215B27 21%, #0B194CB2 39%, #091542F1 57%, #091440 79%, #091440 100%),
-        url('../images/landing/bg.png'),
-        // linear-gradient(200deg, #0f2666 0%, #091440 62%, #091440 100%),
+        url('../images/landing/bg.jpg'),
+        linear-gradient(200deg, #0f2666 0%, #091440 62%, #091440 100%),
         // Bottom.
             ;
     background-size: cover;
@@ -18,18 +18,8 @@ body {
         local,
         fixed,
         fixed,
-        // local
+        local,
     ;
-
-    // @include media-breakpoint-down(xl) {
-    //     background-image: url('../images/landing-bg/lg.svg');
-    // }
-    // @include media-breakpoint-down(lg) {
-    //     background-image: url('../images/landing-bg/md.svg');
-    // }
-    // @include media-breakpoint-down(md) {
-    //     background-image: url('../images/landing-bg/sm.svg');
-    // }
 }
 
 .landing-btns {
