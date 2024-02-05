@@ -7,19 +7,108 @@ body {
         // Top.
         linear-gradient(237deg, #122E7600 0%, #0B194CB2 29%, #091542F1 57%, #091440 79%, #091440 100%),
         linear-gradient(237deg, #122E7600 0%, #112B7000 4%, #0D215B27 21%, #0B194CB2 39%, #091542F1 57%, #091440 79%, #091440 100%),
-        url('../images/landing/bg.jpg'),
+        -webkit-image-set(
+            url("../images/landing/bg/bg375.jpg")   1x,
+            url("../images/landing/bg/bg375@2.jpg") 2x
+        ),
         linear-gradient(200deg, #0f2666 0%, #091440 62%, #091440 100%),
         // Bottom.
-            ;
+    ;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 20% top;
+    background-position: right center;
     background-attachment: 
-        local,
         fixed,
+        local,
         fixed,
         local,
     ;
+
+    @include media-breakpoint-up(sm) {
+        background:
+            // Top.
+            linear-gradient(237deg, #122E7600 0%, #0B194CB2 29%, #091542F1 57%, #091440 79%, #091440 100%),
+            linear-gradient(237deg, #122E7600 0%, #112B7000 4%, #0D215B27 21%, #0B194CB2 39%, #091542F1 57%, #091440 79%, #091440 100%),
+            -webkit-image-set(
+                url("../images/landing/bg/bg768-1024.jpg")   1x,
+                url("../images/landing/bg/bg768-1024@2.jpg") 2x
+            ),
+            linear-gradient(200deg, #0f2666 0%, #091440 62%, #091440 100%),
+            // Bottom.
+        ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-attachment: 
+            fixed,
+            local,
+            fixed,
+            local,
+        ;
+    }
+    @include media-breakpoint-up(md) {
+        background:
+            // Top.
+            linear-gradient(237deg, #122E7600 0%, #0B194CB2 29%, #091542F1 57%, #091440 79%, #091440 100%),
+            linear-gradient(237deg, #122E7600 0%, #112B7000 4%, #0D215B27 21%, #0B194CB2 39%, #091542F1 57%, #091440 79%, #091440 100%),
+            -webkit-image-set(
+                url("../images/landing/bg/bg1280.jpg")   1x,
+                url("../images/landing/bg/bg1280@2.jpg") 2x
+            ),
+            linear-gradient(200deg, #0f2666 0%, #091440 62%, #091440 100%),
+            // Bottom.
+        ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-attachment: 
+            fixed,
+            local,
+            fixed,
+            local,
+        ;
+    }
+    @include media-breakpoint-up(lg) {
+        background:
+            // Top.
+            linear-gradient(237deg, #122E7600 0%, #0B194CB2 29%, #091542F1 57%, #091440 79%, #091440 100%),
+            linear-gradient(237deg, #122E7600 0%, #112B7000 4%, #0D215B27 21%, #0B194CB2 39%, #091542F1 57%, #091440 79%, #091440 100%),
+            -webkit-image-set(
+                url("../images/landing/bg/bg1920.jpg")   1x,
+                url("../images/landing/bg/bg1920@2.jpg") 2x
+            ),
+            linear-gradient(200deg, #0f2666 0%, #091440 62%, #091440 100%),
+            // Bottom.
+        ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-attachment: 
+            fixed,
+            local,
+            fixed,
+            local,
+        ;
+    }
+    @include media-breakpoint-up(xl) {
+        background:
+            // Top.
+            linear-gradient(237deg, #122E7600 0%, #0B194CB2 29%, #091542F1 57%, #091440 79%, #091440 100%),
+            linear-gradient(237deg, #122E7600 0%, #112B7000 4%, #0D215B27 21%, #0B194CB2 39%, #091542F1 57%, #091440 79%, #091440 100%),
+            url('../images/landing/bg/bg-extra-wide.jpg'),
+            linear-gradient(200deg, #0f2666 0%, #091440 62%, #091440 100%),
+            // Bottom.
+        ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-attachment: 
+            fixed,
+            local,
+            fixed,
+            local,
+        ;
+    }
 }
 
 .landing-btns {
@@ -289,6 +378,7 @@ body {
         background-position: center bottom;
         background-size: contain;
         background-repeat: no-repeat;
+        background-color: $dark-blue;
 
         @include media-breakpoint-up(md) {
             height: 315px;
