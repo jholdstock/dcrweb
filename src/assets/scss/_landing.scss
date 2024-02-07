@@ -494,8 +494,14 @@ $down-grad:  rgba(0, 0, 0, 0.3) linear-gradient(0deg,   #09144021 0%, #091440   
         font-size: 15px;
         line-height: 21px;
 
-        .ul {
+        a {
+            color: $another-gray;
             text-decoration: underline;
+            
+            &:hover,
+            &:focus {
+                opacity: 0.85;
+            }
         }
     }
 }
